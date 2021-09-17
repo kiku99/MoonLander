@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/LandingArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/LandingArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window.class" afterDir="false" />
-    </list>
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +21,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager">
@@ -41,6 +30,17 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
       <module name="moon_lander" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -55,8 +55,16 @@
       <option name="presentableId" value="Default" />
       <updated>1631858827523</updated>
       <workItem from="1631858828794" duration="135000" />
-      <workItem from="1631863748401" duration="676000" />
+      <workItem from="1631863748401" duration="1068000" />
     </task>
+    <task id="LOCAL-00001" summary="1212">
+      <created>1631864883681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631864883681</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,10 +75,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1212" />
+    <option name="LAST_COMMIT_MESSAGE" value="1212" />
   </component>
 </project>

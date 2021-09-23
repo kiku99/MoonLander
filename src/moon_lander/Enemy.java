@@ -2,8 +2,6 @@ package moon_lander;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
@@ -32,17 +30,17 @@ public class Enemy {
     //적이 파괴된 상태
     public boolean crashed;
 
-    public Enemy(int HP, int moveSpeed){
+    public Enemy(){
         Initialize();
         LoadContent();
 
-        x = random.nextInt(10);
+        x = random.nextInt(700);
     }
 
     private void Initialize(){
         random = new Random();
 
-        ResetPlayer();
+        ResetEnemy();
     }
 
     private void LoadContent(){
@@ -57,13 +55,13 @@ public class Enemy {
         }
     }
 
-    public void ResetPlayer(){
+    public void ResetEnemy(){
         crashed = false;
 
         x = random.nextInt(700);
         y = -100;
 
-        speedY = 1;
+        speedY = 5;
     }
 
     public void Move(){
@@ -72,6 +70,12 @@ public class Enemy {
         if(this.y > 500){
             this.y = -100;
         }
+    }
+
+    public void Draw(Graphics2D g2d){
+        g2d.setColor(Color.white);
+
+        g2d.drawImage(enemyImg, x, y, null);
     }
 
 }

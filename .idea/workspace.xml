@@ -4,29 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="123">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moon_lander.iml" beforeDir="false" afterPath="$PROJECT_DIR$/moon_lander.iml" afterDir="false" />
+    <list default="true" id="d2391dab-6537-4358-a477-815ace241af0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Canvas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/master" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1yFslKDIUyE2MrOp5KuNlD3UOL4" />
+  <component name="ProjectId" id="1yLqKR6aPNXVQXeoq86vELIUxnb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -35,39 +31,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="JavaSE-1.7" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
       <module name="moon_lander" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,36 +51,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="" />
-      <created>1631858827523</created>
+      <changelist id="d2391dab-6537-4358-a477-815ace241af0" name="Changes" comment="" />
+      <created>1632041155281</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631858827523</updated>
-      <workItem from="1631858828794" duration="135000" />
-      <workItem from="1631863748401" duration="2704000" />
+      <updated>1632041155281</updated>
+      <workItem from="1632041163071" duration="2482000" />
+      <workItem from="1632361224545" duration="5180000" />
+      <workItem from="1632376890319" duration="694000" />
     </task>
-    <task id="LOCAL-00001" summary="1212">
-      <created>1631864883681</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1631864883681</updated>
-    </task>
-    <task id="LOCAL-00002" summary="코드 리뷰 파일 추가">
-      <created>1631865075788</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1631865075788</updated>
-    </task>
-    <task id="LOCAL-00003" summary="123">
-      <created>1631867136460</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1631867136460</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,29 +70,11 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="kiku/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="1212" />
-    <MESSAGE value="코드 리뷰 파일 추가" />
-    <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
 </project>

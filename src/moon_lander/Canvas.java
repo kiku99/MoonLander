@@ -35,7 +35,7 @@ public abstract class Canvas extends JPanel implements KeyListener, MouseListene
         this.setFocusable(true); // 이벤트핸들링을 위해 포커스를 넘김
         this.setBackground(Color.black); //배경색 변경
         
-        // If you will draw your own mouse cursor or if you just want that mouse cursor disapear, 
+        // If you will draw your own mouse cursor or if you just want that mouse cursor disapear,
         // insert "true" into if condition and mouse cursor will be removed.
         if(false)
         {
@@ -57,8 +57,8 @@ public abstract class Canvas extends JPanel implements KeyListener, MouseListene
     @Override
     public void paintComponent(Graphics g)
     {
-        Graphics2D g2d = (Graphics2D)g;        
-        super.paintComponent(g2d);        
+        Graphics2D g2d = (Graphics2D)g;
+        super.paintComponent(g2d);
         Draw(g2d);
     }
        

@@ -10,6 +10,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 
+import static moon_lander.Framework.*;
+import static moon_lander.Framework.*;
+
 /**
  * Actual game.
  * 

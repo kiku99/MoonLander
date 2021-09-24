@@ -5,6 +5,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -67,11 +68,13 @@ public class Enemy {
     public void Move(){
         this.y += this.speedY;
         //적이 화면을 넘어가면 위치 초기화
-        if(this.y > 500){
+        if(this.y > 550){
             this.y = -100;
             this.x = random.nextInt(700);
         }
     }
+
+
 
     public void Draw(Graphics2D g2d){
         g2d.setColor(Color.white);

@@ -40,6 +40,8 @@ public class Game {
     private Enemy enemy4;
     private Enemy enemy5;
 
+    ArrayList<Enemy> enemies = new ArrayList<Enemy>();
+
     /**
      * Game background image.
      */
@@ -83,6 +85,8 @@ public class Game {
         enemy3 = new Enemy();
         enemy4 = new Enemy();
         enemy5 = new Enemy();
+
+        enemies.add(enemy1);
 
     }
     
@@ -160,6 +164,10 @@ public class Game {
 
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
+    }
+
+    public boolean Crash(Game o1, Game o2){
+        boolean check = false;
     }
     
     /**

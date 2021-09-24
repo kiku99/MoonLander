@@ -6,6 +6,7 @@ import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
@@ -33,7 +34,12 @@ public class Game {
     private LandingArea landingArea;
     
     //적
-    private Enemy enemy;
+    private Enemy enemy1;
+    private Enemy enemy2;
+    private Enemy enemy3;
+    private Enemy enemy4;
+    private Enemy enemy5;
+
     /**
      * Game background image.
      */
@@ -43,7 +49,7 @@ public class Game {
      * Red border of the frame. It is used when player crash the rocket.
      */
     private BufferedImage redBorderImg;
-    
+
 
     public Game()
     {
@@ -56,7 +62,8 @@ public class Game {
                 Initialize();
                 // Load game files (images, sounds, ...)
                 LoadContent();
-                
+
+
                 Framework.gameState = Framework.GameState.PLAYING;
             }
         };
@@ -71,7 +78,12 @@ public class Game {
     {
         playerRocket = new PlayerRocket();
         landingArea  = new LandingArea();
-        enemy = new Enemy();
+        enemy1 = new Enemy();
+        enemy2 = new Enemy();
+        enemy3 = new Enemy();
+        enemy4 = new Enemy();
+        enemy5 = new Enemy();
+
     }
     
     /**
@@ -100,7 +112,11 @@ public class Game {
     {
         playerRocket.ResetPlayer();
 
-        enemy.ResetEnemy();
+        enemy1.ResetEnemy();
+        enemy2.ResetEnemy();
+        enemy3.ResetEnemy();
+        enemy4.ResetEnemy();
+        enemy5.ResetEnemy();
     }
     
     
@@ -116,7 +132,15 @@ public class Game {
         playerRocket.Update();
 
         // 적 생성
-        enemy.Move();
+        enemy1.Move();
+        enemy2.Move();
+        enemy3.Move();
+        enemy4.Move();
+        enemy5.Move();
+
+
+
+
         
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
@@ -152,7 +176,13 @@ public class Game {
         
         playerRocket.Draw(g2d);
 
-        enemy.Draw(g2d);
+        enemy1.Draw(g2d);
+        enemy2.Draw(g2d);
+        enemy3.Draw(g2d);
+        enemy4.Draw(g2d);
+        enemy5.Draw(g2d);
+
+
     }
     
     

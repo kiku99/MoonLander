@@ -69,6 +69,7 @@ public class Enemy {
         //적이 화면을 넘어가면 위치 초기화
         if(this.y > 500){
             this.y = -100;
+            this.x = random.nextInt(700);
         }
     }
 

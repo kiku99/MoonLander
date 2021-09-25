@@ -65,7 +65,8 @@ public class PlayerRocket {
      * How fast and to which direction rocket is moving on y coordinate?
      */
     public int speedY;
-            
+    //로켓 내구도
+    public int hp;
     /**
      * Image of the rocket in air.
      */
@@ -113,6 +114,8 @@ public class PlayerRocket {
         speedStopping = 1;
         
         topLandingSpeed = 5;
+
+        this.hp = 10;
     }
     
     private void LoadContent()
@@ -151,6 +154,8 @@ public class PlayerRocket {
         
         speedX = 0;
         speedY = 0;
+
+        this.hp = 10;
     }
     
     

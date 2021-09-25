@@ -6,6 +6,7 @@ import java.awt.Point;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
@@ -33,7 +34,14 @@ public class Game {
     private LandingArea landingArea;
     
     //적
-    private Enemy enemy;
+    private Enemy enemy1;
+    private Enemy enemy2;
+    private Enemy enemy3;
+    private Enemy enemy4;
+    private Enemy enemy5;
+
+    ArrayList<Enemy> enemies = new ArrayList<>();
+
     /**
      * Game background image.
      */
@@ -43,7 +51,7 @@ public class Game {
      * Red border of the frame. It is used when player crash the rocket.
      */
     private BufferedImage redBorderImg;
-    
+
 
     public Game()
     {
@@ -56,7 +64,8 @@ public class Game {
                 Initialize();
                 // Load game files (images, sounds, ...)
                 LoadContent();
-                
+
+
                 Framework.gameState = Framework.GameState.PLAYING;
             }
         };
@@ -71,7 +80,18 @@ public class Game {
     {
         playerRocket = new PlayerRocket();
         landingArea  = new LandingArea();
-        enemy = new Enemy();
+        enemy1 = new Enemy();
+        enemy2 = new Enemy();
+        enemy3 = new Enemy();
+        enemy4 = new Enemy();
+        enemy5 = new Enemy();
+
+        enemies.add(enemy1);
+        enemies.add(enemy2);
+        enemies.add(enemy3);
+        enemies.add(enemy4);
+        enemies.add(enemy5);
+
     }
     
     /**
@@ -100,7 +120,9 @@ public class Game {
     {
         playerRocket.ResetPlayer();
 
-        enemy.ResetEnemy();
+        for (Enemy enemy : this.enemies) {
+            enemy.ResetEnemy();
+        }
     }
     
     
@@ -116,8 +138,16 @@ public class Game {
         playerRocket.Update();
 
         // 적 생성
-        enemy.Move();
-        
+        enemy1.Move();
+        enemy2.Move();
+        enemy3.Move();
+        enemy4.Move();
+        enemy5.Move();
+
+        for (Enemy enemy : this.enemies) {
+            enemy.Move();
+        }
+
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
         if(playerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y)
@@ -136,6 +166,19 @@ public class Game {
 
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
+
+        if(Crash(this.playerRocket, this.enemies.get(1))){
+            this.playerRocket.crashed = true;
+            Framework.gameState = Framework.GameState.GAMEOVER;
+        }
+    }
+
+    public boolean Crash(PlayerRocket rocket, Enemy enemy){
+        boolean check = false;
+        if(Math.abs((rocket.x + rocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + rocket.rocketImgWidth / 2 ) &&
+                Math.abs((rocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + rocket.rocketImgHeight / 2 ))
+            check = true;
+        return check;
     }
     
     /**
@@ -152,7 +195,13 @@ public class Game {
         
         playerRocket.Draw(g2d);
 
-        enemy.Draw(g2d);
+        for (Enemy enemy : this.enemies) {
+            enemy.Draw(g2d);
+        }
+
+
+
+
     }
     
     

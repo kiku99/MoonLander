@@ -66,9 +66,9 @@ public class Enemy {
         crashed = false;
 
         x = random.nextInt(700);
-        y = -100;
+        y = -200;
 
-        speedY = 5;
+        speedY = random.nextInt(10) + 3;
     }
 
     public void Move(){

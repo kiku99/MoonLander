@@ -3,6 +3,7 @@ package moon_lander;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
@@ -23,7 +24,6 @@ public class PlayerRocket {
      * We use this to generate a random number for starting x coordinate of the rocket.
      */
     private Random random;
- 
     /**
      * X coordinate of the rocket.
      */
@@ -160,19 +160,19 @@ public class PlayerRocket {
     public void Update()
     {
         // Calculating speed for moving up or down.
-        if(Canvas.keyboardKeyState(KeyEvent.VK_W))
+        if(Canvas.keyboardKeyState(KeyEvent.VK_W) || Canvas.mouseButtonState(MouseEvent.BUTTON2))
             speedY -= speedAccelerating;
         else
             speedY += speedStopping;
         
         // Calculating speed for moving or stopping to the left.
-        if(Canvas.keyboardKeyState(KeyEvent.VK_A))
+        if(Canvas.keyboardKeyState(KeyEvent.VK_A) || Canvas.mouseButtonState(MouseEvent.BUTTON1))
             speedX -= speedAccelerating;
         else if(speedX < 0)
             speedX += speedStopping;
         
         // Calculating speed for moving or stopping to the right.
-        if(Canvas.keyboardKeyState(KeyEvent.VK_D))
+        if(Canvas.keyboardKeyState(KeyEvent.VK_D) || Canvas.mouseButtonState(MouseEvent.BUTTON3))
             speedX += speedAccelerating;
         else if(speedX > 0)
             speedX -= speedStopping;
@@ -201,7 +201,7 @@ public class PlayerRocket {
         else
         {
             // If player hold down a W key we draw rocket fire.
-            if(Canvas.keyboardKeyState(KeyEvent.VK_W))
+            if(Canvas.keyboardKeyState(KeyEvent.VK_W)|| Canvas.mouseButtonState(MouseEvent.BUTTON2))
                 g2d.drawImage(rocketFireImg, x + 12, y + 66, null);
             g2d.drawImage(rocketImg, x, y, null);
         }

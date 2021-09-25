@@ -10,6 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 
+
 import static moon_lander.Framework.*;
 import static moon_lander.Framework.*;
 
@@ -31,6 +32,8 @@ public class Game {
      */
     private LandingArea landingArea;
     
+    //적
+    private Enemy enemy;
     /**
      * Game background image.
      */
@@ -68,6 +71,7 @@ public class Game {
     {
         playerRocket = new PlayerRocket();
         landingArea  = new LandingArea();
+        enemy = new Enemy();
     }
     
     /**
@@ -95,6 +99,8 @@ public class Game {
     public void RestartGame()
     {
         playerRocket.ResetPlayer();
+
+        enemy.ResetEnemy();
     }
     
     
@@ -108,6 +114,9 @@ public class Game {
     {
         // Move the rocket
         playerRocket.Update();
+
+        // 적 생성
+        enemy.Move();
         
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
@@ -124,7 +133,7 @@ public class Game {
             }
             else
                 playerRocket.crashed = true;
-                
+
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
     }
@@ -142,6 +151,8 @@ public class Game {
         landingArea.Draw(g2d);
         
         playerRocket.Draw(g2d);
+
+        enemy.Draw(g2d);
     }
     
     

@@ -24,6 +24,10 @@ public class Bullet {
 
     public Point pos;
 
+    public int x;
+
+    public int y;
+
     public Bullet()
     {
         LoadContent();
@@ -31,12 +35,13 @@ public class Bullet {
 
     public Bullet(int x, int y)
     {
-        pos = new Point(x, y);
+        this.x = x;
+        this.y = y;
     }
 
     public void move()
     {
-        pos.y -= 20;
+        y -= 20;
     }
 
     private void LoadContent()
@@ -68,11 +73,11 @@ public class Bullet {
         {
             bullet = bullets.get(i);
 
-            g2d.drawImage(bulletImg, bullet.pos.x + ((PlayerRocket.rocketImgWidth - bulletImgWidth) / 2), bullet.pos.y - bulletImgHeight, null);
+            g2d.drawImage(bulletImg, bullet.x + ((PlayerRocket.rocketImgWidth - bulletImgWidth) / 2), bullet.y - bulletImgHeight, null);
 
             bullet.move();
 
-            if ( bullet.pos.y > Framework.frameHeight ){
+            if ( bullet.y > Framework.frameHeight ){
                 bullets.remove(i);
             }
         }

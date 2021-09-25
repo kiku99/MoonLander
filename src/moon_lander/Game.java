@@ -162,13 +162,12 @@ public class Game {
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
 
-        for (Enemy enemy : this.enemies) {
-            if (Crash(this.playerRocket, enemy)) {
+       for (Enemy enemy : this.enemies) {
+            if (Crash(this.playerRocket, enemy) || (Destroy(bullet, enemy))) {
                 this.playerRocket.crashed = true;
-                Framework.gameState = GameState.GAMEOVER;
+                Framework.gameState = Framework.GameState.GAMEOVER;
             }
         }
-
 
 
     }
@@ -176,17 +175,23 @@ public class Game {
     public boolean Crash(PlayerRocket rocket, Enemy enemy){
         boolean check = false;
         if(Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2 ) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + rocket.rocketImgHeight / 2 ))
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2 ))
             check = true;
         return check;
     }
-    //총알과 적이 충돌해
+
+    //총알과 적이 충돌했을 때
     public boolean Destroy(Bullet bullet, Enemy enemy){
         boolean check = false;
-        if(Math.abs((bullet.pos.y + bullet.bulletImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + bullet.bulletImgHeight / 2 ))
+        if(Math.abs((bullet.x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2 ) &&
+                Math.abs((bullet.y + bullet.bulletImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2 ))
             check = true;
+
         return check;
     }
+
+
+
     
     /**
      * Draw the game to the screen.

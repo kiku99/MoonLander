@@ -40,7 +40,7 @@ public class Game {
     private Enemy enemy4;
     private Enemy enemy5;
 
-    ArrayList<Enemy> enemies = new ArrayList<Enemy>();
+    ArrayList<Enemy> enemies = new ArrayList<>();
 
     /**
      * Game background image.
@@ -87,6 +87,10 @@ public class Game {
         enemy5 = new Enemy();
 
         enemies.add(enemy1);
+        enemies.add(enemy2);
+        enemies.add(enemy3);
+        enemies.add(enemy4);
+        enemies.add(enemy5);
 
     }
     
@@ -116,11 +120,9 @@ public class Game {
     {
         playerRocket.ResetPlayer();
 
-        enemy1.ResetEnemy();
-        enemy2.ResetEnemy();
-        enemy3.ResetEnemy();
-        enemy4.ResetEnemy();
-        enemy5.ResetEnemy();
+        for (Enemy enemy : this.enemies) {
+            enemy.ResetEnemy();
+        }
     }
     
     
@@ -141,6 +143,10 @@ public class Game {
         enemy3.Move();
         enemy4.Move();
         enemy5.Move();
+
+        for (Enemy enemy : this.enemies) {
+            enemy.Move();
+        }
 
 
 
@@ -166,8 +172,12 @@ public class Game {
         }
     }
 
-    public boolean Crash(Game o1, Game o2){
+    public boolean Crash(PlayerRocket rocket, Enemy enemy){
         boolean check = false;
+        if(Math.abs((rocket.x + rocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + rocket.rocketImgWidth / 2 ) &&
+                Math.abs((rocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + rocket.rocketImgHeight / 2 ))
+            check = true;
+        return check;
     }
     
     /**
@@ -184,11 +194,11 @@ public class Game {
         
         playerRocket.Draw(g2d);
 
-        enemy1.Draw(g2d);
-        enemy2.Draw(g2d);
-        enemy3.Draw(g2d);
-        enemy4.Draw(g2d);
-        enemy5.Draw(g2d);
+        for (Enemy enemy : this.enemies) {
+            enemy.Draw(g2d);
+        }
+
+
 
 
     }

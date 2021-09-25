@@ -26,6 +26,10 @@ public class Enemy {
     private int speedY;
     //적 이미지
     private BufferedImage enemyImg;
+    //적 이미지 넓이
+    public int enemyImgWidth;
+    //적 이미지 높이
+    public int enemyImgHeight;
     //적 파괴시 이미지
     private BufferedImage enemyCrashedImg;
     //적이 파괴된 상태
@@ -48,11 +52,13 @@ public class Enemy {
         try {
             URL enemyImgUrl = this.getClass().getResource("/resources/images/rocket.png");
             enemyImg = ImageIO.read(enemyImgUrl);
+            enemyImgWidth = enemyImg.getWidth();
+            enemyImgHeight = enemyImg.getHeight();
 
             URL enemyCrashedImgUrl = this.getClass().getResource("/resources/images/rocket.png");
             enemyCrashedImg = ImageIO.read(enemyCrashedImgUrl);
         } catch (IOException ex) {
-            Logger.getLogger(PlayerRocket.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Enemy.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

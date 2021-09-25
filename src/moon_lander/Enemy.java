@@ -50,10 +50,10 @@ public class Enemy {
 
     private void LoadContent(){
         try {
-            URL enemyImgUrl = this.getClass().getResource("/resources/images/rocket.png");
+            URL enemyImgUrl = this.getClass().getResource("/resources/images/meteor.png");
             enemyImg = ImageIO.read(enemyImgUrl);
-            enemyImgWidth = enemyImg.getWidth();
-            enemyImgHeight = enemyImg.getHeight();
+            enemyImgWidth = enemyImg.getWidth() - 5;
+            enemyImgHeight = enemyImg.getHeight() - 5;
 
             URL enemyCrashedImgUrl = this.getClass().getResource("/resources/images/rocket.png");
             enemyCrashedImg = ImageIO.read(enemyCrashedImgUrl);

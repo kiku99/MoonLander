@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Window.java" afterDir="false" />
-    </list>
+    <list default="true" id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -37,19 +24,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="적 속도 랜덤 생성">
+      <created>1632565398090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632565398090</updated>
+    </task>
+    <task id="LOCAL-00002" summary="모든 적에 닿으면 로켓 파괴">
+      <created>1632566159607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632566159607</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -57,7 +61,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test_mac" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -66,6 +82,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge on mac" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge on mac" />
+    <MESSAGE value="적 속도 랜덤 생성" />
+    <MESSAGE value="모든 적에 닿으면 로켓 파괴" />
+    <option name="LAST_COMMIT_MESSAGE" value="모든 적에 닿으면 로켓 파괴" />
   </component>
 </project>

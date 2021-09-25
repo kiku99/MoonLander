@@ -132,7 +132,7 @@ public class Game {
         }
     }
     
-    
+
     /**
      * Update game logic.
      * 
@@ -145,12 +145,6 @@ public class Game {
         playerRocket.Update();
         bullet.Update();
         // 적 생성
-        enemy1.Move();
-        enemy2.Move();
-        enemy3.Move();
-        enemy4.Move();
-        enemy5.Move();
-
         for (Enemy enemy : this.enemies) {
             enemy.Move();
         }
@@ -179,7 +173,7 @@ public class Game {
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
     }
-
+    //로켓과 적이 충돌했을
     public boolean Crash(PlayerRocket rocket, Enemy enemy){
         boolean check = false;
         if(Math.abs((rocket.x + rocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + rocket.rocketImgWidth / 2 ) &&

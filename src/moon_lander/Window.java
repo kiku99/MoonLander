@@ -10,7 +10,6 @@ import javax.swing.SwingUtilities;
  */
 
 public class Window extends JFrame{
-        
     private Window()
     {
         // Sets the title for this frame.

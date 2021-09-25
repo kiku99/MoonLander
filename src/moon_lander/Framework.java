@@ -94,7 +94,7 @@ public class Framework extends Canvas {
     }
     
     
-   /**
+    /**
      * Set variables and objects.
      * This method is intended to set the variables and objects for this class, variables and objects for the actual game can be set in Game.java.
      */

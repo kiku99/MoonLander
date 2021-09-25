@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="second init">
+      <change afterPath="$PROJECT_DIR$/src/moon_lander/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/LandingArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/LandingArea.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Framework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Enemy.java" afterDir="false" />
+>>>>>>> test
       <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -28,8 +39,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
+=======
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1632379247" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1632378403" />
+                    <option name="lastUsedInstant" value="1632399726" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1632399725" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+>>>>>>> test
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1yFslKDIUyE2MrOp5KuNlD3UOL4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -48,7 +94,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Lombok" />
   </component>
   <component name="RunManager">
@@ -75,6 +125,12 @@
       <workItem from="1632046973246" duration="1880000" />
       <workItem from="1632049349525" duration="418000" />
       <workItem from="1632049798890" duration="567000" />
+      <workItem from="1632381301584" duration="2089000" />
+      <workItem from="1632394353786" duration="880000" />
+      <workItem from="1632398763973" duration="3036000" />
+      <workItem from="1632463744538" duration="5142000" />
+      <workItem from="1632474555888" duration="2423000" />
+      <workItem from="1632547731609" duration="1019000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1631864883681</created>

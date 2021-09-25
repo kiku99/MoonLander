@@ -19,7 +19,7 @@ import javax.imageio.ImageIO;
  */
 
 public class PlayerRocket {
-    
+
     /**
      * We use this to generate a random number for starting x coordinate of the rocket.
      */
@@ -27,11 +27,11 @@ public class PlayerRocket {
     /**
      * X coordinate of the rocket.
      */
-    public int x;
+    public static int x;
     /**
      * Y coordinate of the rocket.
      */
-    public int y;
+    public static int y;
     
     /**
      * Is rocket landed?
@@ -87,7 +87,7 @@ public class PlayerRocket {
     /**
      * Width of rocket.
      */
-    public int rocketImgWidth;
+    public static int rocketImgWidth;
     /**
      * Height of rocket.
      */

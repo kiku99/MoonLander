@@ -32,6 +32,11 @@ public class Game {
      * Landing area on which rocket will have to land.
      */
     private LandingArea landingArea;
+
+    /**
+     * Bullet
+     */
+    private Bullet bullet;
     
     //적
     private Enemy enemy1;
@@ -73,13 +78,14 @@ public class Game {
     }
     
     
-   /**
+    /**
      * Set variables and objects for the game.
      */
     private void Initialize()
     {
         playerRocket = new PlayerRocket();
         landingArea  = new LandingArea();
+
         enemy1 = new Enemy();
         enemy2 = new Enemy();
         enemy3 = new Enemy();
@@ -92,6 +98,7 @@ public class Game {
         enemies.add(enemy4);
         enemies.add(enemy5);
 
+        bullet = new Bullet();
     }
     
     /**
@@ -136,7 +143,7 @@ public class Game {
     {
         // Move the rocket
         playerRocket.Update();
-
+        bullet.Update();
         // 적 생성
         enemy1.Move();
         enemy2.Move();
@@ -199,9 +206,7 @@ public class Game {
             enemy.Draw(g2d);
         }
 
-
-
-
+        bullet.Draw(g2d);
     }
     
     
@@ -229,5 +234,9 @@ public class Game {
             g2d.drawString("You have crashed the rocket!", Framework.frameWidth / 2 - 95, Framework.frameHeight / 3);
             g2d.drawImage(redBorderImg, 0, 0, Framework.frameWidth, Framework.frameHeight, null);
         }
+    }
+
+    public void setBullet(Bullet bullet) {
+        this.bullet = bullet;
     }
 }

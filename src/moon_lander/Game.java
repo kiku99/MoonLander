@@ -37,13 +37,6 @@ public class Game {
      * Bullet
      */
     private Bullet bullet;
-    
-    //적
-    private Enemy enemy1;
-    private Enemy enemy2;
-    private Enemy enemy3;
-    private Enemy enemy4;
-    private Enemy enemy5;
 
     ArrayList<Enemy> enemies = new ArrayList<>();
 
@@ -86,11 +79,12 @@ public class Game {
         playerRocket = new PlayerRocket();
         landingArea  = new LandingArea();
 
-        enemy1 = new Enemy();
-        enemy2 = new Enemy();
-        enemy3 = new Enemy();
-        enemy4 = new Enemy();
-        enemy5 = new Enemy();
+        //적 생
+        Enemy enemy1 = new Enemy();
+        Enemy enemy2 = new Enemy();
+        Enemy enemy3 = new Enemy();
+        Enemy enemy4 = new Enemy();
+        Enemy enemy5 = new Enemy();
 
         enemies.add(enemy1);
         enemies.add(enemy2);
@@ -132,7 +126,7 @@ public class Game {
         }
     }
     
-    
+
     /**
      * Update game logic.
      * 
@@ -145,22 +139,16 @@ public class Game {
         playerRocket.Update();
         bullet.Update();
         // 적 생성
-        enemy1.Move();
-        enemy2.Move();
-        enemy3.Move();
-        enemy4.Move();
-        enemy5.Move();
-
         for (Enemy enemy : this.enemies) {
             enemy.Move();
         }
 
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
-        if(playerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y)
+        if(PlayerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y)
         {
             // Here we check if the rocket is over landing area.
-            if((playerRocket.x > landingArea.x) && (playerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - playerRocket.rocketImgWidth))
+            if((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth))
             {
                 // Here we check if the rocket speed isn't too high.
                 if(playerRocket.speedY <= playerRocket.topLandingSpeed)
@@ -174,16 +162,30 @@ public class Game {
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
 
-        if(Crash(this.playerRocket, this.enemies.get(1))){
-            this.playerRocket.crashed = true;
-            Framework.gameState = Framework.GameState.GAMEOVER;
+        for (Enemy enemy : this.enemies) {
+            if (Crash(this.playerRocket, enemy)) {
+                this.playerRocket.crashed = true;
+                Framework.gameState = GameState.GAMEOVER;
+            }
         }
-    }
 
+        if(Destroy(bullet, enemies.get(0))){
+            enemies.remove(0);
+        }
+
+    }
+    //로켓과 적이 충돌했을 때
     public boolean Crash(PlayerRocket rocket, Enemy enemy){
         boolean check = false;
-        if(Math.abs((rocket.x + rocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + rocket.rocketImgWidth / 2 ) &&
-                Math.abs((rocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + rocket.rocketImgHeight / 2 ))
+        if(Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2 ) &&
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + rocket.rocketImgHeight / 2 ))
+            check = true;
+        return check;
+    }
+    //총알과 적이 충돌해
+    public boolean Destroy(Bullet bullet, Enemy enemy){
+        boolean check = false;
+        if(Math.abs((bullet.pos.y + bullet.bulletImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + bullet.bulletImgHeight / 2 ))
             check = true;
         return check;
     }

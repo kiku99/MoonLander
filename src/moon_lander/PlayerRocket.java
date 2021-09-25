@@ -150,7 +150,7 @@ public class PlayerRocket {
         crashed = false;
         
         x = random.nextInt(Framework.frameWidth - rocketImgWidth);
-        y = 10;
+        y = 200;
         
         speedX = 0;
         speedY = 0;

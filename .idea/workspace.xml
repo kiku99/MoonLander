@@ -1,71 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="second init">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_30__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_30__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_49__Changes_.xml" afterDir="false" />
+    <list default="true" id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Enemy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="test" />
+    <option name="BRANCH" value="test_mac" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="test_mac" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitToolBoxStore">
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1632553178" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="test" />
-                    <option name="lastUsedInstant" value="1632553129" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
-  <component name="ProjectId" id="1yFslKDIUyE2MrOp5KuNlD3UOL4" />
+  <component name="ProjectId" id="1yd0bKmMtheoudkuINHHo5Orgd2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -73,99 +35,73 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="LombokPluginIS_ANNOTATION_PROCESSING_CHECK_Enabled" value="true" />
-    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="ToolWindowBuild.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Lombok" />
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
       <module name="moon_lander" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="moon_lander" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="JavaSE-1.7" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
-      <module name="moon_lander" />
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.moon_lander" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="" />
-      <created>1631858827523</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1631858827523</updated>
-      <workItem from="1631858828794" duration="135000" />
-      <workItem from="1631863748401" duration="2704000" />
-      <workItem from="1632046973246" duration="1880000" />
-      <workItem from="1632049349525" duration="418000" />
-      <workItem from="1632049798890" duration="567000" />
-      <workItem from="1632458041857" duration="7738000" />
-      <workItem from="1632548280926" duration="938000" />
-    </task>
-    <task id="LOCAL-00001" summary="1212">
-      <created>1631864883681</created>
+    <task id="LOCAL-00001" summary="적 속도 랜덤 생성">
+      <created>1632565398090</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1631864883681</updated>
+      <updated>1632565398090</updated>
     </task>
-    <task id="LOCAL-00002" summary="코드 리뷰 파일 추가">
-      <created>1631865075788</created>
+    <task id="LOCAL-00002" summary="모든 적에 닿으면 로켓 파괴">
+      <created>1632566159607</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1631865075788</updated>
+      <updated>1632566159607</updated>
     </task>
-    <task id="LOCAL-00003" summary="위에서 떨어지는 적 구현">
-      <created>1632402344772</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="" />
+      <created>1632566228185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632566228185</updated>
+      <workItem from="1632566230865" duration="6904000" />
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1632566297312</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1632402344772</updated>
+      <updated>1632566297312</updated>
     </task>
-    <task id="LOCAL-00004" summary="적 개수 증가">
-      <created>1632461716003</created>
+    <task id="LOCAL-00004" summary="운석 이미지 추가">
+      <created>1632571044668</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1632461716007</updated>
+      <updated>1632571044668</updated>
     </task>
-    <task id="LOCAL-00005" summary="적 개수 증가2">
-      <created>1632463992781</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1632463992781</updated>
-    </task>
-    <task id="LOCAL-00006" summary="충돌 로직 구현">
-      <created>1632548992876</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1632548992876</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,12 +132,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1212" />
-    <MESSAGE value="코드 리뷰 파일 추가" />
-    <MESSAGE value="위에서 떨어지는 적 구현" />
-    <MESSAGE value="적 개수 증가" />
-    <MESSAGE value="적 개수 증가2" />
-    <MESSAGE value="충돌 로직 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="충돌 로직 구현" />
+    <MESSAGE value="merge on mac" />
+    <MESSAGE value="적 속도 랜덤 생성" />
+    <MESSAGE value="모든 적에 닿으면 로켓 파괴" />
+    <MESSAGE value="1" />
+    <MESSAGE value="운석 이미지 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="운석 이미지 추가" />
   </component>
 </project>

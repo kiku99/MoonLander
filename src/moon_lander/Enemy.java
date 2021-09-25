@@ -39,7 +39,7 @@ public class Enemy {
         Initialize();
         LoadContent();
 
-        x = random.nextInt(700);
+
     }
 
     private void Initialize(){
@@ -50,7 +50,7 @@ public class Enemy {
 
     private void LoadContent(){
         try {
-            URL enemyImgUrl = this.getClass().getResource("/resources/images/meteor.png");
+            URL enemyImgUrl = this.getClass().getResource("/resources/images/metheo.png");
             enemyImg = ImageIO.read(enemyImgUrl);
             enemyImgWidth = enemyImg.getWidth() - 20;
             enemyImgHeight = enemyImg.getHeight() - 20;
@@ -77,6 +77,7 @@ public class Enemy {
         if(this.y > 550){
             this.y = -100;
             this.x = random.nextInt(700);
+            ResetEnemy();
         }
     }
 

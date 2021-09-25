@@ -169,9 +169,7 @@ public class Game {
             }
         }
 
-        if(Destroy(bullet, enemies.get(0))){
-            enemies.remove(0);
-        }
+
 
     }
     //로켓과 적이 충돌했을 때

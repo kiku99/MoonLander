@@ -2,26 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework$GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />

@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="second init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/LandingArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/LandingArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
-    </list>
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="second init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -26,10 +22,53 @@
     <option name="BRANCH" value="origin/master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1632379247" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1632378403" />
+                    <option name="lastUsedInstant" value="1632399726" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1632399725" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/moon_lander/Framework.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/moon_lander/Canvas.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/moon_lander/Bullet.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/moon_lander/Game.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/moon_lander/LandingArea.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1yFslKDIUyE2MrOp5KuNlD3UOL4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -48,10 +87,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Lombok" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Unnamed">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
+      <module name="moon_lander" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="moon_lander" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="JavaSE-1.7" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -61,6 +111,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.moon_lander" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,6 +129,12 @@
       <workItem from="1632046973246" duration="1880000" />
       <workItem from="1632049349525" duration="418000" />
       <workItem from="1632049798890" duration="567000" />
+      <workItem from="1632381301584" duration="2089000" />
+      <workItem from="1632394353786" duration="880000" />
+      <workItem from="1632398763973" duration="3036000" />
+      <workItem from="1632463744538" duration="5142000" />
+      <workItem from="1632474555888" duration="2423000" />
+      <workItem from="1632547731609" duration="1019000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1631864883681</created>
@@ -90,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631865075788</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="위에서 떨어지는 적 구현">
+      <created>1632402344772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632402344772</updated>
+    </task>
+    <task id="LOCAL-00004" summary="second init">
+      <created>1632550939116</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632550939116</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +197,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1212" />
     <MESSAGE value="코드 리뷰 파일 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="코드 리뷰 파일 추가" />
+    <MESSAGE value="위에서 떨어지는 적 구현" />
+    <MESSAGE value="second init" />
+    <option name="LAST_COMMIT_MESSAGE" value="second init" />
   </component>
 </project>

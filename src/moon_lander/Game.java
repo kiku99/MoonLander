@@ -151,10 +151,10 @@ public class Game {
 
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
-        if(playerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y)
+        if(PlayerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y)
         {
             // Here we check if the rocket is over landing area.
-            if((playerRocket.x > landingArea.x) && (playerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - playerRocket.rocketImgWidth))
+            if((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth))
             {
                 // Here we check if the rocket speed isn't too high.
                 if(playerRocket.speedY <= playerRocket.topLandingSpeed)
@@ -168,16 +168,19 @@ public class Game {
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
 
-        if(Crash(this.playerRocket, this.enemies.get(1))){
-            this.playerRocket.crashed = true;
-            Framework.gameState = Framework.GameState.GAMEOVER;
+        for (Enemy enemy : this.enemies) {
+            if (Crash(this.playerRocket, enemy)) {
+                this.playerRocket.crashed = true;
+                Framework.gameState = GameState.GAMEOVER;
+            }
         }
+
     }
     //로켓과 적이 충돌했을
     public boolean Crash(PlayerRocket rocket, Enemy enemy){
         boolean check = false;
-        if(Math.abs((rocket.x + rocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + rocket.rocketImgWidth / 2 ) &&
-                Math.abs((rocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + rocket.rocketImgHeight / 2 ))
+        if(Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2 ) &&
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgWidth / 2 + rocket.rocketImgHeight / 2 ))
             check = true;
         return check;
     }

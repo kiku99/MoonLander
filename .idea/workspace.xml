@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,14 @@
     </configuration>
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="적 속도 랜덤 생성">
+      <created>1632565398090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632565398090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -49,7 +56,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test_mac" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -58,6 +77,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="merge on mac" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge on mac" />
+    <MESSAGE value="적 속도 랜덤 생성" />
+    <MESSAGE value="모든 적에 닿으면 로켓 파괴" />
+    <option name="LAST_COMMIT_MESSAGE" value="모든 적에 닿으면 로켓 파괴" />
   </component>
 </project>

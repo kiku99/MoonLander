@@ -113,13 +113,17 @@ public class Game {
      * Restart game - reset some variables.
      */
     public void RestartGame() {
+        enemies.clear();
+
         playerRocket.ResetPlayer();
 
         for (Enemy enemy : this.enemies) {
             enemy.ResetEnemy();
         }
-        //총알 초기
+        //총알 초기화
         bullet.bullets.clear();
+
+        Initialize();
     }
 
 

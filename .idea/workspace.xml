@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="second init">
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="총알리셋">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1632566228185</updated>
       <workItem from="1632566230865" duration="6904000" />
-      <workItem from="1632646156574" duration="4551000" />
+      <workItem from="1632646156574" duration="4591000" />
+      <workItem from="1632651868938" duration="403000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632648693165</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="총알리셋">
+      <created>1632651837340</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632651837340</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +138,7 @@
     <MESSAGE value="1" />
     <MESSAGE value="운석 이미지 추가" />
     <MESSAGE value="bullet.remove 작동하지 않는거 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="bullet.remove 작동하지 않는거 수정" />
+    <MESSAGE value="총알리셋" />
+    <option name="LAST_COMMIT_MESSAGE" value="총알리셋" />
   </component>
 </project>

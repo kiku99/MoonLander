@@ -154,18 +154,16 @@ public class Game {
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
 
-        for (Enemy enemy : this.enemies) {
-            if (Crash(this.playerRocket, enemy)) {
+        for (int i = 0; i < enemies.size(); i++) {
+            if (Crash(this.playerRocket, enemies.get(i))) {
                 this.playerRocket.crashed = true;
                 Framework.gameState = Framework.GameState.GAMEOVER;
             }
-            if(Destroy(bullet, enemy)){
-                Framework.gameState = Framework.GameState.GAMEOVER;
-
+            if(Destroy(bullet, enemies.get(i))){
+                this.enemies.get(i).crashed = true;
+                this.enemies.remove(i);
             }
         }
-
-
     }
 
     //로켓과 적이 충돌했을 때

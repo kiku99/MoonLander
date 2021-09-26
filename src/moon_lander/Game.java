@@ -27,7 +27,7 @@ public class Game {
      * The space rocket with which player will have to land.
      */
     private PlayerRocket playerRocket;
-    
+
     /**
      * Landing area on which rocket will have to land.
      */
@@ -44,20 +44,19 @@ public class Game {
      * Game background image.
      */
     private BufferedImage backgroundImg;
-    
+
     /**
      * Red border of the frame. It is used when player crash the rocket.
      */
     private BufferedImage redBorderImg;
 
 
-    public Game()
-    {
+    public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
-        
+
         Thread threadForInitGame = new Thread() {
             @Override
-            public void run(){
+            public void run() {
                 // Sets variables and objects for the game.
                 Initialize();
                 // Load game files (images, sounds, ...)
@@ -69,15 +68,14 @@ public class Game {
         };
         threadForInitGame.start();
     }
-    
-    
+
+
     /**
      * Set variables and objects for the game.
      */
-    private void Initialize()
-    {
+    private void Initialize() {
         playerRocket = new PlayerRocket();
-        landingArea  = new LandingArea();
+        landingArea = new LandingArea();
 
         //적 생
         Enemy enemy1 = new Enemy();
@@ -94,47 +92,44 @@ public class Game {
 
         bullet = new Bullet();
     }
-    
+
     /**
      * Load game files - images, sounds, ...
      */
-    private void LoadContent()
-    {
-        try
-        {
+    private void LoadContent() {
+        try {
             URL backgroundImgUrl = this.getClass().getResource("/resources/images/background.jpg");
             backgroundImg = ImageIO.read(backgroundImgUrl);
-            
+
             URL redBorderImgUrl = this.getClass().getResource("/resources/images/red_border.png");
             redBorderImg = ImageIO.read(redBorderImgUrl);
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    
+
+
     /**
      * Restart game - reset some variables.
      */
-    public void RestartGame()
-    {
+    public void RestartGame() {
         playerRocket.ResetPlayer();
 
         for (Enemy enemy : this.enemies) {
             enemy.ResetEnemy();
         }
+        //총알 초기
+        bullet.bullets.clear();
     }
-    
+
 
     /**
      * Update game logic.
-     * 
-     * @param gameTime gameTime of the game.
+     *
+     * @param gameTime      gameTime of the game.
      * @param mousePosition current mouse position.
      */
-    public void UpdateGame(long gameTime, Point mousePosition)
-    {
+    public void UpdateGame(long gameTime, Point mousePosition) {
         // Move the rocket
         playerRocket.Update();
         bullet.Update();
@@ -145,50 +140,55 @@ public class Game {
 
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
-        if(PlayerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y)
-        {
+        if (PlayerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y) {
             // Here we check if the rocket is over landing area.
-            if((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth))
-            {
+            if ((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth)) {
                 // Here we check if the rocket speed isn't too high.
-                if(playerRocket.speedY <= playerRocket.topLandingSpeed)
+                if (playerRocket.speedY <= playerRocket.topLandingSpeed)
                     playerRocket.landed = true;
                 else
                     playerRocket.crashed = true;
-            }
-            else
+            } else
                 playerRocket.crashed = true;
 
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
 
-       for (Enemy enemy : this.enemies) {
-            if (Crash(this.playerRocket, enemy) || (Destroy(bullet, enemy))) {
+        for (Enemy enemy : this.enemies) {
+            if (Crash(this.playerRocket, enemy)) {
                 this.playerRocket.crashed = true;
                 Framework.gameState = Framework.GameState.GAMEOVER;
+            }
+            if(Destroy(bullet, enemy)){
+                Framework.gameState = Framework.GameState.GAMEOVER;
+
             }
         }
 
 
     }
+
     //로켓과 적이 충돌했을 때
-    public boolean Crash(PlayerRocket rocket, Enemy enemy){
+    public boolean Crash(PlayerRocket rocket, Enemy enemy) {
         boolean check = false;
-        if(Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2 ) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2 ))
+        if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2))
             check = true;
         return check;
     }
 
     //총알과 적이 충돌했을 때
-    public boolean Destroy(Bullet bullet, Enemy enemy){
+    public boolean Destroy(Bullet bullet, Enemy enemy) {
         boolean check = false;
-        if(Math.abs((bullet.x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2 ) &&
-                Math.abs((bullet.y + bullet.bulletImgHeight / 2 ) - (enemy.y + enemy.enemyImgHeight / 2 )) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2 ))
-            check = true;
 
+        for (int i = 0; i < bullet.bullets.size(); i++) {
+            if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
+                    Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2))
+                check = true;
+        }
         return check;
     }
+
 
 
 

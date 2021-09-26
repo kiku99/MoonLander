@@ -12,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Bullet {
-    private ArrayList<Bullet> bullets = new ArrayList<>();
+    public ArrayList<Bullet> bullets = new ArrayList<>();
 
     private BufferedImage bulletImg;
 
@@ -21,8 +21,6 @@ public class Bullet {
     public int bulletImgHeight;
 
     Bullet bullet;
-
-    public Point pos;
 
     public int x;
 
@@ -65,6 +63,16 @@ public class Bullet {
             bullet = new Bullet(PlayerRocket.x, PlayerRocket.y);
             bullets.add(bullet);
         }
+        for (Bullet value : this.bullets) {
+            value.move();
+        }
+
+        for(int i = 0; i < bullets.size(); i++) {
+            if (bullets.get(i).y < 0) {
+                bullets.remove(i);
+            }
+        }
+
     }
 
     public void Draw(Graphics2D g2d)
@@ -74,12 +82,6 @@ public class Bullet {
             bullet = bullets.get(i);
 
             g2d.drawImage(bulletImg, bullet.x + ((PlayerRocket.rocketImgWidth - bulletImgWidth) / 2), bullet.y - bulletImgHeight, null);
-
-            bullet.move();
-
-            if ( bullet.y > Framework.frameHeight ){
-                bullets.remove(i);
-            }
         }
     }
 }

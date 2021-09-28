@@ -42,6 +42,8 @@ public class PlayerRocket {
      * Has rocket crashed?
      */
     public boolean crashed;
+    //로켓 HP < 5
+    public boolean damaged;
         
     /**
      * Accelerating speed of the rocket.
@@ -79,6 +81,8 @@ public class PlayerRocket {
      * Image of the rocket when crashed.
      */
     private BufferedImage rocketCrashedImg;
+
+    private BufferedImage rocketDamagedImg;
     /**
      * Image of the rocket fire.
      */
@@ -112,7 +116,6 @@ public class PlayerRocket {
         
         speedAccelerating = 2;
         speedStopping = 1;
-        
         topLandingSpeed = 5;
 
         this.hp = 10;
@@ -132,6 +135,9 @@ public class PlayerRocket {
             
             URL rocketCrashedImgUrl = this.getClass().getResource("/resources/images/rocket_crashed.png");
             rocketCrashedImg = ImageIO.read(rocketCrashedImgUrl);
+
+            URL rocketDamagedImgUrl = this.getClass().getResource("/resources/images/rocket_damaged.png");
+            rocketDamagedImg = ImageIO.read(rocketDamagedImgUrl);
             
             URL rocketFireImgUrl = this.getClass().getResource("/resources/images/rocket_fire.png");
             rocketFireImg = ImageIO.read(rocketFireImgUrl);
@@ -148,6 +154,7 @@ public class PlayerRocket {
     {
         landed = false;
         crashed = false;
+        damaged = false;
         
         x = random.nextInt(Framework.frameWidth - rocketImgWidth);
         y = 200;
@@ -185,6 +192,17 @@ public class PlayerRocket {
         // Moves the rocket.
         x += speedX;
         y += speedY;
+
+        //로켓 내구도 체크
+        if (this.hp < 0){
+            crashed = true;
+        }
+        else if(this.hp < 5){
+            damaged = true;
+        }
+
+
+
     }
     
     public void Draw(Graphics2D g2d)
@@ -201,6 +219,10 @@ public class PlayerRocket {
         else if(crashed)
         {
             g2d.drawImage(rocketCrashedImg, x, y + rocketImgHeight - rocketCrashedImg.getHeight(), null);
+        }
+        else if(damaged)
+        {
+            g2d.drawImage(rocketDamagedImg, x, y, null);
         }
         // If the rocket is still in the space.
         else

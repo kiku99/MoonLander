@@ -169,13 +169,17 @@ public class Game {
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
             if (Crash(this.playerRocket, enemies.get(i))) {
-                this.playerRocket.crashed = true;
-                Framework.gameState = Framework.GameState.GAMEOVER;
+                this.playerRocket.hp -= 6;
             }
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
             }
+        }
+
+        if (playerRocket.crashed){
+            Framework.gameState = Framework.GameState.GAMEOVER;
+
         }
         //모든 적이 없어지면 키 드랍
         if(enemies.isEmpty()){

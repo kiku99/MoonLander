@@ -25,8 +25,6 @@ public class Key {
     //열쇠를 드랍한 상태
     public boolean dropKey;
 
-
-
     public Key(){
         Initialize();
         Loadcontent();

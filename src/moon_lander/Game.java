@@ -37,6 +37,8 @@ public class Game {
      * Bullet
      */
     private Bullet bullet;
+    //키
+    private Key key;
 
     ArrayList<Enemy> enemies = new ArrayList<>();
 
@@ -77,7 +79,7 @@ public class Game {
         playerRocket = new PlayerRocket();
         landingArea = new LandingArea();
 
-        //적 생
+        //적 생성
         Enemy enemy1 = new Enemy();
         Enemy enemy2 = new Enemy();
         Enemy enemy3 = new Enemy();
@@ -89,8 +91,10 @@ public class Game {
         enemies.add(enemy3);
         enemies.add(enemy4);
         enemies.add(enemy5);
-
+        //총알 생성
         bullet = new Bullet();
+        //키 생성
+        key = new Key();
     }
 
     /**
@@ -115,14 +119,17 @@ public class Game {
     public void RestartGame() {
         //모든 적 삭제
         enemies.clear();
-
+        //로켓 초기화
         playerRocket.ResetPlayer();
-
+        //모든 적 초기화
         for (Enemy enemy : this.enemies) {
             enemy.ResetEnemy();
         }
         //모든 총알 초기화
         bullet.bullets.clear();
+        //열쇠 초기화
+        key.ResetKey(this.key);
+
         //객체 초기화
         Initialize();
     }
@@ -137,6 +144,7 @@ public class Game {
     public void UpdateGame(long gameTime, Point mousePosition) {
         // Move the rocket
         playerRocket.Update();
+        //총알 생성
         bullet.Update();
         // 적 생성
         for (Enemy enemy : this.enemies) {
@@ -148,8 +156,8 @@ public class Game {
         if (PlayerRocket.y + playerRocket.rocketImgHeight - 10 > landingArea.y) {
             // Here we check if the rocket is over landing area.
             if ((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth)) {
-                // Here we check if the rocket speed isn't too high.
-                if (playerRocket.speedY <= playerRocket.topLandingSpeed)
+                // Here we check if the rocket speed isn't too high and get key.
+                if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey)
                     playerRocket.landed = true;
                 else
                     playerRocket.crashed = true;
@@ -158,7 +166,7 @@ public class Game {
 
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
-
+        //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
             if (Crash(this.playerRocket, enemies.get(i))) {
                 this.playerRocket.crashed = true;
@@ -167,6 +175,14 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
+            }
+        }
+        //모든 적이 없어지면 키 드랍
+        if(enemies.isEmpty()){
+            key.Create();
+            if (GetKey(playerRocket, key)){
+                key.dropKey = false;
+                key.getKey = true;
             }
         }
     }
@@ -189,6 +205,14 @@ public class Game {
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2))
                 check = true;
         }
+        return check;
+    }
+    //키와 로켓이 닿을 때
+    public boolean GetKey(PlayerRocket rocket, Key key){
+        boolean check = false;
+        if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (key.x + key.keyImgWidth / 2)) < (key.keyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (key.y + key.keyImgHeight / 2)) < (key.keyImgHeight / 2 + rocket.rocketImgHeight / 2))
+            check = true;
         return check;
     }
 
@@ -215,6 +239,8 @@ public class Game {
         }
 
         bullet.Draw(g2d);
+
+        key.Draw(g2d);
     }
     
     
@@ -244,7 +270,4 @@ public class Game {
         }
     }
 
-    public void setBullet(Bullet bullet) {
-        this.bullet = bullet;
-    }
 }

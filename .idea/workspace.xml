@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="총알리셋">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/moon_lander/PlayerRocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/resources/images/rocket.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/resources/images/rocket.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/images/rocket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/rocket.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +54,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,7 +93,7 @@
       <workItem from="1632652510985" duration="1671000" />
       <workItem from="1632798526352" duration="12091000" />
       <workItem from="1632813045321" duration="853000" />
-      <workItem from="1632813909947" duration="2997000" />
+      <workItem from="1632813909947" duration="3605000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -147,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632812942279</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="로켓 내구도 구현">
+      <created>1632818462377</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1632818462377</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +200,7 @@
     <MESSAGE value="게임 리셋시 적이 안나오는 오류 수정" />
     <MESSAGE value="Key 클래스 생성" />
     <MESSAGE value="키를 획득하면 사라지는 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="키를 획득하면 사라지는 기능 구현" />
+    <MESSAGE value="로켓 내구도 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="로켓 내구도 구현" />
   </component>
 </project>

@@ -1,5 +1,8 @@
 package moon_lander;
 
+
+import sun.security.mscapi.CPublicKey;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,10 +13,10 @@ public class ResisterPage extends JFrame {
     private JButton btnAddAccount;
     private JPanel resisterPanel;
     private JPasswordField tResisterPw;
-
-    public String ID;
-
-    public char[] pw;
+    //등록하려는 아이디
+    private String ID = null;
+    //등록하려는 비밀번호
+    private char[] pw = null;
 
     public ResisterPage(){
 
@@ -23,11 +26,11 @@ public class ResisterPage extends JFrame {
         setVisible(true);
 
         Dimension frameSize = getSize();
-
         Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
-
+        //화면 중앙에 띄우기
         setLocation((windowSize.width - frameSize.width) / 2, (windowSize.height - frameSize.height) / 2);
 
+        //resister 버튼
         btnAddAccount.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -41,5 +44,11 @@ public class ResisterPage extends JFrame {
         });
     }
 
+    public String getID() {
+        return ID;
+    }
 
+    public char[] getPw() {
+        return pw;
+    }
 }

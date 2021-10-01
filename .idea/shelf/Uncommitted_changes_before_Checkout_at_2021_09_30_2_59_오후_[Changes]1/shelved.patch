@@ -1,0 +1,183 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b5ab4d4b-886c-4ea2-b37f-13e060319ad2\" name=\"Default Changelist\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Merge.Settings\">\n    <option name=\"BRANCH\" value=\"test_mac\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"test_mac\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1yd0bKmMtheoudkuINHHo5Orgd2\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"run\" type=\"Application\" factoryName=\"Application\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"moon_lander.Window\" />\n      <module name=\"moon_lander\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\n      <option name=\"arquillianRunConfiguration\">\n        <value>\n          <option name=\"containerStateName\" value=\"\" />\n        </value>\n      </option>\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task id=\"LOCAL-00001\" summary=\"적 속도 랜덤 생성\">\n      <created>1632565398090</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1632565398090</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"모든 적에 닿으면 로켓 파괴\">\n      <created>1632566159607</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1632566159607</updated>\n    </task>\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b5ab4d4b-886c-4ea2-b37f-13e060319ad2\" name=\"Default Changelist\" comment=\"\" />\n      <created>1632566228185</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1632566228185</updated>\n      <workItem from=\"1632566230865\" duration=\"7062000\" />\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"1\">\n      <created>1632566297312</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1632566297312</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"운석 이미지 추가\">\n      <created>1632571044668</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1632571044668</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"destory메소드 구현중\">\n      <created>1632575547804</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1632575547804</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"master\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"merge on mac\" />\n    <MESSAGE value=\"적 속도 랜덤 생성\" />\n    <MESSAGE value=\"모든 적에 닿으면 로켓 파괴\" />\n    <MESSAGE value=\"1\" />\n    <MESSAGE value=\"운석 이미지 추가\" />\n    <MESSAGE value=\"destory메소드 구현중\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"destory메소드 구현중\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d2eea88c73aeff098923f425cc1b66ed00717a54)
++++ b/.idea/workspace.xml	(date 1632981562632)
+@@ -1,11 +1,43 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="" />
++    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="총알리셋">
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Canvas.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Enemy.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Key.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/LandingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LandingArea.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/moon_lander/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Window.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/background.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/bullet.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/key.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/key.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/landing_area.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/landing_area.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/menu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/menu.jpg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/metheo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/metheo.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/red_border.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/red_border.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/rocket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/rocket.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/rocket_crashed.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/rocket_crashed.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/rocket_damaged.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/rocket_damaged.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/rocket_fire.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/rocket_fire.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/resources/images/rocket_landed.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/images/images/rocket_landed.png" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Merge.Settings">
+     <option name="BRANCH" value="test_mac" />
+@@ -17,9 +49,11 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="RESET_MODE" value="HARD" />
+   </component>
+   <component name="ProjectId" id="1yd0bKmMtheoudkuINHHo5Orgd2" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <OptionsSetting value="false" id="Update" />
+     <ConfirmationsSetting value="2" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+@@ -29,9 +63,17 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="nodejs_package_manager_path" value="npm" />
++    <property name="restartRequiresConfirmation" value="false" />
++  </component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/src/main/java/resources/images" />
++      <recent name="$PROJECT_DIR$/src/main/java/moon_lander" />
++    </key>
+   </component>
+   <component name="RunManager">
+     <configuration name="run" type="Application" factoryName="Application">
+@@ -70,12 +112,17 @@
+       <updated>1632566159607</updated>
+     </task>
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="b5ab4d4b-886c-4ea2-b37f-13e060319ad2" name="Default Changelist" comment="" />
+       <created>1632566228185</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1632566228185</updated>
+-      <workItem from="1632566230865" duration="7062000" />
++      <workItem from="1632566230865" duration="6904000" />
++      <workItem from="1632646156574" duration="4591000" />
++      <workItem from="1632651868938" duration="634000" />
++      <workItem from="1632652510985" duration="1671000" />
++      <workItem from="1632798526352" duration="12091000" />
++      <workItem from="1632813045321" duration="853000" />
++      <workItem from="1632813909947" duration="3605000" />
+     </task>
+     <task id="LOCAL-00003" summary="1">
+       <created>1632566297312</created>
+@@ -91,14 +138,56 @@
+       <option name="project" value="LOCAL" />
+       <updated>1632571044668</updated>
+     </task>
+-    <task id="LOCAL-00005" summary="destory메소드 구현중">
+-      <created>1632575547804</created>
++    <task id="LOCAL-00005" summary="bullet.remove 작동하지 않는거 수정">
++      <created>1632648693165</created>
+       <option name="number" value="00005" />
+       <option name="presentableId" value="LOCAL-00005" />
+       <option name="project" value="LOCAL" />
+-      <updated>1632575547804</updated>
++      <updated>1632648693165</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="총알리셋">
++      <created>1632651837340</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1632651837340</updated>
++    </task>
++    <task id="LOCAL-00007" summary="총알과 적이 닿을때 적 제거">
++      <created>1632652443492</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1632652443492</updated>
++    </task>
++    <task id="LOCAL-00008" summary="게임 리셋시 적이 안나오는 오류 수정">
++      <created>1632653687213</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1632653687213</updated>
++    </task>
++    <task id="LOCAL-00009" summary="Key 클래스 생성">
++      <created>1632804042868</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1632804042868</updated>
++    </task>
++    <task id="LOCAL-00010" summary="키를 획득하면 사라지는 기능 구현">
++      <created>1632812942279</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1632812942279</updated>
++    </task>
++    <task id="LOCAL-00011" summary="로켓 내구도 구현">
++      <created>1632818462377</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1632818462377</updated>
++    </task>
++    <option name="localTasksCounter" value="12" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -134,7 +223,13 @@
+     <MESSAGE value="모든 적에 닿으면 로켓 파괴" />
+     <MESSAGE value="1" />
+     <MESSAGE value="운석 이미지 추가" />
+-    <MESSAGE value="destory메소드 구현중" />
+-    <option name="LAST_COMMIT_MESSAGE" value="destory메소드 구현중" />
++    <MESSAGE value="bullet.remove 작동하지 않는거 수정" />
++    <MESSAGE value="총알리셋" />
++    <MESSAGE value="총알과 적이 닿을때 적 제거" />
++    <MESSAGE value="게임 리셋시 적이 안나오는 오류 수정" />
++    <MESSAGE value="Key 클래스 생성" />
++    <MESSAGE value="키를 획득하면 사라지는 기능 구현" />
++    <MESSAGE value="로켓 내구도 구현" />
++    <option name="LAST_COMMIT_MESSAGE" value="로켓 내구도 구현" />
+   </component>
+ </project>
+\ No newline at end of file

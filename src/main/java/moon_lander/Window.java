@@ -55,7 +55,9 @@ public class Window extends JFrame{
             }
         });
 
-//        menu mymenu = new menu();
+        LoginPage mymenu = new LoginPage();
+
+
 
     }
 }

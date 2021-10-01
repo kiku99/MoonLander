@@ -70,7 +70,7 @@ public class Framework extends Canvas {
     // The actual game
     private Game game;
 
-    private menu menu;
+    private LoginPage menu;
     
     
     /**

@@ -69,12 +69,16 @@ public class Framework extends Canvas {
     
     // The actual game
     private Game game;
+
+    private menu menu;
     
     
     /**
      * Image for menu.
      */
     private BufferedImage moonLanderMenuImg;
+
+
     
     
     public Framework ()
@@ -147,7 +151,7 @@ public class Framework extends Canvas {
 
                 break;
                 case MAIN_MENU:
-                    //...
+
                 break;
                 case OPTIONS:
                     //...
@@ -258,6 +262,8 @@ public class Framework extends Canvas {
         // We change game status so that the game can start.
         gameState = GameState.PLAYING;
     }
+
+
     
     /**
      * Returns the position of the mouse pointer in game frame/window.

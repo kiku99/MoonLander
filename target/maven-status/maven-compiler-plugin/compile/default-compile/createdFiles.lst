@@ -9,6 +9,7 @@ moon_lander\Game$1.class
 moon_lander\Game.class
 moon_lander\Window$1.class
 moon_lander\Framework$1.class
+moon_lander\menu.class
 moon_lander\Framework.class
 moon_lander\Key.class
 moon_lander\Framework$GameState.class

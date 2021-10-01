@@ -20,6 +20,8 @@ public class LoginPage extends JFrame {
     //사용자 비밀번호
     private char[] pw = null;
 
+    private boolean logined;
+
     public LoginPage() {
 
         setContentPane(loginPanel);
@@ -27,6 +29,8 @@ public class LoginPage extends JFrame {
         setSize(450, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+
+        logined = false;
 
         Dimension frameSize = getSize();
         Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -43,7 +47,10 @@ public class LoginPage extends JFrame {
                 if (ID.isEmpty() || Arrays.toString(pw).isEmpty()){
                     message.setText("아이디 또는 비밀번호를 입력하세요");
                 }
-                else dispose();
+                else {
+                    login();
+                    dispose();
+                }
             }
         });
 
@@ -73,5 +80,10 @@ public class LoginPage extends JFrame {
 
     public char[] getPw() {
         return pw;
+    }
+
+    public boolean login(){
+        logined = true;
+        return true;
     }
 }

@@ -54,7 +54,7 @@ public class Framework extends Canvas {
     /**
      * Possible states of the game
      */
-    public static enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, DESTROYED}
+    public static enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, DESTROYED, STAGE_SELECT}
     /**
      * Current state of the game
      */
@@ -69,12 +69,18 @@ public class Framework extends Canvas {
     
     // The actual game
     private Game game;
+
+    private Stage stage;
+
+    private LoginPage menu;
     
     
     /**
      * Image for menu.
      */
     private BufferedImage moonLanderMenuImg;
+
+
     
     
     public Framework ()
@@ -258,6 +264,8 @@ public class Framework extends Canvas {
         // We change game status so that the game can start.
         gameState = GameState.PLAYING;
     }
+
+
     
     /**
      * Returns the position of the mouse pointer in game frame/window.
@@ -293,7 +301,10 @@ public class Framework extends Canvas {
         switch (gameState)
         {
             case MAIN_MENU:
-                newGame();
+                //...
+            break;
+            case STAGE_SELECT:
+                //...
             break;
             case GAMEOVER:
                 if(e.getKeyCode() == KeyEvent.VK_SPACE || e.getKeyCode() == KeyEvent.VK_ENTER)
@@ -310,6 +321,15 @@ public class Framework extends Canvas {
     @Override
     public void mouseClicked(MouseEvent e)
     {
-        
+        switch (gameState)
+        {
+            case MAIN_MENU:
+                stage = new Stage();
+                gameState = GameState.STAGE_SELECT;
+            break;
+            case STAGE_SELECT:
+                //...
+            break;
+        }
     }
 }

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="총알리셋">
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,17 +15,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="test_mac" />
+    <option name="BRANCH" value="test" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test_mac" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,6 +39,31 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1633073162" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1633073161" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1yd0bKmMtheoudkuINHHo5Orgd2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -58,33 +80,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../moon_lander" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.11764705" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\2021 2학기\소코\newsourcecode\2021SourceCode\src\main\java\moon_lander" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.run">
-    <configuration name="run" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/Downloads/zulu15.29.15-ca-jdk15.0.2-macosx_aarch64" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
+    <configuration name="LoginPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="moon_lander.LoginPage" />
       <module name="moon_lander" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration name="run" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
+      <module name="moon_lander" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +169,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.run" />
+      <item itemvalue="Application.LoginPage" />
       <item itemvalue="Maven.runMaven" />
       <item itemvalue="Maven.moon_lander [clean]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginPage" />
+        <item itemvalue="Maven.moon_lander [clean]" />
         <item itemvalue="Maven.moon_lander [clean]" />
       </list>
     </recent_temporary>
@@ -188,6 +215,10 @@
       <workItem from="1633008251788" duration="3207000" />
       <workItem from="1633049768457" duration="46000" />
       <workItem from="1633071932594" duration="367000" />
+      <workItem from="1633082227266" duration="9821000" />
+      <workItem from="1633094695880" duration="206000" />
+      <workItem from="1633148322643" duration="3383000" />
+      <workItem from="1633151754930" duration="149000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -252,7 +283,49 @@
       <option name="project" value="LOCAL" />
       <updated>1632818462377</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add firebase dependency">
+      <created>1633073146458</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633073146458</updated>
+    </task>
+    <task id="LOCAL-00013" summary="firebase db 연결">
+      <created>1633075008387</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1633075008387</updated>
+    </task>
+    <task id="LOCAL-00014" summary="pom.xml 에 플러그인, 의존성 추가">
+      <created>1633084637831</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633084637831</updated>
+    </task>
+    <task id="LOCAL-00015" summary="로그인 페이지 구현">
+      <created>1633091405261</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1633091405261</updated>
+    </task>
+    <task id="LOCAL-00016" summary="asd">
+      <created>1633094754720</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1633094754720</updated>
+    </task>
+    <task id="LOCAL-00017" summary="스테이지">
+      <created>1633151674315</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1633151674315</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +368,13 @@
     <MESSAGE value="Key 클래스 생성" />
     <MESSAGE value="키를 획득하면 사라지는 기능 구현" />
     <MESSAGE value="로켓 내구도 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="로켓 내구도 구현" />
+    <MESSAGE value="add firebase dependency" />
+    <MESSAGE value="firebase db 연결" />
+    <MESSAGE value="pom.xml 에 플러그인, 의존성 추가" />
+    <MESSAGE value="로그인 페이지 구현" />
+    <MESSAGE value="asd" />
+    <MESSAGE value="스테이지" />
+    <option name="LAST_COMMIT_MESSAGE" value="스테이지" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

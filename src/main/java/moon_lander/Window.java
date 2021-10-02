@@ -1,7 +1,6 @@
 package moon_lander;
 
-import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
+import javax.swing.*;
 
 /**
  * Creates frame and set its properties.
@@ -10,45 +9,57 @@ import javax.swing.SwingUtilities;
  */
 
 public class Window extends JFrame{
+    static JFrame frame = new JFrame();
     private Window()
     {
         // Sets the title for this frame.
-        this.setTitle("Moon Lander");
+        frame.setTitle("Moon Lander");
         
         // Sets size of the frame.
         if(false) // Full screen mode
         {
             // Disables decorations for this frame.
-            this.setUndecorated(true);
+            frame.setUndecorated(true);
             // Puts the frame to full screen.
-            this.setExtendedState(this.MAXIMIZED_BOTH);
+            frame.setExtendedState(frame.MAXIMIZED_BOTH);
         }
         else // Window mode
         {
             // Size of the frame.
-            this.setSize(800, 600);
+            frame.setSize(800, 600);
             // Puts frame to center of the screen.
-            this.setLocationRelativeTo(null);
+            frame.setLocationRelativeTo(null);
             // So that frame cannot be resizable by the user.
-            this.setResizable(false);
+            frame.setResizable(false);
         }
         
         // Exit the application when user close frame.
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
-        this.setContentPane(new Framework());
-        
-        this.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        frame.setContentPane(new Framework());
+
+
+
+        frame.setVisible(true);
     }
+
+
 
     public static void main(String[] args)
     {
-        // Use the event dispatch thread to build the UI for thread-safety.
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new Window();
-            }
-        });
+
+
+        LoginPage loginPage = new LoginPage();
+
+        if (loginPage.login()) {
+            // Use the event dispatch thread to build the UI for thread-safety.
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    new Window();
+                }
+            });
+        }
     }
+
 }

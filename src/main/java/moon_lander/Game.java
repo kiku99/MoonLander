@@ -52,6 +52,7 @@ public class Game {
      */
     private BufferedImage redBorderImg;
 
+    public static int stageNum;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -259,7 +260,7 @@ public class Game {
     {
         Draw(g2d, mousePosition);
         
-        g2d.drawString("Press space or enter to restart.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 70);
+        g2d.drawString("Press space or enter to restart. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 70);
         
         if(playerRocket.landed)
         {

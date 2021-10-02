@@ -1,8 +1,10 @@
 moon_lander\LoginPage$3.class
+moon_lander\Stage$5.class
 moon_lander\Bullet.class
 moon_lander\LoginPage.class
 moon_lander\Canvas.class
 moon_lander\Framework$2.class
+moon_lander\Stage$3.class
 moon_lander\Enemy.class
 moon_lander\LandingArea.class
 moon_lander\Window.class
@@ -14,7 +16,11 @@ moon_lander\ResisterPage$1.class
 moon_lander\LoginPage$2.class
 moon_lander\Window$1.class
 moon_lander\Framework$1.class
+moon_lander\Stage$2.class
+moon_lander\Stage$1.class
 moon_lander\LoginPage$1.class
 moon_lander\Framework.class
+moon_lander\Stage.class
 moon_lander\Key.class
 moon_lander\Framework$GameState.class
+moon_lander\Stage$4.class

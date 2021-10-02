@@ -54,7 +54,7 @@ public class Framework extends Canvas {
     /**
      * Possible states of the game
      */
-    public static enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, DESTROYED}
+    public static enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, DESTROYED, STAGE_SELECT}
     /**
      * Current state of the game
      */
@@ -69,6 +69,8 @@ public class Framework extends Canvas {
     
     // The actual game
     private Game game;
+
+    private Stage stage;
 
     private LoginPage menu;
     
@@ -151,7 +153,7 @@ public class Framework extends Canvas {
 
                 break;
                 case MAIN_MENU:
-
+                    //...
                 break;
                 case OPTIONS:
                     //...
@@ -299,7 +301,10 @@ public class Framework extends Canvas {
         switch (gameState)
         {
             case MAIN_MENU:
-                newGame();
+                //...
+            break;
+            case STAGE_SELECT:
+                //...
             break;
             case GAMEOVER:
                 if(e.getKeyCode() == KeyEvent.VK_SPACE || e.getKeyCode() == KeyEvent.VK_ENTER)
@@ -316,6 +321,15 @@ public class Framework extends Canvas {
     @Override
     public void mouseClicked(MouseEvent e)
     {
-        
+        switch (gameState)
+        {
+            case MAIN_MENU:
+                stage = new Stage();
+                gameState = GameState.STAGE_SELECT;
+            break;
+            case STAGE_SELECT:
+                //...
+            break;
+        }
     }
 }

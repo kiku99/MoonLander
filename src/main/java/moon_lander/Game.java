@@ -52,6 +52,7 @@ public class Game {
      */
     private BufferedImage redBorderImg;
 
+    public static int stageNum;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;

@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,6 +221,8 @@
       <workItem from="1633094695880" duration="206000" />
       <workItem from="1633148322643" duration="3383000" />
       <workItem from="1633151754930" duration="149000" />
+      <workItem from="1633181718642" duration="1076000" />
+      <workItem from="1633330404860" duration="132000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -325,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633151674315</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="mac">
+      <created>1633181914741</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1633181914741</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +385,8 @@
     <MESSAGE value="로그인 페이지 구현" />
     <MESSAGE value="asd" />
     <MESSAGE value="스테이지" />
-    <option name="LAST_COMMIT_MESSAGE" value="스테이지" />
+    <MESSAGE value="mac" />
+    <option name="LAST_COMMIT_MESSAGE" value="mac" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

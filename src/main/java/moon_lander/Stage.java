@@ -50,6 +50,7 @@ public class Stage extends JPanel {
             public void mouseClicked(MouseEvent e)
             {
                 Game.stageNum = 1;
+                setVisible(false);
                 Framework.gameState = Framework.GameState.STAGE_SELECT;
             }
         });

@@ -155,6 +155,9 @@ public class Framework extends Canvas {
                 case MAIN_MENU:
                     //...
                 break;
+                case STAGE_SELECT:
+                    newGame();
+                    break;
                 case OPTIONS:
                     //...
                 break;
@@ -228,6 +231,7 @@ public class Framework extends Canvas {
                 g2d.drawString("Press any key to start the game.", frameWidth / 2 - 100, frameHeight / 2 + 30);
                 g2d.drawString("WWW.GAMETUTORIAL.NET", 7, frameHeight - 5);
             break;
+
             case OPTIONS:
                 //...
             break;
@@ -325,10 +329,10 @@ public class Framework extends Canvas {
         {
             case MAIN_MENU:
                 stage = new Stage();
-                gameState = GameState.STAGE_SELECT;
             break;
             case STAGE_SELECT:
-                //...
+
+
             break;
         }
     }

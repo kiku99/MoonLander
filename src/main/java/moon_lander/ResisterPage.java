@@ -1,18 +1,24 @@
 package moon_lander;
 
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthException;
+import com.google.firebase.auth.UserRecord;
 import sun.security.mscapi.CPublicKey;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ResisterPage extends JFrame {
     private JTextField tResisterID;
     private JButton btnAddAccount;
     private JPanel resisterPanel;
     private JPasswordField tResisterPw;
+    private JTextField tResisterName;
     //등록하려는 아이디
     private String ID = null;
     //등록하려는 비밀번호
@@ -35,8 +41,19 @@ public class ResisterPage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                ID = tResisterID.getText();
-                pw = tResisterPw.getPassword();
+                try {
+                    UserRecord.CreateRequest request = new UserRecord.CreateRequest()
+                            .setEmail(tResisterID.getText())
+                            .setEmailVerified(false)
+                            .setPassword(String.valueOf(tResisterPw.getPassword()))
+                            .setDisplayName(tResisterName.getText());
+
+                    UserRecord userRecord = FirebaseAuth.getInstance().createUser(request);
+                    System.out.println("유저 생성 성공");
+                }
+                catch (FirebaseAuthException ex){
+                    Logger.getLogger(ResisterPage.class.getName()).log(Level.SEVERE, null, ex);
+                }
 
                 new LoginPage();
                 dispose();

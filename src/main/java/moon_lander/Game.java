@@ -106,6 +106,8 @@ public class Game {
                 enemies.add(enemy4);
                 enemies.add(enemy5);
 
+                break;
+
             case 2:
                 enemy1 = new Enemy();
                 enemy2 = new Enemy();
@@ -120,6 +122,8 @@ public class Game {
                 enemies.add(enemy4);
                 enemies.add(enemy5);
                 enemies.add(enemy6);
+
+                break;
 
             case 3:
                 enemy1 = new Enemy();
@@ -137,6 +141,8 @@ public class Game {
                 enemies.add(enemy5);
                 enemies.add(enemy6);
                 enemies.add(enemy7);
+
+                break;
 
 
             case 4:
@@ -158,6 +164,8 @@ public class Game {
                 enemies.add(enemy7);
                 enemies.add(enemy8);
 
+                break;
+
             case 5:
                 enemy1 = new Enemy();
                 enemy2 = new Enemy();
@@ -178,6 +186,8 @@ public class Game {
                 enemies.add(enemy7);
                 enemies.add(enemy8);
                 enemies.add(enemy9);
+
+                break;
         }
 
         //총알 생성

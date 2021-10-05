@@ -97,7 +97,7 @@ public class LoginPage extends JFrame {
 
             if (password.equals(String.valueOf(tpw.getPassword()))){
                 JOptionPane.showMessageDialog(null, "Hello" + " " + name);
-                dispose();
+                setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(null, "비밀번호가 일치하지 않습니다.");
             }

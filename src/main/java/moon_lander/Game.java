@@ -64,7 +64,7 @@ public class Game {
 
     public static int stageNum;
 
-    public int score;
+    public static int score = 5;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -264,6 +264,7 @@ public class Game {
                 playerRocket.crashed = true;
 
             Framework.gameState = Framework.GameState.GAMEOVER;
+
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
@@ -278,6 +279,7 @@ public class Game {
 
         if (playerRocket.crashed){
             Framework.gameState = Framework.GameState.GAMEOVER;
+            new StoreDB();
 
         }
         //모든 적이 없어지면 키 드랍
@@ -307,7 +309,7 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-                score += 50;
+//                score += 50;
             }
 
         }

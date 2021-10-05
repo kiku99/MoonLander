@@ -5,7 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_30__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_49__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_57__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_58__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25__3_59__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_30_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_49_[Changes]/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_49_[Changes]/Framework.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_49_[Changes]/Game$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_49_[Changes]/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_49_[Changes]/LandingArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_49_[Changes]/PlayerRocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_49_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_57_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_58_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021-09-25_오후_3_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_25_6_15___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_25_6_15_오후_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_25_7_38___Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_25_7_38_오후_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-09-25__3_59__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-09-25_오후_3_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_09_25_6_16___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_09_25_6_16_오후_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +261,9 @@
       <workItem from="1633082227266" duration="9821000" />
       <workItem from="1633094695880" duration="206000" />
       <workItem from="1633148322643" duration="3383000" />
-      <workItem from="1633151754930" duration="149000" />
+      <workItem from="1633151754930" duration="2474000" />
+      <workItem from="1633156363186" duration="2521000" />
+      <workItem from="1633263516508" duration="3871000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -325,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633151674315</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="스테이지">
+      <created>1633152159758</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1633152159758</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

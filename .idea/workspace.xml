@@ -5,29 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_gms_google_services_3_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/credentials.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moon_lander.iml" beforeDir="false" afterPath="$PROJECT_DIR$/moon_lander.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FIrebase/ConectionFirebase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FIrebase/ConectionFirebase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -372,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633152159758</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="파이어베이스 연결, 계정 생성 구현, 로그인 구현">
+      <created>1633443710760</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1633443710760</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +414,8 @@
     <MESSAGE value="로그인 페이지 구현" />
     <MESSAGE value="asd" />
     <MESSAGE value="스테이지" />
-    <option name="LAST_COMMIT_MESSAGE" value="스테이지" />
+    <MESSAGE value="파이어베이스 연결, 계정 생성 구현, 로그인 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="파이어베이스 연결, 계정 생성 구현, 로그인 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

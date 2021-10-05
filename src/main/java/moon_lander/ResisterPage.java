@@ -4,7 +4,7 @@ package moon_lander;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.UserRecord;
-import sun.security.mscapi.CPublicKey;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,9 +20,9 @@ public class ResisterPage extends JFrame {
     private JPasswordField tResisterPw;
     private JTextField tResisterName;
     //등록하려는 아이디
-    private String ID = null;
+//    private String ID = null;
     //등록하려는 비밀번호
-    private char[] pw = null;
+//    private char[] pw = null;
 
     public ResisterPage(){
 
@@ -50,6 +50,7 @@ public class ResisterPage extends JFrame {
 
                     UserRecord userRecord = FirebaseAuth.getInstance().createUser(request);
                     System.out.println("유저 생성 성공");
+                    JOptionPane.showMessageDialog(null, "유저 생성 성공");
                 }
                 catch (FirebaseAuthException ex){
                     Logger.getLogger(ResisterPage.class.getName()).log(Level.SEVERE, null, ex);
@@ -61,11 +62,11 @@ public class ResisterPage extends JFrame {
         });
     }
 
-    public String getID() {
-        return ID;
-    }
-
-    public char[] getPw() {
-        return pw;
-    }
+//    public String getID() {
+//        return ID;
+//    }
+//
+//    public char[] getPw() {
+//        return pw;
+//    }
 }

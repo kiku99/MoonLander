@@ -42,6 +42,16 @@ public class Game {
 
     ArrayList<Enemy> enemies = new ArrayList<>();
 
+    Enemy enemy1;
+    Enemy enemy2;
+    Enemy enemy3;
+    Enemy enemy4;
+    Enemy enemy5;
+    Enemy enemy6;
+    Enemy enemy7;
+    Enemy enemy8;
+    Enemy enemy9;
+
     /**
      * Game background image.
      */
@@ -53,6 +63,8 @@ public class Game {
     private BufferedImage redBorderImg;
 
     public static int stageNum;
+
+    public static int score = 5;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -80,18 +92,104 @@ public class Game {
         playerRocket = new PlayerRocket();
         landingArea = new LandingArea();
 
-        //적 생성
-        Enemy enemy1 = new Enemy();
-        Enemy enemy2 = new Enemy();
-        Enemy enemy3 = new Enemy();
-        Enemy enemy4 = new Enemy();
-        Enemy enemy5 = new Enemy();
+        switch (stageNum){
+            case 1:
+                enemy1 = new Enemy();
+                enemy2 = new Enemy();
+                enemy3 = new Enemy();
+                enemy4 = new Enemy();
+                enemy5 = new Enemy();
 
-        enemies.add(enemy1);
-        enemies.add(enemy2);
-        enemies.add(enemy3);
-        enemies.add(enemy4);
-        enemies.add(enemy5);
+                enemies.add(enemy1);
+                enemies.add(enemy2);
+                enemies.add(enemy3);
+                enemies.add(enemy4);
+                enemies.add(enemy5);
+
+                break;
+
+            case 2:
+                enemy1 = new Enemy();
+                enemy2 = new Enemy();
+                enemy3 = new Enemy();
+                enemy4 = new Enemy();
+                enemy5 = new Enemy();
+                enemy6 = new Enemy();
+
+                enemies.add(enemy1);
+                enemies.add(enemy2);
+                enemies.add(enemy3);
+                enemies.add(enemy4);
+                enemies.add(enemy5);
+                enemies.add(enemy6);
+
+                break;
+
+            case 3:
+                enemy1 = new Enemy();
+                enemy2 = new Enemy();
+                enemy3 = new Enemy();
+                enemy4 = new Enemy();
+                enemy5 = new Enemy();
+                enemy6 = new Enemy();
+                enemy7 = new Enemy();
+
+                enemies.add(enemy1);
+                enemies.add(enemy2);
+                enemies.add(enemy3);
+                enemies.add(enemy4);
+                enemies.add(enemy5);
+                enemies.add(enemy6);
+                enemies.add(enemy7);
+
+                break;
+
+
+            case 4:
+                enemy1 = new Enemy();
+                enemy2 = new Enemy();
+                enemy3 = new Enemy();
+                enemy4 = new Enemy();
+                enemy5 = new Enemy();
+                enemy6 = new Enemy();
+                enemy7 = new Enemy();
+                enemy8 = new Enemy();
+
+                enemies.add(enemy1);
+                enemies.add(enemy2);
+                enemies.add(enemy3);
+                enemies.add(enemy4);
+                enemies.add(enemy5);
+                enemies.add(enemy6);
+                enemies.add(enemy7);
+                enemies.add(enemy8);
+
+                break;
+
+            case 5:
+                enemy1 = new Enemy();
+                enemy2 = new Enemy();
+                enemy3 = new Enemy();
+                enemy4 = new Enemy();
+                enemy5 = new Enemy();
+                enemy6 = new Enemy();
+                enemy7 = new Enemy();
+                enemy8 = new Enemy();
+                enemy9 = new Enemy();
+
+                enemies.add(enemy1);
+                enemies.add(enemy2);
+                enemies.add(enemy3);
+                enemies.add(enemy4);
+                enemies.add(enemy5);
+                enemies.add(enemy6);
+                enemies.add(enemy7);
+                enemies.add(enemy8);
+                enemies.add(enemy9);
+
+                break;
+        }
+
         //총알 생성
         bullet = new Bullet();
         //키 생성
@@ -166,6 +264,7 @@ public class Game {
                 playerRocket.crashed = true;
 
             Framework.gameState = Framework.GameState.GAMEOVER;
+
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
@@ -180,6 +279,7 @@ public class Game {
 
         if (playerRocket.crashed){
             Framework.gameState = Framework.GameState.GAMEOVER;
+            new StoreDB();
 
         }
         //모든 적이 없어지면 키 드랍
@@ -207,8 +307,11 @@ public class Game {
 
         for (int i = 0; i < bullet.bullets.size(); i++) {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
-                    Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2))
+                    Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
+//                score += 50;
+            }
+
         }
         return check;
     }
@@ -266,6 +369,7 @@ public class Game {
         {
             g2d.drawString("You have successfully landed!", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3);
             g2d.drawString("You have landed in " + gameTime / Framework.secInNanosec + " seconds.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 20);
+            g2d.drawString("Your Score: " + (score - (gameTime / Framework.secInNanosec) * 50), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
         }
         else
         {

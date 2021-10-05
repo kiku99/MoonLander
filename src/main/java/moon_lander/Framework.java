@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -11,6 +12,7 @@ import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.swing.*;
 
 /**
  * Framework that controls the game (Game.java) that created it, update it and draw it on the screen.
@@ -66,11 +68,14 @@ public class Framework extends Canvas {
     private long gameTime;
     // It is used for calculating elapsed time.
     private long lastTime;
+
+    public static int cnt;
     
     // The actual game
     private Game game;
 
     private Stage stage;
+
 
     private LoginPage menu;
     
@@ -148,12 +153,16 @@ public class Framework extends Canvas {
                     game.UpdateGame(gameTime, mousePosition());
                     
                     lastTime = System.nanoTime();
+                    cnt += 1;
                 break;
                 case GAMEOVER:
 
                 break;
                 case MAIN_MENU:
                     //...
+                break;
+                case STAGE_SELECT:
+                    newGame();
                 break;
                 case OPTIONS:
                     //...
@@ -217,6 +226,8 @@ public class Framework extends Canvas {
         {
             case PLAYING:
                 game.Draw(g2d, mousePosition());
+                g2d.setColor(Color.white);
+                g2d.drawString("Time: " + gameTime / secInNanosec, 5, 30);
             break;
             case GAMEOVER:
                 game.DrawGameOver(g2d, mousePosition(), gameTime);
@@ -246,7 +257,7 @@ public class Framework extends Canvas {
         // We set gameTime to zero and lastTime to current time for later calculations.
         gameTime = 0;
         lastTime = System.nanoTime();
-        
+
         game = new Game();
     }
     

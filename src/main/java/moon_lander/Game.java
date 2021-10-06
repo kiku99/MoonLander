@@ -271,13 +271,12 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
+                score += 5;
             }
         }
 
         if (playerRocket.crashed){
             Framework.gameState = Framework.GameState.GAMEOVER;
-            new StoreDB();
-
         }
         //모든 적이 없어지면 키 드랍
         if(enemies.isEmpty()){

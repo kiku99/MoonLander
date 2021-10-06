@@ -13,9 +13,6 @@ public class StoreDB {
 
     private UserRecord userRecord;
 
-    public StoreDB() {
-
-    }
 
     public void storeScore(int score) {
         HashMap<String, Integer> users = new HashMap<>();

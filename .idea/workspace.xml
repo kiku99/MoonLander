@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FIrebase/CRUDFirebase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FIrebase/ConectionFirebase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FIrebase/ConectionFirebase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="test" />
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -125,17 +117,6 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
       <module name="moon_lander" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -248,6 +229,7 @@
       <workItem from="1633151754930" duration="2474000" />
       <workItem from="1633156363186" duration="2521000" />
       <workItem from="1633263516508" duration="3871000" />
+      <workItem from="1633505077753" duration="332000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>

@@ -50,6 +50,7 @@ public class Stage extends JPanel {
             public void mouseClicked(MouseEvent e)
             {
                 Game.stageNum = 1;
+                setVisible(false);
                 Framework.gameState = Framework.GameState.STAGE_SELECT;
             }
         });
@@ -66,6 +67,8 @@ public class Stage extends JPanel {
             public void mouseClicked(MouseEvent e)
             {
                 Game.stageNum = 2;
+                setVisible(false);
+                Framework.gameState = Framework.GameState.STAGE_SELECT;
             }
         });
 
@@ -81,6 +84,8 @@ public class Stage extends JPanel {
             public void mouseClicked(MouseEvent e)
             {
                 Game.stageNum = 3;
+                setVisible(false);
+                Framework.gameState = Framework.GameState.STAGE_SELECT;
             }
         });
 
@@ -96,6 +101,8 @@ public class Stage extends JPanel {
             public void mouseClicked(MouseEvent e)
             {
                 Game.stageNum = 4;
+                setVisible(false);
+                Framework.gameState = Framework.GameState.STAGE_SELECT;
             }
         });
 
@@ -111,6 +118,8 @@ public class Stage extends JPanel {
             public void mouseClicked(MouseEvent e)
             {
                 Game.stageNum = 5;
+                setVisible(false);
+                Framework.gameState = Framework.GameState.STAGE_SELECT;
             }
         });
 

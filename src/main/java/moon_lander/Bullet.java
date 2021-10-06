@@ -58,7 +58,7 @@ public class Bullet {
 
     public void Update()
     {
-        if (Canvas.keyboardKeyState(KeyEvent.VK_L))
+        if (Canvas.keyboardKeyState(KeyEvent.VK_L) && Framework.cnt % 5 == 0)
         {
             bullet = new Bullet(PlayerRocket.x, PlayerRocket.y);
             bullets.add(bullet);

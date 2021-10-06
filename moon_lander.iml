@@ -85,5 +85,6 @@
     <orderEntry type="library" name="Maven: asm:asm:3.0" level="project" />
     <orderEntry type="library" name="Maven: com.jgoodies:forms:1.1-preview" level="project" />
     <orderEntry type="library" name="Maven: jdom:jdom:1.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.gms:google-services:3.1.1" level="project" />
   </component>
 </module>

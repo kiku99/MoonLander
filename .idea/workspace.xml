@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
-      <change afterPath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FIrebase/CRUDFirebase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FIrebase/ConectionFirebase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FIrebase/ConectionFirebase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -37,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="mac" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

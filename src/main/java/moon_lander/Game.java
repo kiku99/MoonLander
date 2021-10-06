@@ -11,10 +11,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 
-
-import static moon_lander.Framework.*;
-import static moon_lander.Framework.*;
-
 /**
  * Actual game.
  * 
@@ -64,7 +60,7 @@ public class Game {
 
     public static int stageNum;
 
-    public static int score = 5;
+    public static int score = 10;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -264,7 +260,8 @@ public class Game {
                 playerRocket.crashed = true;
 
             Framework.gameState = Framework.GameState.GAMEOVER;
-
+            StoreDB db = new StoreDB();
+            db.storeScore(score);
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {

@@ -16,9 +16,11 @@ moon_lander/Game.class
 moon_lander/LandingArea.class
 moon_lander/PlayerRocket.class
 moon_lander/Bullet.class
+moon_lander/StoreDB.class
 moon_lander/LoginPage$2.class
 moon_lander/Stage$4.class
 moon_lander/ResisterPage.class
+FIrebase/ConectionFirebase.class
 moon_lander/Window$1.class
 moon_lander/Stage$5.class
 moon_lander/Stage$2.class

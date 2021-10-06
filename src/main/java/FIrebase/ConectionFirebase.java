@@ -17,7 +17,7 @@ public class ConectionFirebase {
             FileInputStream serviceAccount = new FileInputStream("credentials.json");
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                    .setDatabaseUrl("https://sourcecode-377cf.firebaseio.com")
+                    .setDatabaseUrl("https://sourcecode-377cf-default-rtdb.firebaseio.com/")
                     .build();
 
             FirebaseApp.initializeApp(options);

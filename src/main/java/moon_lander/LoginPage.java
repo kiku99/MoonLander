@@ -27,7 +27,7 @@ public class LoginPage extends JFrame {
     //사용자 비밀번호
     private char[] pw = null;
 
-    private boolean logined;
+    public static String userName = null;
 
     public LoginPage() {
 
@@ -36,8 +36,6 @@ public class LoginPage extends JFrame {
         setSize(450, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-
-        logined = false;
 
         Dimension frameSize = getSize();
         Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -89,14 +87,14 @@ public class LoginPage extends JFrame {
 
             String email = userRecord.getEmail();
             String uid = userRecord.getUid();
-            String name = userRecord.getDisplayName();
+            userName = userRecord.getDisplayName();
             String password = "elsd4988";
 
             System.out.println(email);
             System.out.println(uid);
 
             if (password.equals(String.valueOf(tpw.getPassword()))){
-                JOptionPane.showMessageDialog(null, "Hello" + " " + name);
+                JOptionPane.showMessageDialog(null, "Hello" + " " + userName);
                 setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(null, "비밀번호가 일치하지 않습니다.");
@@ -124,11 +122,6 @@ public class LoginPage extends JFrame {
 
     public char[] getPw() {
         return pw;
-    }
-
-    public boolean login(){
-        logined = true;
-        return true;
     }
 
 }

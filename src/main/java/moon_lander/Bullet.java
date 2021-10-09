@@ -46,7 +46,7 @@ public class Bullet {
     {
         try
         {
-            URL bulletImgUrl = this.getClass().getResource("/bullet.png");
+            URL bulletImgUrl = this.getClass().getResource("/images/bullet.png");
             bulletImg = ImageIO.read(bulletImgUrl);
             bulletImgWidth = bulletImg.getWidth();
             bulletImgHeight = bulletImg.getHeight();

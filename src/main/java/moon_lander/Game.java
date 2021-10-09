@@ -10,10 +10,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
-
-
-import static moon_lander.Framework.*;
-import static moon_lander.Framework.*;
+import javax.xml.bind.SchemaOutputResolver;
 
 /**
  * Actual game.
@@ -64,7 +61,7 @@ public class Game {
 
     public static int stageNum;
 
-    public int score;
+    public static int score = 10;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -106,6 +103,8 @@ public class Game {
                 enemies.add(enemy4);
                 enemies.add(enemy5);
 
+                break;
+
             case 2:
                 enemy1 = new Enemy();
                 enemy2 = new Enemy();
@@ -120,6 +119,8 @@ public class Game {
                 enemies.add(enemy4);
                 enemies.add(enemy5);
                 enemies.add(enemy6);
+
+                break;
 
             case 3:
                 enemy1 = new Enemy();
@@ -137,6 +138,8 @@ public class Game {
                 enemies.add(enemy5);
                 enemies.add(enemy6);
                 enemies.add(enemy7);
+
+                break;
 
 
             case 4:
@@ -158,6 +161,8 @@ public class Game {
                 enemies.add(enemy7);
                 enemies.add(enemy8);
 
+                break;
+
             case 5:
                 enemy1 = new Enemy();
                 enemy2 = new Enemy();
@@ -178,6 +183,8 @@ public class Game {
                 enemies.add(enemy7);
                 enemies.add(enemy8);
                 enemies.add(enemy9);
+
+                break;
         }
 
         //총알 생성
@@ -191,10 +198,10 @@ public class Game {
      */
     private void LoadContent() {
         try {
-            URL backgroundImgUrl = this.getClass().getResource("/background.jpg");
+            URL backgroundImgUrl = this.getClass().getResource("/images/background.jpg");
             backgroundImg = ImageIO.read(backgroundImgUrl);
 
-            URL redBorderImgUrl = this.getClass().getResource("/red_border.png");
+            URL redBorderImgUrl = this.getClass().getResource("/images/red_border.png");
             redBorderImg = ImageIO.read(redBorderImgUrl);
         } catch (IOException ex) {
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
@@ -254,6 +261,8 @@ public class Game {
                 playerRocket.crashed = true;
 
             Framework.gameState = Framework.GameState.GAMEOVER;
+            StoreDB db = new StoreDB();
+            db.storeScore(score);
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
@@ -263,12 +272,12 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
+                score += 5;
             }
         }
 
         if (playerRocket.crashed){
             Framework.gameState = Framework.GameState.GAMEOVER;
-
         }
         //모든 적이 없어지면 키 드랍
         if(enemies.isEmpty()){
@@ -297,7 +306,7 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-                score += 50;
+//                score += 50;
             }
 
         }

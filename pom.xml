@@ -68,13 +68,6 @@
             <scope>runtime</scope>
         </dependency>
 
-         https://mvnrepository.com/artifact/com.google.firebase/firebase-auth
-        <dependency>
-            <groupId>com.google.firebase</groupId>
-            <artifactId>firebase-auth</artifactId>
-            <version>21.0.1</version>
-        </dependency>
-
     </dependencies>
 
 </project>

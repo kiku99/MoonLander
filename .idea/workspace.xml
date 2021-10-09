@@ -5,11 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/landing_area.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/metheo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/red_border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/rocket_crashed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/rocket_damaged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/rocket_fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/rocket_landed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/landing_area.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/metheo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Canvas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Key.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LandingArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/PlayerRocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/red_border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rocket_crashed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rocket_fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rocket_landed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +76,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="mac" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -185,6 +231,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.moon_lander [clean]" />
+        <item itemvalue="Application.LoginPage" />
         <item itemvalue="Application.LoginPage" />
         <item itemvalue="Maven.moon_lander [clean]" />
         <item itemvalue="Maven.moon_lander [clean]" />
@@ -390,7 +438,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="mac" />
                       </list>
                     </value>
                   </entry>

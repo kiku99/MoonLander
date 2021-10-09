@@ -19,4 +19,5 @@ public class StoreDB {
         users.put(LoginPage.userName, score);
         this.userRef.setValueAsync(users);
     }
+
 }

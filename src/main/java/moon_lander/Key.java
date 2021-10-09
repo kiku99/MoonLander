@@ -37,7 +37,7 @@ public class Key {
 
     private void Loadcontent() {
         try {
-            URL keyImgUrl = this.getClass().getResource("/key.png");
+            URL keyImgUrl = this.getClass().getResource("/images/key.png");
             keyImg = ImageIO.read(keyImgUrl);
             keyImgWidth = keyImg.getWidth();
             keyImgHeight = keyImg.getHeight();

@@ -50,12 +50,12 @@ public class Enemy {
 
     private void LoadContent(){
         try {
-            URL enemyImgUrl = this.getClass().getResource("/metheo.png");
+            URL enemyImgUrl = this.getClass().getResource("/images/metheo.png");
             enemyImg = ImageIO.read(enemyImgUrl);
             enemyImgWidth = enemyImg.getWidth() - 20;
             enemyImgHeight = enemyImg.getHeight() - 20;
 
-            URL enemyCrashedImgUrl = this.getClass().getResource("/rocket.png");
+            URL enemyCrashedImgUrl = this.getClass().getResource("/images/rocket.png");
             enemyCrashedImg = ImageIO.read(enemyCrashedImgUrl);
         } catch (IOException ex) {
             Logger.getLogger(Enemy.class.getName()).log(Level.SEVERE, null, ex);

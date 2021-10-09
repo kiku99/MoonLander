@@ -18,14 +18,8 @@ public class ResisterPage extends JFrame {
     private JButton btnAddAccount;
     private JPanel resisterPanel;
     private JPasswordField tResisterPw;
-    private JTextField tResisterName;
-    //등록하려는 아이디
-//    private String ID = null;
-    //등록하려는 비밀번호
-//    private char[] pw = null;
 
     public ResisterPage(){
-
         setContentPane(resisterPanel);
         setTitle("resister");
         setSize(450, 300);
@@ -45,8 +39,7 @@ public class ResisterPage extends JFrame {
                     UserRecord.CreateRequest request = new UserRecord.CreateRequest()
                             .setEmail(tResisterID.getText())
                             .setEmailVerified(false)
-                            .setPassword(String.valueOf(tResisterPw.getPassword()))
-                            .setDisplayName(tResisterName.getText());
+                            .setDisplayName(String.valueOf(tResisterPw.getPassword()));
 
                     UserRecord userRecord = FirebaseAuth.getInstance().createUser(request);
                     System.out.println("유저 생성 성공");
@@ -61,7 +54,6 @@ public class ResisterPage extends JFrame {
             }
         });
     }
-
 //    public String getID() {
 //        return ID;
 //    }

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.xml.bind.SchemaOutputResolver;
 
 /**
  * Actual game.
@@ -197,10 +198,10 @@ public class Game {
      */
     private void LoadContent() {
         try {
-            URL backgroundImgUrl = this.getClass().getResource("/background.jpg");
+            URL backgroundImgUrl = this.getClass().getResource("/images/background.jpg");
             backgroundImg = ImageIO.read(backgroundImgUrl);
 
-            URL redBorderImgUrl = this.getClass().getResource("/red_border.png");
+            URL redBorderImgUrl = this.getClass().getResource("/images/red_border.png");
             redBorderImg = ImageIO.read(redBorderImgUrl);
         } catch (IOException ex) {
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);

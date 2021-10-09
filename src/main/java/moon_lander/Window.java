@@ -1,8 +1,6 @@
 package moon_lander;
 
-import FIrebase.ConectionFirebase;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
+import firebase.ConectionFirebase;
 
 import javax.swing.*;
 

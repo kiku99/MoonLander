@@ -29,8 +29,8 @@ public class LoginPage extends JFrame {
 
     public static String userName = null;
 
-    public LoginPage() {
 
+    public LoginPage() {
         setContentPane(loginPanel);
         setTitle("Login");
         setSize(450, 300);
@@ -75,23 +75,21 @@ public class LoginPage extends JFrame {
                 dispose();
             }
         });
-
-
-
     }
 
     private void getDataByEmail(){
+        
         UserRecord userRecord = null;
         try {
             userRecord = FirebaseAuth.getInstance().getUserByEmail(tID.getText());
-
             String email = userRecord.getEmail();
             String uid = userRecord.getUid();
-            userName = userRecord.getDisplayName();
-            String password = "elsd4988";
+            String password = userRecord.getDisplayName();
 
             System.out.println(email);
             System.out.println(uid);
+
+
 
             if (password.equals(String.valueOf(tpw.getPassword()))){
                 JOptionPane.showMessageDialog(null, "Hello" + " " + userName);
@@ -114,14 +112,6 @@ public class LoginPage extends JFrame {
         } catch (FirebaseAuthException e) {
             e.printStackTrace();
         }
-    }
-
-    public String getID() {
-        return ID;
-    }
-
-    public char[] getPw() {
-        return pw;
     }
 
 }

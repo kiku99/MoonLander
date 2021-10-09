@@ -31,7 +31,7 @@ public class Stage extends JPanel {
     }
     public void LoadContent() {
         try {
-            URL backgroundImgUrl = this.getClass().getResource("/background.jpg");
+            URL backgroundImgUrl = this.getClass().getResource("/images/background.jpg");
             backgroundImg = ImageIO.read(backgroundImgUrl);
 
         } catch (IOException ex) {

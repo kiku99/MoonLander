@@ -5,66 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moon_lander.iml" beforeDir="false" afterPath="$PROJECT_DIR$/moon_lander.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FIrebase/ConectionFirebase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/firebase/ConectionFirebase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LandingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LandingArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/bullet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/key.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/key.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/landing_area.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/landing_area.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/menu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/menu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/metheo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/metheo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/red_border.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/red_border.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/rocket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rocket.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/rocket_crashed.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rocket_crashed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/rocket_damaged.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rocket_damaged.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/rocket_fire.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rocket_fire.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/rocket_landed.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rocket_landed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/landing_area.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/menu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/metheo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Key.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Key.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LandingArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LandingArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/PlayerRocket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/red_border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rocket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rocket_crashed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rocket_damaged.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rocket_fire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rocket_landed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +244,7 @@
       <workItem from="1633151754930" duration="2474000" />
       <workItem from="1633156363186" duration="2521000" />
       <workItem from="1633263516508" duration="3871000" />
-      <workItem from="1633505077753" duration="15248000" />
+      <workItem from="1633505077753" duration="15359000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -434,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633505600503</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="비밀번호 로직 개선">
+      <created>1633777138719</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1633777138719</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +438,8 @@
     <MESSAGE value="파이어베이스 연결, 계정 생성 구현, 로그인 구현" />
     <MESSAGE value="로그인 코드 개선" />
     <MESSAGE value="score 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="score 개선" />
+    <MESSAGE value="비밀번호 로직 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="비밀번호 로직 개선" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

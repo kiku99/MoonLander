@@ -4,15 +4,19 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 
-import static moon_lander.Framework.*;
 import static moon_lander.Framework.*;
 
 /**
@@ -42,15 +46,7 @@ public class Game {
 
     ArrayList<Enemy> enemies = new ArrayList<>();
 
-    Enemy enemy1;
-    Enemy enemy2;
-    Enemy enemy3;
-    Enemy enemy4;
-    Enemy enemy5;
-    Enemy enemy6;
-    Enemy enemy7;
-    Enemy enemy8;
-    Enemy enemy9;
+    Enemy enemy;
 
     /**
      * Game background image.
@@ -92,98 +88,49 @@ public class Game {
         playerRocket = new PlayerRocket();
         landingArea = new LandingArea();
 
-        switch (stageNum){
+        switch(stageNum) {
             case 1:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
+                for (int i=0; i<5; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
+                break;
 
             case 2:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
+                for (int i=0; i<6; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
+                break;
 
             case 3:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-                enemy7 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
-                enemies.add(enemy7);
-
+                for (int i=0; i<7; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
+                break;
 
             case 4:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-                enemy7 = new Enemy();
-                enemy8 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
-                enemies.add(enemy7);
-                enemies.add(enemy8);
+                for (int i=0; i<8; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
+                break;
 
             case 5:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-                enemy7 = new Enemy();
-                enemy8 = new Enemy();
-                enemy9 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
-                enemies.add(enemy7);
-                enemies.add(enemy8);
-                enemies.add(enemy9);
+                for (int i=0; i<9; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
+                break;
         }
 
         //총알 생성
         bullet = new Bullet();
         //키 생성
         key = new Key();
+
+        Sound("src/main/java/resources/sound/backgroundsound.wav");
     }
 
     /**
@@ -284,8 +231,10 @@ public class Game {
     public boolean Crash(PlayerRocket rocket, Enemy enemy) {
         boolean check = false;
         if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2))
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2)){
             check = true;
+            Sound("src/main/java/resources/sound/explosionsound.wav");
+        }
         return check;
     }
 
@@ -297,7 +246,8 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-                score += 50;
+                score += 100;
+                Sound("src/main/java/resources/sound/explosionsound.wav");
             }
 
         }
@@ -307,8 +257,9 @@ public class Game {
     public boolean GetKey(PlayerRocket rocket, Key key){
         boolean check = false;
         if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (key.x + key.keyImgWidth / 2)) < (key.keyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (key.y + key.keyImgHeight / 2)) < (key.keyImgHeight / 2 + rocket.rocketImgHeight / 2))
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (key.y + key.keyImgHeight / 2)) < (key.keyImgHeight / 2 + rocket.rocketImgHeight / 2)){
             check = true;
+        }
         return check;
     }
 
@@ -357,7 +308,7 @@ public class Game {
         {
             g2d.drawString("You have successfully landed!", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3);
             g2d.drawString("You have landed in " + gameTime / Framework.secInNanosec + " seconds.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 20);
-            g2d.drawString("Your Score: " + (score - (gameTime / Framework.secInNanosec) * 50), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
+            g2d.drawString("Your Score: " + (score - (gameTime / Framework.secInNanosec) * 10), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
         }
         else
         {
@@ -366,5 +317,18 @@ public class Game {
             g2d.drawImage(redBorderImg, 0, 0, Framework.frameWidth, Framework.frameHeight, null);
         }
     }
-
+    public static void Sound(String file){
+        Clip clip;
+        try
+        {
+            AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream(file)));
+            clip = AudioSystem.getClip();
+            clip.open(ais);
+            clip.start();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 }

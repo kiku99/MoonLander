@@ -5,44 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_46___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_46___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_47___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_47___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-10-01__4_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-10-01__4_15__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_01_3_59___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_01_3_59___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34_오후_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34_오후_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_46___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_46_오후_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_47___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_47_오후_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/landing_area.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/metheo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/red_border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_crashed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_damaged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_landed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/landing_area.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/menu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/red_border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket_crashed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket_fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket_landed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-10-01__4_15__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-10-01_오후_4_15_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_01_3_59___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_01_3_59_오후_[Changes]/LandingArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_10_01_3_59_오후_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Key.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Key.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LandingArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LandingArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/PlayerRocket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Stage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Window$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Window.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
@@ -119,7 +136,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../moon_lander" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -261,7 +278,11 @@
       <workItem from="1633156363186" duration="2521000" />
       <workItem from="1633263516508" duration="3871000" />
       <workItem from="1633420924128" duration="722000" />
-      <workItem from="1633421676816" duration="538000" />
+      <workItem from="1633421676816" duration="4194000" />
+      <workItem from="1633426651588" duration="989000" />
+      <workItem from="1633516411358" duration="6007000" />
+      <workItem from="1633523582113" duration="950000" />
+      <workItem from="1633774399421" duration="272000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -375,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633152159758</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="스테이지">
+      <created>1633422263774</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1633422263775</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +453,16 @@
     <MESSAGE value="asd" />
     <MESSAGE value="스테이지" />
     <option name="LAST_COMMIT_MESSAGE" value="스테이지" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

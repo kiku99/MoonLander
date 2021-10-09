@@ -130,8 +130,8 @@ public class Stage extends JPanel {
         this.add(bt_three);
         this.add(bt_four);
         this.add(bt_five);
-        jl1 = new JLabel("                      high score");
-        jl2 = new JLabel("                        1000000");
+        jl1 = new JLabel("                     high score");
+        jl2 = new JLabel("                       1000000");
         jl1.setForeground(Color.BLACK);
         jl2.setForeground(Color.BLACK);
         jl1.setBounds(0, Framework.frameHeight / 2 - 60, Framework.frameWidth, 50);

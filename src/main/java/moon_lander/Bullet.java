@@ -58,10 +58,11 @@ public class Bullet {
 
     public void Update()
     {
-        if (Canvas.keyboardKeyState(KeyEvent.VK_L) && Framework.cnt % 5 == 0)
+        if (Canvas.keyboardKeyState(KeyEvent.VK_L) && Framework.cnt % 1 == 0)
         {
             bullet = new Bullet(PlayerRocket.x, PlayerRocket.y);
             bullets.add(bullet);
+            Game.Sound("src/main/java/resources/sound/shootingsound.wav");
         }
         for (Bullet value : this.bullets) {
             value.move();

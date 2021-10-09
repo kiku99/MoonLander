@@ -91,6 +91,8 @@ public class Framework extends Canvas {
     private BufferedImage moonLanderMenuImg;
 
 
+
+
     
     
     public Framework ()
@@ -98,6 +100,7 @@ public class Framework extends Canvas {
         super();
         
         gameState = GameState.VISUALIZING;
+
         
         //We start game in new thread.
         Thread gameThread = new Thread() {
@@ -126,7 +129,7 @@ public class Framework extends Canvas {
     {
         try
         {
-            URL moonLanderMenuImgUrl = this.getClass().getResource("/menu.jpg");
+            URL moonLanderMenuImgUrl = this.getClass().getResource("/images/menu.jpg");
             moonLanderMenuImg = ImageIO.read(moonLanderMenuImgUrl);
         }
         catch (IOException ex) {

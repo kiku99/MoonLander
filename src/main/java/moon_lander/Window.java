@@ -1,5 +1,7 @@
 package moon_lander;
 
+import firebase.ConectionFirebase;
+
 import javax.swing.*;
 
 /**
@@ -47,19 +49,16 @@ public class Window extends JFrame{
 
     public static void main(String[] args)
     {
-
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Window();
+            }
+        });
 
         LoginPage loginPage = new LoginPage();
 
-        if (loginPage.login()) {
-            // Use the event dispatch thread to build the UI for thread-safety.
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    new Window();
-                }
-            });
-        }
+        new ConectionFirebase().initFirebase();
     }
 
 }

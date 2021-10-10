@@ -27,8 +27,6 @@ public class LoginPage extends JFrame {
     //사용자 비밀번호
     private char[] pw = null;
 
-    public static String userName = null;
-
 
     public LoginPage() {
         setContentPane(loginPanel);
@@ -92,7 +90,7 @@ public class LoginPage extends JFrame {
 
 
             if (password.equals(String.valueOf(tpw.getPassword()))){
-                JOptionPane.showMessageDialog(null, "Hello" + " " + userName);
+                JOptionPane.showMessageDialog(null, "Hello" + " " + email);
                 setVisible(false);
             } else {
                 JOptionPane.showMessageDialog(null, "비밀번호가 일치하지 않습니다.");
@@ -112,6 +110,10 @@ public class LoginPage extends JFrame {
         } catch (FirebaseAuthException e) {
             e.printStackTrace();
         }
+    }
+
+    public String getID(){
+        return tID.getText();
     }
 
 }

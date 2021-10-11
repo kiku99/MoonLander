@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="합체">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
@@ -374,12 +378,12 @@
       <option name="project" value="LOCAL" />
       <updated>1633777138719</updated>
     </task>
-    <task id="LOCAL-00023" summary="하이스코어 구현">
-      <created>1633931654349</created>
+    <task id="LOCAL-00023" summary="합체">
+      <created>1633929396538</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1633931654349</updated>
+      <updated>1633929396538</updated>
     </task>
     <option name="localTasksCounter" value="24" />
     <servers />
@@ -434,8 +438,8 @@
     <MESSAGE value="로그인 코드 개선" />
     <MESSAGE value="score 개선" />
     <MESSAGE value="비밀번호 로직 개선" />
-    <MESSAGE value="하이스코어 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="하이스코어 구현" />
+    <MESSAGE value="합체" />
+    <option name="LAST_COMMIT_MESSAGE" value="합체" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -11,12 +11,12 @@ public class StoreDB {
 
     private DatabaseReference userRef = db.getReference("users");
 
-    private UserRecord userRecord;
+    private LoginPage loginPage;
 
 
     public void storeScore(int score) {
         HashMap<String, Integer> users = new HashMap<>();
-        users.put(LoginPage.userName, score);
+        users.put("user", score);
         this.userRef.setValueAsync(users);
     }
 

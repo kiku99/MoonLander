@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,6 +231,7 @@
       <workItem from="1633156363186" duration="2521000" />
       <workItem from="1633263516508" duration="3871000" />
       <workItem from="1633505077753" duration="15359000" />
+      <workItem from="1633928642838" duration="854000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -381,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633777138719</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="버그 픽스 및 게임오버시 스테이지 선택 구현">
+      <created>1633857833880</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1633857833880</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +433,8 @@
     <MESSAGE value="로그인 코드 개선" />
     <MESSAGE value="score 개선" />
     <MESSAGE value="비밀번호 로직 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="비밀번호 로직 개선" />
+    <MESSAGE value="버그 픽스 및 게임오버시 스테이지 선택 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="버그 픽스 및 게임오버시 스테이지 선택 구현" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

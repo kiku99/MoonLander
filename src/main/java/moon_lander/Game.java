@@ -65,7 +65,9 @@ public class Game {
 
     public static int stageNum;
 
-    public static int score = 10;
+    public static int score = 0;
+
+    public static int highscore = 0;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -231,6 +233,8 @@ public class Game {
         //열쇠 초기화
         key.ResetKey(this.key);
 
+        score = 0;
+
         //객체 초기화
         Initialize();
     }
@@ -265,9 +269,13 @@ public class Game {
             } else
                 playerRocket.crashed = true;
 
+            score = 10000 - (int)((gameTime / Framework.secInNanosec) * 50);
+            if (score > highscore){
+                highscore = score;
+            }
             Framework.gameState = Framework.GameState.GAMEOVER;
             StoreDB db = new StoreDB();
-            db.storeScore(score);
+            db.storeScore(highscore);
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
@@ -277,7 +285,6 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
-                score += 5;
             }
         }
 
@@ -314,7 +321,6 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-                score += 100;
                 Sound("src/main/resources/sounds/explosionsound.wav", false);
             }
 
@@ -369,13 +375,16 @@ public class Game {
     {
         Draw(g2d, mousePosition);
         
-        g2d.drawString("Press space or enter to restart. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 70);
+        g2d.drawString("Press space or enter to restart. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 80);
+        g2d.drawString("Press m enter to select stage. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 100);
         
         if(playerRocket.landed)
         {
             g2d.drawString("You have successfully landed!", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3);
             g2d.drawString("You have landed in " + gameTime / Framework.secInNanosec + " seconds.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 20);
-            g2d.drawString("Your Score: " + (score - (gameTime / Framework.secInNanosec) * 50), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
+            g2d.drawString("Your Score: " + (score), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
+            g2d.drawString("Your highScore: " + (highscore), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 60);
+
         }
         else
         {

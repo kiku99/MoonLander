@@ -62,7 +62,7 @@ public class Bullet {
         {
             bullet = new Bullet(PlayerRocket.x, PlayerRocket.y);
             bullets.add(bullet);
-            Game.Sound("src/main/java/resources/sound/shootingsound.wav");
+            Game.Sound("src/main/java/resources/sound/shootingsound.wav", false);
         }
         for (Bullet value : this.bullets) {
             value.move();

@@ -199,7 +199,6 @@ public class Game {
         bullet = new Bullet();
         //키 생성
         key = new Key();
-        Sound("src/main/resources/sounds/backgroundsound.wav");
     }
 
     /**
@@ -222,6 +221,7 @@ public class Game {
             AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream("src/main/resources/sounds/backgroundsound.wav")));
             backgroundSound = AudioSystem.getClip();
             backgroundSound.open(ais);
+            backgroundSound.stop();
             backgroundSound.start();
             backgroundSound.loop(-1);
         }
@@ -254,6 +254,7 @@ public class Game {
         //객체 초기화
         Initialize();
 
+        backgroundSound.stop();
         backgroundSound.start();
         backgroundSound.loop(-1);
     }
@@ -281,15 +282,17 @@ public class Game {
             // Here we check if the rocket is over landing area.
             if ((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth)) {
                 // Here we check if the rocket speed isn't too high and get key.
-                if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey)
-                    playerRocket.landed = true;
-                else {
-                    playerRocket.crashed = true;
+                if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey){
                     backgroundSound.stop();
+                    playerRocket.landed = true;
+                }
+                else {
+                    backgroundSound.stop();
+                    playerRocket.crashed = true;
                 }
             } else {
-                playerRocket.crashed = true;
                 backgroundSound.stop();
+                playerRocket.crashed = true;
             }
 
             score = 10000 - (int)((gameTime / Framework.secInNanosec) * 50);
@@ -346,6 +349,7 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
+                score += 100;
                 Sound("src/main/resources/sounds/explosionsound.wav");
             }
 

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="합체">
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="사운드">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +24,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="mac" />
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="OPTIONS">
-      <set>
-        <option value="SQUASH" />
-      </set>
-    </option>
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -385,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633929396538</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="사운드">
+      <created>1633932246230</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1633932246230</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +442,8 @@
     <MESSAGE value="score 개선" />
     <MESSAGE value="비밀번호 로직 개선" />
     <MESSAGE value="합체" />
-    <option name="LAST_COMMIT_MESSAGE" value="합체" />
+    <MESSAGE value="사운드" />
+    <option name="LAST_COMMIT_MESSAGE" value="사운드" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

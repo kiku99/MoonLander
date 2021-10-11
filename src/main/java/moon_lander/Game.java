@@ -195,7 +195,7 @@ public class Game {
         bullet = new Bullet();
         //키 생성
         key = new Key();
-        Sound("src/main/java/resources/sound/background.wav", false);
+        Sound("src/main/resources/sounds/backgroundsound.wav", false);
     }
 
     /**
@@ -300,7 +300,7 @@ public class Game {
         if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
                 Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2)) {
             check = true;
-            Sound("src/main/java/resources/sound/explosionsound.wav", false);
+            Sound("src/main/resources/sounds/explosionsound.wav", false);
         }
 
         return check;
@@ -315,7 +315,7 @@ public class Game {
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
                 score += 100;
-                Sound("src/main/java/resources/sound/explosionsound.wav", false);
+                Sound("src/main/resources/sounds/explosionsound.wav", false);
             }
 
         }

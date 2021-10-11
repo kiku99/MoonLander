@@ -286,19 +286,16 @@ public class Game {
                 if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey){
                     backgroundSound.stop();
                     playerRocket.landed = true;
+                    score = 10000 - (int)((gameTime / Framework.secInNanosec) * 100);
+                    if (score > highscore){
+                        highscore = score;
+                    }
                 }
                 else {
-                    backgroundSound.stop();
                     playerRocket.crashed = true;
                 }
             } else {
-                backgroundSound.stop();
                 playerRocket.crashed = true;
-            }
-
-            score = 10000 - (int)((gameTime / Framework.secInNanosec) * 50);
-            if (score > highscore){
-                highscore = score;
             }
             Framework.gameState = Framework.GameState.GAMEOVER;
             StoreDB db = new StoreDB();

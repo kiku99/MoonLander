@@ -7,11 +7,16 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 
 /**
@@ -114,7 +119,6 @@ public class Framework extends Canvas {
      */
     private void Initialize()
     {
-        
     }
     
     /**
@@ -351,4 +355,5 @@ public class Framework extends Canvas {
             break;
         }
     }
+
 }

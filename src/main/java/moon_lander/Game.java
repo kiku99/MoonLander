@@ -4,13 +4,17 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
-import javax.xml.bind.SchemaOutputResolver;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 /**
  * Actual game.
@@ -61,7 +65,9 @@ public class Game {
 
     public static int stageNum;
 
-    public static int score = 10;
+    public static int score = 0;
+
+    public static int highscore = 0;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -191,6 +197,7 @@ public class Game {
         bullet = new Bullet();
         //키 생성
         key = new Key();
+        Sound("src/main/resources/sounds/backgroundsound.wav", false);
     }
 
     /**
@@ -226,6 +233,8 @@ public class Game {
         //열쇠 초기화
         key.ResetKey(this.key);
 
+        score = 0;
+
         //객체 초기화
         Initialize();
     }
@@ -260,9 +269,13 @@ public class Game {
             } else
                 playerRocket.crashed = true;
 
+            score = 10000 - (int)((gameTime / Framework.secInNanosec) * 50);
+            if (score > highscore){
+                highscore = score;
+            }
             Framework.gameState = Framework.GameState.GAMEOVER;
             StoreDB db = new StoreDB();
-            db.storeScore(score);
+            db.storeScore(highscore);
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
@@ -272,7 +285,6 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
-                score += 5;
             }
         }
 
@@ -293,8 +305,11 @@ public class Game {
     public boolean Crash(PlayerRocket rocket, Enemy enemy) {
         boolean check = false;
         if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2))
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2)) {
             check = true;
+            Sound("src/main/resources/sounds/explosionsound.wav", false);
+        }
+
         return check;
     }
 
@@ -306,7 +321,7 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-//                score += 50;
+                Sound("src/main/resources/sounds/explosionsound.wav", false);
             }
 
         }
@@ -360,13 +375,16 @@ public class Game {
     {
         Draw(g2d, mousePosition);
         
-        g2d.drawString("Press space or enter to restart. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 70);
+        g2d.drawString("Press space or enter to restart. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 80);
+        g2d.drawString("Press m enter to select stage. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 100);
         
         if(playerRocket.landed)
         {
             g2d.drawString("You have successfully landed!", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3);
             g2d.drawString("You have landed in " + gameTime / Framework.secInNanosec + " seconds.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 20);
-            g2d.drawString("Your Score: " + (score - (gameTime / Framework.secInNanosec) * 50), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
+            g2d.drawString("Your Score: " + (score), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
+            g2d.drawString("Your highScore: " + (highscore), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 60);
+
         }
         else
         {
@@ -375,5 +393,18 @@ public class Game {
             g2d.drawImage(redBorderImg, 0, 0, Framework.frameWidth, Framework.frameHeight, null);
         }
     }
-
+    public static void Sound(String file, boolean Loop){
+        Clip clip;
+        try {
+            AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream(file)));
+            clip = AudioSystem.getClip();
+            clip.open(ais);
+            clip.start();
+            if (Loop) clip.loop(-1);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 }

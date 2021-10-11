@@ -4,13 +4,17 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
-import javax.xml.bind.SchemaOutputResolver;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 /**
  * Actual game.
@@ -191,6 +195,7 @@ public class Game {
         bullet = new Bullet();
         //키 생성
         key = new Key();
+        Sound("src/main/resources/sounds/backgroundsound.wav", false);
     }
 
     /**
@@ -293,8 +298,11 @@ public class Game {
     public boolean Crash(PlayerRocket rocket, Enemy enemy) {
         boolean check = false;
         if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2))
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2)) {
             check = true;
+            Sound("src/main/resources/sounds/explosionsound.wav", false);
+        }
+
         return check;
     }
 
@@ -306,7 +314,8 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-//                score += 50;
+                score += 100;
+                Sound("src/main/resources/sounds/explosionsound.wav", false);
             }
 
         }
@@ -375,5 +384,18 @@ public class Game {
             g2d.drawImage(redBorderImg, 0, 0, Framework.frameWidth, Framework.frameHeight, null);
         }
     }
-
+    public static void Sound(String file, boolean Loop){
+        Clip clip;
+        try {
+            AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream(file)));
+            clip = AudioSystem.getClip();
+            clip.open(ais);
+            clip.start();
+            if (Loop) clip.loop(-1);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 }

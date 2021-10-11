@@ -250,6 +250,7 @@ public class Game {
         key.ResetKey(this.key);
 
         score = 0;
+        highscore = 0;
 
         //객체 초기화
         Initialize();
@@ -311,7 +312,6 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
-                score += 5;
             }
         }
 

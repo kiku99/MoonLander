@@ -30,8 +30,6 @@ public class Enemy {
     public int enemyImgWidth;
     //적 이미지 높이
     public int enemyImgHeight;
-    //적 파괴시 이미지
-    private BufferedImage enemyCrashedImg;
     //적이 파괴된 상태
     public boolean crashed;
 
@@ -54,9 +52,6 @@ public class Enemy {
             enemyImg = ImageIO.read(enemyImgUrl);
             enemyImgWidth = enemyImg.getWidth() - 20;
             enemyImgHeight = enemyImg.getHeight() - 20;
-
-            URL enemyCrashedImgUrl = this.getClass().getResource("/images/rocket.png");
-            enemyCrashedImg = ImageIO.read(enemyCrashedImgUrl);
         } catch (IOException ex) {
             Logger.getLogger(Enemy.class.getName()).log(Level.SEVERE, null, ex);
         }

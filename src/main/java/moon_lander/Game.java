@@ -53,6 +53,8 @@ public class Game {
     Enemy enemy8;
     Enemy enemy9;
 
+    Clip backgroundSound;
+
     /**
      * Game background image.
      */
@@ -197,7 +199,6 @@ public class Game {
         bullet = new Bullet();
         //키 생성
         key = new Key();
-        Sound("src/main/resources/sounds/backgroundsound.wav", false);
     }
 
     /**
@@ -210,8 +211,23 @@ public class Game {
 
             URL redBorderImgUrl = this.getClass().getResource("/images/red_border.png");
             redBorderImg = ImageIO.read(redBorderImgUrl);
-        } catch (IOException ex) {
+        }
+        catch (IOException ex)
+        {
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        try {
+            AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream("src/main/resources/sounds/backgroundsound.wav")));
+            backgroundSound = AudioSystem.getClip();
+            backgroundSound.open(ais);
+            backgroundSound.stop();
+            backgroundSound.start();
+            backgroundSound.loop(-1);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
         }
     }
 
@@ -237,6 +253,10 @@ public class Game {
 
         //객체 초기화
         Initialize();
+
+        backgroundSound.stop();
+        backgroundSound.start();
+        backgroundSound.loop(-1);
     }
 
 
@@ -262,12 +282,18 @@ public class Game {
             // Here we check if the rocket is over landing area.
             if ((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth)) {
                 // Here we check if the rocket speed isn't too high and get key.
-                if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey)
+                if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey){
+                    backgroundSound.stop();
                     playerRocket.landed = true;
-                else
+                }
+                else {
+                    backgroundSound.stop();
                     playerRocket.crashed = true;
-            } else
+                }
+            } else {
+                backgroundSound.stop();
                 playerRocket.crashed = true;
+            }
 
             score = 10000 - (int)((gameTime / Framework.secInNanosec) * 50);
             if (score > highscore){
@@ -285,10 +311,12 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
+                score += 5;
             }
         }
 
         if (playerRocket.crashed){
+            backgroundSound.stop();
             Framework.gameState = Framework.GameState.GAMEOVER;
         }
         //모든 적이 없어지면 키 드랍
@@ -307,7 +335,7 @@ public class Game {
         if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
                 Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2)) {
             check = true;
-            Sound("src/main/resources/sounds/explosionsound.wav", false);
+            Sound("src/main/resources/sounds/explosionsound.wav");
         }
 
         return check;
@@ -321,7 +349,8 @@ public class Game {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-                Sound("src/main/resources/sounds/explosionsound.wav", false);
+                score += 100;
+                Sound("src/main/resources/sounds/explosionsound.wav");
             }
 
         }
@@ -393,14 +422,13 @@ public class Game {
             g2d.drawImage(redBorderImg, 0, 0, Framework.frameWidth, Framework.frameHeight, null);
         }
     }
-    public static void Sound(String file, boolean Loop){
+    public static void Sound(String file){
         Clip clip;
         try {
             AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream(file)));
             clip = AudioSystem.getClip();
             clip.open(ais);
             clip.start();
-            if (Loop) clip.loop(-1);
         }
         catch (Exception e)
         {

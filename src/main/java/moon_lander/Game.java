@@ -199,7 +199,7 @@ public class Game {
         bullet = new Bullet();
         //키 생성
         key = new Key();
-        Sound("src/main/resources/sounds/backgroundsound.wav", false);
+        Sound("src/main/resources/sounds/backgroundsound.wav");
     }
 
     /**

@@ -1,6 +1,5 @@
 package moon_lander;
 
-import com.google.firebase.auth.UserRecord;
 import com.google.firebase.database.*;
 
 import java.util.HashMap;
@@ -11,7 +10,6 @@ public class StoreDB {
 
     private DatabaseReference userRef = db.getReference("users");
 
-    private LoginPage loginPage;
     public static Object score;
 
 
@@ -19,7 +17,6 @@ public class StoreDB {
         HashMap<String, Integer> users = new HashMap<>();
         users.put("high score", score);
         this.userRef.setValueAsync(users);
-        readData();
     }
 
     public void readData(){
@@ -37,4 +34,7 @@ public class StoreDB {
         });
     }
 
+    public  Object returnData(){
+        return score;
+    }
 }

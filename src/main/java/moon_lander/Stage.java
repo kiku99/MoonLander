@@ -24,10 +24,19 @@ public class Stage extends JPanel {
 
     private Graphics2D g2d;
 
+    private StoreDB db;
+
+    Object score;
+
     public Stage()
     {
-        //Initialize();
+        Initialize();
         LoadContent();
+    }
+    public void Initialize(){
+        db = new StoreDB();
+        db.readData();
+        score = db.returnData();
     }
     public void LoadContent() {
         try {
@@ -131,7 +140,7 @@ public class Stage extends JPanel {
         this.add(bt_four);
         this.add(bt_five);
         jl1 = new JLabel("                     high score");
-        jl2 = new JLabel("                     " + StoreDB.score);
+        jl2 = new JLabel("                     " + score);
         jl1.setForeground(Color.BLACK);
         jl2.setForeground(Color.BLACK);
         jl1.setBounds(0, Framework.frameHeight / 2 - 60, Framework.frameWidth, 50);

@@ -43,6 +43,8 @@ public class Game {
 
     ArrayList<Enemy> enemies = new ArrayList<>();
 
+    StoreDB db;
+
     Enemy enemy1;
     Enemy enemy2;
     Enemy enemy3;
@@ -96,6 +98,9 @@ public class Game {
     private void Initialize() {
         playerRocket = new PlayerRocket();
         landingArea = new LandingArea();
+        db = new StoreDB();
+        db.readData();
+//        highscore = db.returnData();
 
         switch (stageNum){
             case 1:
@@ -250,6 +255,7 @@ public class Game {
         key.ResetKey(this.key);
 
         score = 0;
+        highscore = 0;
 
         //객체 초기화
         Initialize();
@@ -285,23 +291,20 @@ public class Game {
                 if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey){
                     backgroundSound.stop();
                     playerRocket.landed = true;
+                    score = 10000 - (int)((gameTime / Framework.secInNanosec) * 100);
+                    if (score > highscore){
+                        highscore = score;
+                        db.storeScore(highscore);
+                    }
                 }
                 else {
-                    backgroundSound.stop();
                     playerRocket.crashed = true;
                 }
             } else {
-                backgroundSound.stop();
                 playerRocket.crashed = true;
             }
-
-            score = 10000 - (int)((gameTime / Framework.secInNanosec) * 50);
-            if (score > highscore){
-                highscore = score;
-            }
             Framework.gameState = Framework.GameState.GAMEOVER;
-            StoreDB db = new StoreDB();
-            db.storeScore(highscore);
+
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
@@ -311,7 +314,6 @@ public class Game {
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
                 this.enemies.remove(i);
-                score += 5;
             }
         }
 

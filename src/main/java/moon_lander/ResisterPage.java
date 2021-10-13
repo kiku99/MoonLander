@@ -45,8 +45,7 @@ public class ResisterPage extends JFrame {
                     UserRecord.CreateRequest request = new UserRecord.CreateRequest()
                             .setEmail(tResisterID.getText())
                             .setEmailVerified(false)
-                            .setPassword(String.valueOf(tResisterPw.getPassword()))
-                            .setDisplayName(tResisterName.getText());
+                            .setDisplayName(String.valueOf(tResisterPw.getPassword()));
 
                     UserRecord userRecord = FirebaseAuth.getInstance().createUser(request);
                     System.out.println("유저 생성 성공");

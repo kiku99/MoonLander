@@ -64,7 +64,6 @@ public class Game {
 
     public static int stageNum;
 
-    public static int score = 5;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;

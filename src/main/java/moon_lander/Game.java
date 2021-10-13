@@ -100,7 +100,6 @@ public class Game {
         landingArea = new LandingArea();
         db = new StoreDB();
         db.readData();
-//        highscore = db.returnData();
 
         switch (stageNum){
             case 1:
@@ -227,7 +226,6 @@ public class Game {
             backgroundSound = AudioSystem.getClip();
             backgroundSound.open(ais);
             backgroundSound.stop();
-            backgroundSound.start();
             backgroundSound.loop(-1);
         }
         catch (Exception e)
@@ -309,7 +307,7 @@ public class Game {
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
             if (Crash(this.playerRocket, enemies.get(i))) {
-                this.playerRocket.hp -= 6;
+                this.playerRocket.hp -= 5;
             }
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
@@ -339,14 +337,12 @@ public class Game {
             check = true;
             Sound("src/main/resources/sounds/explosionsound.wav");
         }
-
         return check;
     }
 
     //총알과 적이 충돌했을 때
     public boolean Destroy(Bullet bullet, Enemy enemy) {
         boolean check = false;
-
         for (int i = 0; i < bullet.bullets.size(); i++) {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
@@ -354,7 +350,6 @@ public class Game {
                 score += 100;
                 Sound("src/main/resources/sounds/explosionsound.wav");
             }
-
         }
         return check;
     }

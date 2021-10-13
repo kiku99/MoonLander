@@ -20,8 +20,6 @@ public class Enemy {
     public int x;
     //적의 y 좌표
     public int y;
-    //적의 x 축 속도
-    private int speedX;
     //적의 y 축 속도
     private int speedY;
     //적 이미지
@@ -36,13 +34,10 @@ public class Enemy {
     public Enemy(){
         Initialize();
         LoadContent();
-
-
     }
 
     private void Initialize(){
         random = new Random();
-
         ResetEnemy();
     }
 
@@ -80,7 +75,6 @@ public class Enemy {
 
     public void Draw(Graphics2D g2d){
         g2d.setColor(Color.white);
-
         g2d.drawImage(enemyImg, x, y, null);
     }
 

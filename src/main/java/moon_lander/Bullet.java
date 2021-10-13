@@ -12,18 +12,19 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Bullet {
+    //총알을 담는 객체
     public ArrayList<Bullet> bullets = new ArrayList<>();
-
+    //총알 이미지
     private BufferedImage bulletImg;
-
+    //총알 이미지 넓이
     public int bulletImgWidth;
-
+    //총알 이미지 높이
     public int bulletImgHeight;
-
+    //총알 객체
     Bullet bullet;
-
+    //총알 x좌표
     public int x;
-
+    //총알 y좌표
     public int y;
 
     public Bullet()
@@ -73,7 +74,6 @@ public class Bullet {
                 bullets.remove(i);
             }
         }
-
     }
 
     public void Draw(Graphics2D g2d)
@@ -81,7 +81,6 @@ public class Bullet {
         for(int i = 0; i < this.bullets.size(); i++)
         {
             bullet = bullets.get(i);
-
             g2d.drawImage(bulletImg, bullet.x + ((PlayerRocket.rocketImgWidth - bulletImgWidth) / 2), bullet.y - bulletImgHeight, null);
         }
     }

@@ -34,7 +34,7 @@ public class StoreDB {
         });
     }
 
-    public  Object returnData(){
+    public Object returnData(){
         return score;
     }
 }

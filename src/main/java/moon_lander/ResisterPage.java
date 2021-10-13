@@ -54,11 +54,5 @@ public class ResisterPage extends JFrame {
             }
         });
     }
-//    public String getID() {
-//        return ID;
-//    }
-//
-//    public char[] getPw() {
-//        return pw;
-//    }
+
 }

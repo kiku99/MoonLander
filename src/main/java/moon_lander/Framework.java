@@ -330,7 +330,7 @@ public class Framework extends Canvas {
                 }
                 else if (e.getKeyCode()  == KeyEvent.VK_M){
                     stage = new Stage();
-                    gameState = GameState.STAGE_SELECT;
+
                 }
             break;
         }
@@ -348,7 +348,6 @@ public class Framework extends Canvas {
         {
             case MAIN_MENU:
                 stage = new Stage();
-                gameState = GameState.STAGE_SELECT;
             break;
             case STAGE_SELECT:
                 //...

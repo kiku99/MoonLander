@@ -250,7 +250,7 @@ public class Game {
         //모든 총알 초기화
         bullet.bullets.clear();
         //열쇠 초기화
-        key.ResetKey(this.key);
+        key.Reset();
 
         score = 0;
         highscore = 0;
@@ -307,7 +307,7 @@ public class Game {
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
             if (Crash(this.playerRocket, enemies.get(i))) {
-                this.playerRocket.hp -= 5;
+                this.playerRocket.hp -= 2;
             }
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
@@ -356,8 +356,8 @@ public class Game {
     //키와 로켓이 닿을 때
     public boolean GetKey(PlayerRocket rocket, Key key){
         boolean check = false;
-        if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (key.x + key.keyImgWidth / 2)) < (key.keyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (key.y + key.keyImgHeight / 2)) < (key.keyImgHeight / 2 + rocket.rocketImgHeight / 2))
+        if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (key.posx + key.ImgWidth / 2)) < (key.ImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (key.posy + key.ImgHeight / 2)) < (key.ImgHeight / 2 + rocket.rocketImgHeight / 2))
             check = true;
         return check;
     }

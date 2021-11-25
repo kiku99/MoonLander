@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="moon_lander" />
+        <module name="my-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="moon_lander" target="1.8" />
+      <module name="my-project" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

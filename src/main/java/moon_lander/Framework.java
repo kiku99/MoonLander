@@ -36,6 +36,8 @@ public class Framework extends Canvas {
      */
     public static int frameHeight;
 
+    public static int score = 50;
+
     /**
      * Time of one second in nanoseconds.
      * 1 second = 1 000 000 000 nanoseconds

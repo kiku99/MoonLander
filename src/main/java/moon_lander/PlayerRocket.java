@@ -18,21 +18,13 @@ import javax.imageio.ImageIO;
  * @author www.gametutorial.net
  */
 
-public class PlayerRocket {
+public class PlayerRocket extends Unit{
 
     /**
      * We use this to generate a random number for starting x coordinate of the rocket.
      */
     private Random random;
-    /**
-     * X coordinate of the rocket.
-     */
-    public static int x;
-    /**
-     * Y coordinate of the rocket.
-     */
-    public static int y;
-    
+
     /**
      * Is rocket landed?
      */
@@ -104,11 +96,11 @@ public class PlayerRocket {
         LoadContent();
         
         // Now that we have rocketImgWidth we set starting x coordinate.
-        x = random.nextInt(Framework.frameWidth - rocketImgWidth);
+        posx = random.nextInt(Framework.frameWidth - rocketImgWidth);
     }
     
     
-    private void Initialize()
+    public void Initialize()
     {
         random = new Random();
         
@@ -156,8 +148,8 @@ public class PlayerRocket {
         crashed = false;
         damaged = false;
         
-        x = random.nextInt(Framework.frameWidth - rocketImgWidth);
-        y = 200;
+        posx = random.nextInt(Framework.frameWidth - rocketImgWidth);
+        posy = 200;
         
         speedX = 0;
         speedY = 0;
@@ -190,8 +182,8 @@ public class PlayerRocket {
             speedX -= speedStopping;
         
         // Moves the rocket.
-        x += speedX;
-        y += speedY;
+        posx += speedX;
+        posy += speedY;
 
         //로켓 내구도 체크
         if (this.hp < 0){
@@ -208,29 +200,29 @@ public class PlayerRocket {
     public void Draw(Graphics2D g2d)
     {
         g2d.setColor(Color.white);
-        g2d.drawString("Rocket coordinates: " + x + " : " + y, 5, 15);
+        g2d.drawString("Rocket coordinates: " + posx + " : " + posy, 5, 15);
         
         // If the rocket is landed.
         if(landed)
         {
-            g2d.drawImage(rocketLandedImg, x, y, null);
+            g2d.drawImage(rocketLandedImg, posx, posy, null);
         }
         // If the rocket is crashed.
         else if(crashed)
         {
-            g2d.drawImage(rocketCrashedImg, x, y + rocketImgHeight - rocketCrashedImg.getHeight(), null);
+            g2d.drawImage(rocketCrashedImg, posx, posy + rocketImgHeight - rocketCrashedImg.getHeight(), null);
         }
         else if(damaged)
         {
-            g2d.drawImage(rocketDamagedImg, x, y, null);
+            g2d.drawImage(rocketDamagedImg, posx, posy, null);
         }
         // If the rocket is still in the space.
         else
         {
             // If player hold down a W key we draw rocket fire.
             if(Canvas.keyboardKeyState(KeyEvent.VK_W)|| Canvas.mouseButtonState(MouseEvent.BUTTON2))
-                g2d.drawImage(rocketFireImg, x + 12, y + 66, null);
-            g2d.drawImage(rocketImg, x, y, null);
+                g2d.drawImage(rocketFireImg, posx + 12, posy + 66, null);
+            g2d.drawImage(rocketImg, posx, posy, null);
         }
     }
     

@@ -15,12 +15,19 @@ import java.util.logging.Logger;
 
 
 public class LoginPage extends JFrame {
+    //id 입력 필드
     private JTextField tID;
+    //클리어 버튼
     private JButton btnClear;
+    //ok 버튼
     private JButton btnOK;
+    //로그인 패널
     private JPanel loginPanel;
+    //pw 입력 필드
     private JPasswordField tpw;
+    //회원가입 버튼
     private JButton btnResister;
+    //메세지 출력 라벨
     private JLabel message;
     //사용자 아이디
     private static String ID = null;
@@ -111,9 +118,4 @@ public class LoginPage extends JFrame {
             e.printStackTrace();
         }
     }
-
-    public String getID(){
-        return tID.getText();
-    }
-
 }

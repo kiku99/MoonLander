@@ -6,22 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="사운드">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LandingArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LandingArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FIrebase/ConectionFirebase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FIrebase/ConectionFirebase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Key.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Key.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/StoreDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/StoreDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Window$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Window$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +243,7 @@
       <workItem from="1636523155798" duration="2284000" />
       <workItem from="1636527555393" duration="620000" />
       <workItem from="1637731114141" duration="3421000" />
-      <workItem from="1637850839536" duration="1042000" />
+      <workItem from="1637850839536" duration="3862000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -442,7 +427,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634004046647</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="LandingArea.java 상속">
+      <created>1637852113216</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1637852113216</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Enemy.java 상속">
+      <created>1637853052439</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1637853052439</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,8 +472,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="운석 이미지 추가" />
-    <MESSAGE value="bullet.remove 작동하지 않는거 수정" />
     <MESSAGE value="총알리셋" />
     <MESSAGE value="총알과 적이 닿을때 적 제거" />
     <MESSAGE value="게임 리셋시 적이 안나오는 오류 수정" />
@@ -498,7 +495,9 @@
     <MESSAGE value="하이스코어 개선" />
     <MESSAGE value="처음 게임 실행할 때 하이스코어가 안보이는 로직 개선중" />
     <MESSAGE value="Unit.java 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unit.java 생성" />
+    <MESSAGE value="LandingArea.java 상속" />
+    <MESSAGE value="Enemy.java 상속" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enemy.java 상속" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

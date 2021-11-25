@@ -18,14 +18,8 @@ public class ResisterPage extends JFrame {
     private JButton btnAddAccount;
     private JPanel resisterPanel;
     private JPasswordField tResisterPw;
-    private JTextField tResisterName;
-    //등록하려는 아이디
-//    private String ID = null;
-    //등록하려는 비밀번호
-//    private char[] pw = null;
 
     public ResisterPage(){
-
         setContentPane(resisterPanel);
         setTitle("resister");
         setSize(450, 300);
@@ -61,11 +55,4 @@ public class ResisterPage extends JFrame {
         });
     }
 
-//    public String getID() {
-//        return ID;
-//    }
-//
-//    public char[] getPw() {
-//        return pw;
-//    }
 }

@@ -4,67 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="스테이지">
-      <change afterPath="$PROJECT_DIR$/my-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34___Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34_오후_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_34_오후_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_46___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_46_오후_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_47___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_47_오후_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59___Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/key.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/landing_area.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/menu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/metheo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/red_border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_crashed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_damaged.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_fire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/rocket_landed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/landing_area.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/menu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/red_border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket_crashed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket_fire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/rocket_landed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_09_30_2_59_오후_[Changes]1/shelved.patch" beforeDir="false" />
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="사운드">
+      <change afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Unit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moon_lander.iml" beforeDir="false" afterPath="$PROJECT_DIR$/moon_lander.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/ResisterPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopyImageOptionsProvider">
+    <option name="myScale" value="1.0" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="test" />
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -132,6 +87,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/FIrebase" />
@@ -143,13 +99,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.11764705" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\2021 2학기\소코\소코최종\src\main\java\FIrebase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main" />
       <recent name="E:\2021 2학기\소코\소코최종" />
       <recent name="E:\2021 2학기\소코\newsourcecode\2021SourceCode\src\main\java\moon_lander" />
     </key>
@@ -167,6 +125,17 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
       <module name="moon_lander" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,6 +202,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.moon_lander [clean]" />
+        <item itemvalue="Application.LoginPage" />
         <item itemvalue="Application.LoginPage" />
         <item itemvalue="Maven.moon_lander [clean]" />
         <item itemvalue="Maven.moon_lander [clean]" />
@@ -279,8 +250,15 @@
       <workItem from="1633151754930" duration="2474000" />
       <workItem from="1633156363186" duration="2521000" />
       <workItem from="1633263516508" duration="3871000" />
-      <workItem from="1633451022678" duration="778000" />
-      <workItem from="1633651721895" duration="4563000" />
+      <workItem from="1633505077753" duration="15359000" />
+      <workItem from="1633933872834" duration="12092000" />
+      <workItem from="1634006941474" duration="7238000" />
+      <workItem from="1634100964228" duration="11559000" />
+      <workItem from="1634114747314" duration="8229000" />
+      <workItem from="1636522969548" duration="148000" />
+      <workItem from="1636523155798" duration="2284000" />
+      <workItem from="1636527555393" duration="620000" />
+      <workItem from="1637731114141" duration="3421000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -408,14 +386,63 @@
       <option name="project" value="LOCAL" />
       <updated>1633445754252</updated>
     </task>
-    <task id="LOCAL-00021" summary="StoreDB 추가">
-      <created>1633448708582</created>
+    <task id="LOCAL-00021" summary="score 개선">
+      <created>1633505600503</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1633448708582</updated>
+      <updated>1633505600503</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="비밀번호 로직 개선">
+      <created>1633777138719</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1633777138719</updated>
+    </task>
+    <task id="LOCAL-00023" summary="합체">
+      <created>1633929396538</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1633929396538</updated>
+    </task>
+    <task id="LOCAL-00024" summary="사운드">
+      <created>1633932246230</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1633932246230</updated>
+    </task>
+    <task id="LOCAL-00025" summary="사운드 + 하이스코어">
+      <created>1633933650417</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1633933650417</updated>
+    </task>
+    <task id="LOCAL-00026" summary="db에서 하이스코어 받아오기">
+      <created>1633940750257</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1633940750259</updated>
+    </task>
+    <task id="LOCAL-00027" summary="하이스코어 개선">
+      <created>1633941877911</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1633941877911</updated>
+    </task>
+    <task id="LOCAL-00028" summary="처음 게임 실행할 때 하이스코어가 안보이는 로직 개선중">
+      <created>1634004046647</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1634004046647</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +459,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -446,10 +473,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="merge on mac" />
-    <MESSAGE value="적 속도 랜덤 생성" />
-    <MESSAGE value="모든 적에 닿으면 로켓 파괴" />
-    <MESSAGE value="1" />
     <MESSAGE value="운석 이미지 추가" />
     <MESSAGE value="bullet.remove 작동하지 않는거 수정" />
     <MESSAGE value="총알리셋" />
@@ -466,8 +489,16 @@
     <MESSAGE value="스테이지" />
     <MESSAGE value="파이어베이스 연결, 계정 생성 구현, 로그인 구현" />
     <MESSAGE value="로그인 코드 개선" />
-    <MESSAGE value="StoreDB 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="StoreDB 추가" />
+    <MESSAGE value="score 개선" />
+    <MESSAGE value="비밀번호 로직 개선" />
+    <MESSAGE value="합체" />
+    <MESSAGE value="사운드" />
+    <MESSAGE value="사운드 + 하이스코어" />
+    <MESSAGE value="db에서 하이스코어 받아오기" />
+    <MESSAGE value="하이스코어 개선" />
+    <MESSAGE value="처음 게임 실행할 때 하이스코어가 안보이는 로직 개선중" />
+    <MESSAGE value="Unit.java 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit.java 생성" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

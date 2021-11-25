@@ -20,8 +20,6 @@ public class Enemy {
     public int x;
     //적의 y 좌표
     public int y;
-    //적의 x 축 속도
-    private int speedX;
     //적의 y 축 속도
     private int speedY;
     //적 이미지
@@ -30,33 +28,25 @@ public class Enemy {
     public int enemyImgWidth;
     //적 이미지 높이
     public int enemyImgHeight;
-    //적 파괴시 이미지
-    private BufferedImage enemyCrashedImg;
     //적이 파괴된 상태
     public boolean crashed;
 
     public Enemy(){
         Initialize();
         LoadContent();
-
-
     }
 
     private void Initialize(){
         random = new Random();
-
         ResetEnemy();
     }
 
     private void LoadContent(){
         try {
-            URL enemyImgUrl = this.getClass().getResource("/metheo.png");
+            URL enemyImgUrl = this.getClass().getResource("/images/metheo.png");
             enemyImg = ImageIO.read(enemyImgUrl);
             enemyImgWidth = enemyImg.getWidth() - 20;
             enemyImgHeight = enemyImg.getHeight() - 20;
-
-            URL enemyCrashedImgUrl = this.getClass().getResource("/rocket.png");
-            enemyCrashedImg = ImageIO.read(enemyCrashedImgUrl);
         } catch (IOException ex) {
             Logger.getLogger(Enemy.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -85,7 +75,6 @@ public class Enemy {
 
     public void Draw(Graphics2D g2d){
         g2d.setColor(Color.white);
-
         g2d.drawImage(enemyImg, x, y, null);
     }
 

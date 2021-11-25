@@ -4,16 +4,17 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
-
-
-import static moon_lander.Framework.*;
-import static moon_lander.Framework.*;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 
 /**
  * Actual game.
@@ -42,6 +43,8 @@ public class Game {
 
     ArrayList<Enemy> enemies = new ArrayList<>();
 
+    StoreDB db;
+
     Enemy enemy1;
     Enemy enemy2;
     Enemy enemy3;
@@ -51,6 +54,8 @@ public class Game {
     Enemy enemy7;
     Enemy enemy8;
     Enemy enemy9;
+
+    Clip backgroundSound;
 
     /**
      * Game background image.
@@ -64,6 +69,9 @@ public class Game {
 
     public static int stageNum;
 
+    public static int score = 0;
+
+    public static int highscore = 0;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;
@@ -90,6 +98,8 @@ public class Game {
     private void Initialize() {
         playerRocket = new PlayerRocket();
         landingArea = new LandingArea();
+        db = new StoreDB();
+        db.readData();
 
         switch (stageNum){
             case 1:
@@ -200,13 +210,27 @@ public class Game {
      */
     private void LoadContent() {
         try {
-            URL backgroundImgUrl = this.getClass().getResource("/background.jpg");
+            URL backgroundImgUrl = this.getClass().getResource("/images/background.jpg");
             backgroundImg = ImageIO.read(backgroundImgUrl);
 
-            URL redBorderImgUrl = this.getClass().getResource("/red_border.png");
+            URL redBorderImgUrl = this.getClass().getResource("/images/red_border.png");
             redBorderImg = ImageIO.read(redBorderImgUrl);
-        } catch (IOException ex) {
+        }
+        catch (IOException ex)
+        {
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        try {
+            AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream("src/main/resources/sounds/backgroundsound.wav")));
+            backgroundSound = AudioSystem.getClip();
+            backgroundSound.open(ais);
+            backgroundSound.stop();
+            backgroundSound.loop(-1);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
         }
     }
 
@@ -228,8 +252,15 @@ public class Game {
         //열쇠 초기화
         key.ResetKey(this.key);
 
+        score = 0;
+        highscore = 0;
+
         //객체 초기화
         Initialize();
+
+        backgroundSound.stop();
+        backgroundSound.start();
+        backgroundSound.loop(-1);
     }
 
 
@@ -255,20 +286,28 @@ public class Game {
             // Here we check if the rocket is over landing area.
             if ((PlayerRocket.x > landingArea.x) && (PlayerRocket.x < landingArea.x + landingArea.landingAreaImgWidth - PlayerRocket.rocketImgWidth)) {
                 // Here we check if the rocket speed isn't too high and get key.
-                if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey)
+                if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey){
+                    backgroundSound.stop();
                     playerRocket.landed = true;
-                else
+                    score = 10000 - (int)((gameTime / Framework.secInNanosec) * 100);
+                    if (score > highscore){
+                        highscore = score;
+                        db.storeScore(highscore);
+                    }
+                }
+                else {
                     playerRocket.crashed = true;
-            } else
+                }
+            } else {
                 playerRocket.crashed = true;
-
+            }
             Framework.gameState = Framework.GameState.GAMEOVER;
 
         }
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
             if (Crash(this.playerRocket, enemies.get(i))) {
-                this.playerRocket.hp -= 6;
+                this.playerRocket.hp -= 5;
             }
             if(Destroy(bullet, enemies.get(i))){
                 this.enemies.get(i).crashed = true;
@@ -277,9 +316,8 @@ public class Game {
         }
 
         if (playerRocket.crashed){
+            backgroundSound.stop();
             Framework.gameState = Framework.GameState.GAMEOVER;
-            new StoreDB();
-
         }
         //모든 적이 없어지면 키 드랍
         if(enemies.isEmpty()){
@@ -295,22 +333,23 @@ public class Game {
     public boolean Crash(PlayerRocket rocket, Enemy enemy) {
         boolean check = false;
         if (Math.abs((PlayerRocket.x + PlayerRocket.rocketImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2))
+                Math.abs((PlayerRocket.y + rocket.rocketImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + rocket.rocketImgHeight / 2)) {
             check = true;
+            Sound("src/main/resources/sounds/explosionsound.wav");
+        }
         return check;
     }
 
     //총알과 적이 충돌했을 때
     public boolean Destroy(Bullet bullet, Enemy enemy) {
         boolean check = false;
-
         for (int i = 0; i < bullet.bullets.size(); i++) {
             if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.x + enemy.enemyImgWidth / 2)) < (enemy.enemyImgWidth / 2 + bullet.bulletImgWidth / 2) &&
                     Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.y + enemy.enemyImgHeight / 2)) < (enemy.enemyImgHeight / 2 + bullet.bulletImgHeight / 2)){
                 check = true;
-//                score += 50;
+                score += 100;
+                Sound("src/main/resources/sounds/explosionsound.wav");
             }
-
         }
         return check;
     }
@@ -362,13 +401,16 @@ public class Game {
     {
         Draw(g2d, mousePosition);
         
-        g2d.drawString("Press space or enter to restart. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 70);
+        g2d.drawString("Press space or enter to restart. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 80);
+        g2d.drawString("Press m enter to select stage. ", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 100);
         
         if(playerRocket.landed)
         {
             g2d.drawString("You have successfully landed!", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3);
             g2d.drawString("You have landed in " + gameTime / Framework.secInNanosec + " seconds.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 20);
-            g2d.drawString("Your Score: " + (score - (gameTime / Framework.secInNanosec) * 50), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
+            g2d.drawString("Your Score: " + (score), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
+            g2d.drawString("Your highScore: " + (highscore), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 60);
+
         }
         else
         {
@@ -377,5 +419,17 @@ public class Game {
             g2d.drawImage(redBorderImg, 0, 0, Framework.frameWidth, Framework.frameHeight, null);
         }
     }
-
+    public static void Sound(String file){
+        Clip clip;
+        try {
+            AudioInputStream ais = AudioSystem.getAudioInputStream(new BufferedInputStream(new FileInputStream(file)));
+            clip = AudioSystem.getClip();
+            clip.open(ais);
+            clip.start();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 }

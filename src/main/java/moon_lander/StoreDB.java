@@ -1,25 +1,40 @@
 package moon_lander;
 
-import com.google.firebase.auth.UserRecord;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.*;
+
 import java.util.HashMap;
 
 public class StoreDB {
 
-    UserRecord userRecord;
+    private final FirebaseDatabase db = FirebaseDatabase.getInstance();
 
-    final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference().child("users");
+    private DatabaseReference userRef = db.getReference("users");
 
-    public StoreDB() {
-        storeScore();
+    public static Object score;
 
+
+    public void storeScore(int score) {
+        HashMap<String, Integer> users = new HashMap<>();
+        users.put("high score", score);
+        this.userRef.setValueAsync(users);
     }
 
-    private void storeScore() {
-        HashMap<String, Integer> users = new HashMap<String, Integer>();
-        users.put(userRecord.getDisplayName(), Framework.score);
-        ref.setValueAsync(users);
+    public void readData(){
+        userRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                System.out.println(dataSnapshot.getValue());
+                score = dataSnapshot.getValue();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("read data failed");
+            }
+        });
+    }
+
+    public Object returnData(){
+        return score;
     }
 }

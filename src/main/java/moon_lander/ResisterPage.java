@@ -14,9 +14,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ResisterPage extends JFrame {
+    //ID 입력 필드
     private JTextField tResisterID;
+    //계정 생성 버튼
     private JButton btnAddAccount;
+    //레지스터 폼 패널
     private JPanel resisterPanel;
+    //PW 입력 필드
     private JPasswordField tResisterPw;
 
     public ResisterPage(){

@@ -39,7 +39,7 @@ public class Key extends Unit {
         }
     }
 
-    public void Reset(Key key) {
+    public void Reset() {
         getKey = false;
         dropKey = false;
     }

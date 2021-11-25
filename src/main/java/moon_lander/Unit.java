@@ -38,6 +38,5 @@ public abstract class Unit {
 
     public void Draw(Graphics2D g2d) {
         g2d.setColor(Color.white);
-
     }
 }

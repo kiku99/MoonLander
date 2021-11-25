@@ -250,7 +250,7 @@ public class Game {
         //모든 총알 초기화
         bullet.bullets.clear();
         //열쇠 초기화
-        key.Reset(this.key);
+        key.Reset();
 
         score = 0;
         highscore = 0;

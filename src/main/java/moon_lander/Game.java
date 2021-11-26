@@ -41,6 +41,8 @@ public class Game {
     //키
     private Key key;
 
+    private FixedEnemy fixedEnemy;
+
     ArrayList<Enemy> enemies = new ArrayList<>();
 
     StoreDB db;
@@ -176,6 +178,8 @@ public class Game {
                 break;
 
             case 5:
+                fixedEnemy = new FixedEnemy();
+
                 enemy1 = new Enemy();
                 enemy2 = new Enemy();
                 enemy3 = new Enemy();
@@ -279,6 +283,8 @@ public class Game {
         for (Enemy enemy : this.enemies) {
             enemy.Move();
         }
+
+        fixedEnemy.Create();
 
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
@@ -387,6 +393,8 @@ public class Game {
         bullet.Draw(g2d);
 
         key.Draw(g2d);
+
+        fixedEnemy.Draw(g2d);
     }
     
     

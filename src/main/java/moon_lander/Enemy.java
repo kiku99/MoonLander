@@ -21,7 +21,7 @@ public class Enemy extends Unit{
 
     public Enemy(){
         Initialize();
-        Loadcontent();
+        LoadContent();
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Enemy extends Unit{
     }
 
     @Override
-    public void Loadcontent(){
+    public void LoadContent(){
         try {
             URL ImgUrl = this.getClass().getResource("/images/metheo.png");
             Img = ImageIO.read(ImgUrl);

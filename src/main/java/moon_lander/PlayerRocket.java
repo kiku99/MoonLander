@@ -96,7 +96,7 @@ public class PlayerRocket extends Unit{
     public PlayerRocket()
     {
         Initialize();
-        Loadcontent();
+        LoadContent();
         
         // Now that we have rocketImgWidth we set starting x coordinate.
         posx = random.nextInt(Framework.frameWidth - rocketImgWidth);
@@ -117,7 +117,7 @@ public class PlayerRocket extends Unit{
     }
 
     @Override
-    public void Loadcontent()
+    public void LoadContent()
     {
         try
         {

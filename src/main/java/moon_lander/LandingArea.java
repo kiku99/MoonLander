@@ -19,7 +19,7 @@ public class LandingArea extends Unit{
     public LandingArea()
     {
         Initialize();
-        Loadcontent();
+        LoadContent();
     }
     
     @Override
@@ -32,7 +32,7 @@ public class LandingArea extends Unit{
     }
 
     @Override
-    public void Loadcontent()
+    public void LoadContent()
     {
         try
         {

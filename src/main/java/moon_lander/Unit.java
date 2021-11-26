@@ -17,7 +17,7 @@ public abstract class Unit {
 
     public abstract void Initialize();
 
-    public abstract void Loadcontent();
+    public abstract void LoadContent();
 
     public void Draw(Graphics2D g2d) {
         g2d.setColor(Color.white);

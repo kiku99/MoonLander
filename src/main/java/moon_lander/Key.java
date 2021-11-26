@@ -17,7 +17,7 @@ public class Key extends Unit {
 
     public Key(){
         Initialize();
-        Loadcontent();
+        LoadContent();
     }
 
     @Override
@@ -27,7 +27,7 @@ public class Key extends Unit {
     }
 
     @Override
-    public void Loadcontent() {
+    public void LoadContent() {
         try {
             URL ImgUrl = this.getClass().getResource("/images/key.png");
             Img = ImageIO.read(ImgUrl);

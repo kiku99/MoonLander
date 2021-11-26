@@ -11,7 +11,7 @@ public class FixedEnemy extends Unit{
 
     public FixedEnemy(){
         Initialize();
-        Loadcontent();
+        LoadContent();
     }
 
     @Override
@@ -20,7 +20,7 @@ public class FixedEnemy extends Unit{
     }
 
     @Override
-    public void Loadcontent() {
+    public void LoadContent() {
         try {
             URL ImgUrl = this.getClass().getResource("/images/blackhole.png");
             Img = ImageIO.read(ImgUrl);

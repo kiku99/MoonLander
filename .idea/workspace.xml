@@ -6,7 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="사운드">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Unit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/LandingArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/LandingArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/PlayerRocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/PlayerRocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my-project-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-project-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -472,7 +484,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="총알리셋" />
     <MESSAGE value="총알과 적이 닿을때 적 제거" />
     <MESSAGE value="게임 리셋시 적이 안나오는 오류 수정" />
     <MESSAGE value="Key 클래스 생성" />
@@ -497,7 +508,8 @@
     <MESSAGE value="Unit.java 생성" />
     <MESSAGE value="LandingArea.java 상속" />
     <MESSAGE value="Enemy.java 상속" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enemy.java 상속" />
+    <MESSAGE value="Game.java 버그 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game.java 버그 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

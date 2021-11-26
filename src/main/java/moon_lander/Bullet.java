@@ -22,6 +22,8 @@ public class Bullet {
     public int bulletImgHeight;
     //총알 객체
     Bullet bullet;
+    //로캣 객
+    PlayerRocket playerRocket = new PlayerRocket();
     //총알 x좌표
     public int x;
     //총알 y좌표
@@ -61,7 +63,7 @@ public class Bullet {
     {
         if (Canvas.keyboardKeyState(KeyEvent.VK_L) && Framework.cnt % 3 == 0)
         {
-            bullet = new Bullet(PlayerRocket.x, PlayerRocket.y);
+            bullet = new Bullet(playerRocket.posx, playerRocket.posy);
             bullets.add(bullet);
             Game.Sound("src/main/resources/sounds/shootingsound.wav");
         }

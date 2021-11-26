@@ -37,7 +37,10 @@ public class Game {
     /**
      * Bullet
      */
+    //총알
     private Bullet bullet;
+    //총알을 담는 객체
+    public static ArrayList<Bullet> bullets = new ArrayList<>();
     //키
     private Key key;
 
@@ -248,7 +251,7 @@ public class Game {
             enemy.ResetEnemy();
         }
         //모든 총알 초기화
-        bullet.bullets.clear();
+        bullets.clear();
         //열쇠 초기화
         key.Reset();
 
@@ -343,9 +346,9 @@ public class Game {
     //총알과 적이 충돌했을 때
     public boolean Destroy(Bullet bullet, Enemy enemy) {
         boolean check = false;
-        for (int i = 0; i < bullet.bullets.size(); i++) {
-            if (Math.abs((bullet.bullets.get(i).x + bullet.bulletImgWidth / 2) - (enemy.posx + enemy.ImgWidth / 2)) < (enemy.ImgWidth / 2 + bullet.bulletImgWidth / 2) &&
-                    Math.abs((bullet.bullets.get(i).y + bullet.bulletImgHeight / 2) - (enemy.posy + enemy.ImgHeight / 2)) < (enemy.ImgHeight / 2 + bullet.bulletImgHeight / 2)){
+        for (int i = 0; i < bullets.size(); i++) {
+            if (Math.abs((bullets.get(i).posx + bullet.ImgWidth / 2) - (enemy.posx + enemy.ImgWidth / 2)) < (enemy.ImgWidth / 2 + bullet.ImgWidth / 2) &&
+                    Math.abs((bullets.get(i).posy + bullet.ImgHeight / 2) - (enemy.posy + enemy.ImgHeight / 2)) < (enemy.ImgHeight / 2 + bullet.ImgHeight / 2)){
                 check = true;
                 score += 100;
                 Sound("src/main/resources/sounds/explosionsound.wav");

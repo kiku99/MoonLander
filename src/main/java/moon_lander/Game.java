@@ -181,9 +181,6 @@ public class Game {
                 break;
 
             case 5:
-                fixedEnemy = new FixedEnemy();
-                fixedEnemy.Create();
-
                 enemy1 = new Enemy();
                 enemy2 = new Enemy();
                 enemy3 = new Enemy();
@@ -207,6 +204,8 @@ public class Game {
                 break;
         }
 
+        fixedEnemy = new FixedEnemy();
+        fixedEnemy.Create();
         //총알 생성
         bullet = new Bullet();
         //키 생성
@@ -260,7 +259,7 @@ public class Game {
         //열쇠 초기화
         key.Reset();
 
-        fixedEnemy.Create();
+
 
         score = 0;
         highscore = 0;

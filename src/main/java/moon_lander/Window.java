@@ -1,6 +1,7 @@
 package moon_lander;
 
 import firebase.ConectionFirebase;
+import java.awt.Frame;
 
 import javax.swing.*;
 
@@ -23,7 +24,7 @@ public class Window extends JFrame{
             // Disables decorations for this frame.
             frame.setUndecorated(true);
             // Puts the frame to full screen.
-            frame.setExtendedState(frame.MAXIMIZED_BOTH);
+            frame.setExtendedState(Frame.MAXIMIZED_BOTH);
         }
         else // Window mode
         {

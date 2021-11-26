@@ -25,6 +25,10 @@ public class PlayerRocket extends Unit{
      */
     private Random random;
 
+    public static int posx;
+
+    public static int posy;
+
     /**
      * Is rocket landed?
      */

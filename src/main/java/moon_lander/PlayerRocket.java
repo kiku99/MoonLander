@@ -36,7 +36,6 @@ public class PlayerRocket extends Unit{
     public boolean crashed;
     //로켓 HP < 5
     public boolean damaged;
-        
     /**
      * Accelerating speed of the rocket.
      */
@@ -197,7 +196,8 @@ public class PlayerRocket extends Unit{
 
 
     }
-    
+
+    @Override
     public void Draw(Graphics2D g2d)
     {
         g2d.setColor(Color.white);

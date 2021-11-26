@@ -56,8 +56,7 @@ public class Window extends JFrame{
             }
         });
 
-        LoginPage loginPage = new LoginPage();
-
+        new LoginPage();
         new ConectionFirebase().initFirebase();
     }
 

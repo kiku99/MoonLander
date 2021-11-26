@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="사운드">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/FixedEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/FixedEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/blackhole.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/blackhole.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Enemy.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -479,7 +482,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="게임 리셋시 적이 안나오는 오류 수정" />
     <MESSAGE value="Key 클래스 생성" />
     <MESSAGE value="키를 획득하면 사라지는 기능 구현" />
     <MESSAGE value="로켓 내구도 구현" />
@@ -504,7 +506,8 @@
     <MESSAGE value="Enemy.java 상속" />
     <MESSAGE value="Game.java 버그 수정" />
     <MESSAGE value="버그픽스" />
-    <option name="LAST_COMMIT_MESSAGE" value="버그픽스" />
+    <MESSAGE value="블랙홀 이미지 사이즈조정" />
+    <option name="LAST_COMMIT_MESSAGE" value="블랙홀 이미지 사이즈조정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

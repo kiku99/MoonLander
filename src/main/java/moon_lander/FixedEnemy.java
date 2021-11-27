@@ -16,7 +16,6 @@ public class FixedEnemy extends Unit{
 
     @Override
     public void Initialize() {
-
     }
 
     @Override

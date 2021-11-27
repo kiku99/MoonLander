@@ -181,8 +181,6 @@ public class Game {
                 break;
 
             case 5:
-                fixedEnemy = new FixedEnemy();
-
                 enemy1 = new Enemy();
                 enemy2 = new Enemy();
                 enemy3 = new Enemy();
@@ -206,6 +204,8 @@ public class Game {
                 break;
         }
 
+        fixedEnemy = new FixedEnemy();
+        fixedEnemy.Create();
         //총알 생성
         bullet = new Bullet();
         //키 생성
@@ -259,6 +259,8 @@ public class Game {
         //열쇠 초기화
         key.Reset();
 
+
+
         score = 0;
         highscore = 0;
 
@@ -287,13 +289,11 @@ public class Game {
             enemy.Move();
         }
 
-        fixedEnemy.Create();
-
         // Checks where the player rocket is. Is it still in the space or is it landed or crashed?
         // First we check bottom y coordinate of the rocket if is it near the landing area.
-        if (playerRocket.posy + playerRocket.rocketImgHeight - 10 > landingArea.posy) {
+        if (PlayerRocket.posy + playerRocket.rocketImgHeight - 10 > landingArea.posy) {
             // Here we check if the rocket is over landing area.
-            if ((playerRocket.posx > landingArea.posx) && (playerRocket.posx < landingArea.posx + landingArea.ImgWidth - PlayerRocket.rocketImgWidth)) {
+            if ((PlayerRocket.posx > landingArea.posx) && (PlayerRocket.posx < landingArea.posx + landingArea.ImgWidth - PlayerRocket.rocketImgWidth)) {
                 // Here we check if the rocket speed isn't too high and get key.
                 if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey){
                     backgroundSound.stop();
@@ -313,9 +313,10 @@ public class Game {
             Framework.gameState = Framework.GameState.GAMEOVER;
 
         }
+
         //적들과 로켓이 닿거나 총알로 파괴하는 상황 체크
         for (int i = 0; i < enemies.size(); i++) {
-            if (Crash(this.playerRocket, enemies.get(i))) {
+            if (Crash(this.playerRocket, enemies.get(i), fixedEnemy)) {
                 this.playerRocket.hp -= 2;
             }
             if(Destroy(bullet, enemies.get(i))){
@@ -339,10 +340,12 @@ public class Game {
     }
 
     //로켓과 적이 충돌했을 때
-    public boolean Crash(PlayerRocket rocket, Enemy enemy) {
+    public boolean Crash(PlayerRocket rocket, Enemy enemy, FixedEnemy fixedEnemy) {
         boolean check = false;
-        if (Math.abs((playerRocket.posx + PlayerRocket.rocketImgWidth / 2) - (enemy.posx + enemy.ImgWidth / 2)) < (enemy.ImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((playerRocket.posy + rocket.rocketImgHeight / 2) - (enemy.posy + enemy.ImgHeight / 2)) < (enemy.ImgHeight / 2 + rocket.rocketImgHeight / 2)) {
+        if (Math.abs((PlayerRocket.posx + PlayerRocket.rocketImgWidth / 2) - (enemy.posx + enemy.ImgWidth / 2)) < (enemy.ImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
+                Math.abs((PlayerRocket.posy + rocket.rocketImgHeight / 2) - (enemy.posy + enemy.ImgHeight / 2)) < (enemy.ImgHeight / 2 + rocket.rocketImgHeight / 2) ||
+                Math.abs((PlayerRocket.posx + PlayerRocket.rocketImgWidth / 2) - (fixedEnemy.posx + fixedEnemy.ImgWidth / 2)) < (fixedEnemy.ImgWidth / 2 + PlayerRocket.rocketImgWidth / 2)
+                        && Math.abs((PlayerRocket.posy + rocket.rocketImgHeight / 2) - (fixedEnemy.posy + fixedEnemy.ImgHeight / 2)) < (fixedEnemy.ImgHeight / 2 + rocket.rocketImgHeight / 2) ) {
             check = true;
             Sound("src/main/resources/sounds/explosionsound.wav");
         }
@@ -365,15 +368,11 @@ public class Game {
     //키와 로켓이 닿을 때
     public boolean GetKey(PlayerRocket rocket, Key key){
         boolean check = false;
-        if (Math.abs((playerRocket.posx + PlayerRocket.rocketImgWidth / 2) - (key.posx + key.ImgWidth / 2)) < (key.ImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
-                Math.abs((playerRocket.posy + rocket.rocketImgHeight / 2) - (key.posy + key.ImgHeight / 2)) < (key.ImgHeight / 2 + rocket.rocketImgHeight / 2))
+        if (Math.abs((PlayerRocket.posx + PlayerRocket.rocketImgWidth / 2) - (key.posx + key.ImgWidth / 2)) < (key.ImgWidth / 2 + PlayerRocket.rocketImgWidth / 2) &&
+                Math.abs((PlayerRocket.posy + rocket.rocketImgHeight / 2) - (key.posy + key.ImgHeight / 2)) < (key.ImgHeight / 2 + rocket.rocketImgHeight / 2))
             check = true;
         return check;
     }
-
-
-
-
     
     /**
      * Draw the game to the screen.

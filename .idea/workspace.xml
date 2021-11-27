@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="Game 클래스 enemy 수정">
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" afterDir="false" />
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="Stage 버튼 생성 시 중복 삭제">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/PlayerRocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +258,7 @@
       <workItem from="1637850839536" duration="3862000" />
       <workItem from="1637921871210" duration="1794000" />
       <workItem from="1638005712587" duration="281000" />
-      <workItem from="1638006513160" duration="1264000" />
+      <workItem from="1638006513160" duration="3253000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -475,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638007553862</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Stage 버튼 생성 시 중복 삭제">
+      <created>1638007987828</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1638007987828</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +515,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="키를 획득하면 사라지는 기능 구현" />
     <MESSAGE value="로켓 내구도 구현" />
     <MESSAGE value="add firebase dependency" />
     <MESSAGE value="firebase db 연결" />
@@ -531,7 +539,8 @@
     <MESSAGE value="버그픽스" />
     <MESSAGE value="블랙홀 이미지 사이즈조정" />
     <MESSAGE value="Game 클래스 enemy 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game 클래스 enemy 수정" />
+    <MESSAGE value="Stage 버튼 생성 시 중복 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stage 버튼 생성 시 중복 삭제" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

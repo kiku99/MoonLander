@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="사운드">
-      <change afterPath="$PROJECT_DIR$/firebase-auth.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="Game 클래스 enemy 수정">
+      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Stage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="김재현" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -263,7 +256,7 @@
       <workItem from="1637850839536" duration="3862000" />
       <workItem from="1637921871210" duration="1794000" />
       <workItem from="1638005712587" duration="281000" />
-      <workItem from="1638006513160" duration="665000" />
+      <workItem from="1638006513160" duration="1264000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637928430128</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Game 클래스 enemy 수정">
+      <created>1638007553862</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1638007553862</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Key 클래스 생성" />
     <MESSAGE value="키를 획득하면 사라지는 기능 구현" />
     <MESSAGE value="로켓 내구도 구현" />
     <MESSAGE value="add firebase dependency" />
@@ -531,7 +530,8 @@
     <MESSAGE value="Game.java 버그 수정" />
     <MESSAGE value="버그픽스" />
     <MESSAGE value="블랙홀 이미지 사이즈조정" />
-    <option name="LAST_COMMIT_MESSAGE" value="블랙홀 이미지 사이즈조정" />
+    <MESSAGE value="Game 클래스 enemy 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game 클래스 enemy 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

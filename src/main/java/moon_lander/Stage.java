@@ -49,88 +49,23 @@ public class Stage extends JPanel {
 
         bt_one = new JButton("stage 1");
         bt_one.setBounds(Framework.frameWidth / 2 - 350, Framework.frameHeight / 2 - 100, 100, 50);
-        bt_one.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-        bt_one.setOpaque(false);
-        bt_one.setBackground(Color.blue);
-        bt_one.setForeground(Color.BLACK);
-        bt_one.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
-        bt_one.addMouseListener(new MouseAdapter(){
-            @Override
-            public void mouseClicked(MouseEvent e)
-            {
-                Game.stageNum = 1;
-                setVisible(false);
-                Framework.gameState = Framework.GameState.STAGE_SELECT;
-            }
-        });
+        btDesign(bt_one, 1);
 
         bt_two = new JButton("stage 2");
         bt_two.setBounds(Framework.frameWidth / 2 - 200, Framework.frameHeight / 2 - 100, 100, 50);
-        bt_two.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-        bt_two.setOpaque(false);
-        bt_two.setBackground(Color.blue);
-        bt_two.setForeground(Color.BLACK);
-        bt_two.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
-        bt_two.addMouseListener(new MouseAdapter(){
-            @Override
-            public void mouseClicked(MouseEvent e)
-            {
-                Game.stageNum = 2;
-                setVisible(false);
-                Framework.gameState = Framework.GameState.STAGE_SELECT;
-            }
-        });
+        btDesign(bt_two, 2);
 
         bt_three = new JButton("stage 3");
         bt_three.setBounds(Framework.frameWidth / 2 - 50, Framework.frameHeight / 2 - 100, 100, 50);
-        bt_three.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-        bt_three.setOpaque(false);
-        bt_three.setBackground(Color.blue);
-        bt_three.setForeground(Color.BLACK);
-        bt_three.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
-        bt_three.addMouseListener(new MouseAdapter(){
-            @Override
-            public void mouseClicked(MouseEvent e)
-            {
-                Game.stageNum = 3;
-                setVisible(false);
-                Framework.gameState = Framework.GameState.STAGE_SELECT;
-            }
-        });
+        btDesign(bt_three, 3);
 
         bt_four = new JButton("stage 4");
         bt_four.setBounds(Framework.frameWidth / 2 + 100, Framework.frameHeight / 2 - 100, 100, 50);
-        bt_four.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-        bt_four.setOpaque(false);
-        bt_four.setBackground(Color.blue);
-        bt_four.setForeground(Color.BLACK);
-        bt_four.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
-        bt_four.addMouseListener(new MouseAdapter(){
-            @Override
-            public void mouseClicked(MouseEvent e)
-            {
-                Game.stageNum = 4;
-                setVisible(false);
-                Framework.gameState = Framework.GameState.STAGE_SELECT;
-            }
-        });
+        btDesign(bt_four, 4);
 
         bt_five = new JButton("stage 5");
         bt_five.setBounds(Framework.frameWidth / 2 + 250, Framework.frameHeight / 2 - 100, 100, 50);
-        bt_five.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-        bt_five.setOpaque(false);
-        bt_five.setBackground(Color.blue);
-        bt_five.setForeground(Color.BLACK);
-        bt_five.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
-        bt_five.addMouseListener(new MouseAdapter(){
-            @Override
-            public void mouseClicked(MouseEvent e)
-            {
-                Game.stageNum = 5;
-                setVisible(false);
-                Framework.gameState = Framework.GameState.STAGE_SELECT;
-            }
-        });
+        btDesign(bt_five, 5);
 
         this.setBounds(0, 0, Framework.frameWidth, Framework.frameHeight);
         this.setLayout(null);
@@ -156,4 +91,20 @@ public class Stage extends JPanel {
         g2d.drawImage(backgroundImg, 0, 0, Framework.frameWidth, Framework.frameHeight, null);
     }
 
+    public void btDesign(JButton bt, final int stageNum) {
+        bt.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+        bt.setOpaque(false);
+        bt.setBackground(Color.blue);
+        bt.setForeground(Color.BLACK);
+        bt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
+        bt.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                Game.stageNum = stageNum;
+                setVisible(false);
+                Framework.gameState = Framework.GameState.STAGE_SELECT;
+            }
+        });
+    }
 }

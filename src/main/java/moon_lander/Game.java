@@ -50,15 +50,7 @@ public class Game {
 
     StoreDB db;
 
-    Enemy enemy1;
-    Enemy enemy2;
-    Enemy enemy3;
-    Enemy enemy4;
-    Enemy enemy5;
-    Enemy enemy6;
-    Enemy enemy7;
-    Enemy enemy8;
-    Enemy enemy9;
+    Enemy enemy;
 
     Clip backgroundSound;
 
@@ -108,98 +100,43 @@ public class Game {
 
         switch (stageNum){
             case 1:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
+                for(int i=0; i<5; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
 
                 break;
 
             case 2:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
+                for(int i=0; i<7; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
 
                 break;
 
             case 3:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-                enemy7 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
-                enemies.add(enemy7);
+                for(int i=0; i<9; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
 
                 break;
 
 
             case 4:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-                enemy7 = new Enemy();
-                enemy8 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
-                enemies.add(enemy7);
-                enemies.add(enemy8);
+                for(int i=0; i<11; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
 
                 break;
 
             case 5:
-                enemy1 = new Enemy();
-                enemy2 = new Enemy();
-                enemy3 = new Enemy();
-                enemy4 = new Enemy();
-                enemy5 = new Enemy();
-                enemy6 = new Enemy();
-                enemy7 = new Enemy();
-                enemy8 = new Enemy();
-                enemy9 = new Enemy();
-
-                enemies.add(enemy1);
-                enemies.add(enemy2);
-                enemies.add(enemy3);
-                enemies.add(enemy4);
-                enemies.add(enemy5);
-                enemies.add(enemy6);
-                enemies.add(enemy7);
-                enemies.add(enemy8);
-                enemies.add(enemy9);
+                for(int i=0; i<13; i++) {
+                    enemy = new Enemy();
+                    enemies.add(enemy);
+                }
 
                 break;
         }

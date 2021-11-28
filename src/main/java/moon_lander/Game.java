@@ -66,9 +66,9 @@ public class Game {
 
     public static int stageNum;
 
-    public static int score = 0;
+    public int score = 0;
 
-    public static int highscore = 0;
+    public int highscore = 0;
 
     public Game() {
         Framework.gameState = Framework.GameState.GAME_CONTENT_LOADING;

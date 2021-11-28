@@ -8,9 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="my-project" />
+        <module name="firebase-auth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="firebase-auth" target="1.5" />
       <module name="moon_lander" target="1.8" />
       <module name="my-project" target="1.8" />
     </bytecodeTargetLevel>

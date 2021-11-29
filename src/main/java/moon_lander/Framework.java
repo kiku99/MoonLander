@@ -119,9 +119,6 @@ public class Framework extends Canvas {
      * Set variables and objects.
      * This method is intended to set the variables and objects for this class, variables and objects for the actual game can be set in Game.java.
      */
-    private void Initialize()
-    {
-    }
     
     /**
      * Load files - images, sounds, ...
@@ -183,8 +180,6 @@ public class Framework extends Canvas {
                     //...
                 break;
                 case STARTING:
-                    // Sets variables and objects.
-                    Initialize();
                     // Load files - images, sounds, ...
                     LoadContent();
 

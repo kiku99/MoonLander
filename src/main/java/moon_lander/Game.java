@@ -115,7 +115,7 @@ public class Game {
                     enemies.add(enemy);
                 }
                 PlayerRocket.speedAccelerating = 2;
-                PlayerRocket.speedStopping = 1;
+                PlayerRocket.speedStopping = 2;
 
                 break;
 
@@ -125,7 +125,7 @@ public class Game {
                     enemies.add(enemy);
                 }
                 PlayerRocket.speedAccelerating = 2;
-                PlayerRocket.speedStopping = 1;
+                PlayerRocket.speedStopping = 3;
 
                 break;
 
@@ -136,7 +136,7 @@ public class Game {
                     enemies.add(enemy);
                 }
                 PlayerRocket.speedAccelerating = 2;
-                PlayerRocket.speedStopping = 1;
+                PlayerRocket.speedStopping = 4;
 
                 break;
 
@@ -146,7 +146,7 @@ public class Game {
                     enemies.add(enemy);
                 }
                 PlayerRocket.speedAccelerating = 2;
-                PlayerRocket.speedStopping = 1;
+                PlayerRocket.speedStopping = 5;
 
                 break;
 

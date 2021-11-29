@@ -97,14 +97,6 @@ public class PlayerRocket extends Unit{
     {
         Initialize();
         LoadContent();
-        
-        // Now that we have rocketImgWidth we set starting x coordinate.
-        while(true){
-            posx = random.nextInt(Framework.frameWidth - rocketImgWidth);
-            if(posx < 140 || posx > 300) {
-                break;
-            }
-        }
     }
     
     
@@ -113,6 +105,10 @@ public class PlayerRocket extends Unit{
         random = new Random();
         
         ResetPlayer();
+
+        do {
+            posx = random.nextInt(Framework.frameWidth - rocketImgWidth);
+        } while (posx >= 140 && posx <= 300);
         
         speedAccelerating = 2;
         speedStopping = 1;
@@ -201,10 +197,8 @@ public class PlayerRocket extends Unit{
         else if(this.hp < 5){
             damaged = true;
         }
-
-
-
     }
+
 
     @Override
     public void Draw(Graphics2D g2d)

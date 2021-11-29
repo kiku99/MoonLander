@@ -104,6 +104,8 @@ public class Game {
                     enemy = new Enemy();
                     enemies.add(enemy);
                 }
+                PlayerRocket.speedAccelerating = 2;
+                PlayerRocket.speedStopping = 1;
 
                 break;
 
@@ -112,6 +114,8 @@ public class Game {
                     enemy = new Enemy();
                     enemies.add(enemy);
                 }
+                PlayerRocket.speedAccelerating = 2;
+                PlayerRocket.speedStopping = 1;
 
                 break;
 
@@ -120,6 +124,8 @@ public class Game {
                     enemy = new Enemy();
                     enemies.add(enemy);
                 }
+                PlayerRocket.speedAccelerating = 2;
+                PlayerRocket.speedStopping = 1;
 
                 break;
 
@@ -129,6 +135,8 @@ public class Game {
                     enemy = new Enemy();
                     enemies.add(enemy);
                 }
+                PlayerRocket.speedAccelerating = 2;
+                PlayerRocket.speedStopping = 1;
 
                 break;
 
@@ -137,6 +145,8 @@ public class Game {
                     enemy = new Enemy();
                     enemies.add(enemy);
                 }
+                PlayerRocket.speedAccelerating = 2;
+                PlayerRocket.speedStopping = 1;
 
                 break;
 

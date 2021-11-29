@@ -43,11 +43,11 @@ public class PlayerRocket extends Unit{
     /**
      * Accelerating speed of the rocket.
      */
-    private int speedAccelerating;
+    public static int speedAccelerating;
     /**
      * Stopping/Falling speed of the rocket. Falling speed because, the gravity pulls the rocket down to the moon.
      */
-    private int speedStopping;
+    public static int speedStopping;
     
     /**
      * Maximum speed that rocket can have without having a crash when landing.

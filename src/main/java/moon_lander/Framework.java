@@ -4,24 +4,17 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.swing.*;
 
 /**
  * Framework that controls the game (Game.java) that created it, update it and draw it on the screen.
- * 
+ *
  * @author www.gametutorial.net
  */
 
@@ -119,9 +112,6 @@ public class Framework extends Canvas {
      * Set variables and objects.
      * This method is intended to set the variables and objects for this class, variables and objects for the actual game can be set in Game.java.
      */
-    private void Initialize()
-    {
-    }
     
     /**
      * Load files - images, sounds, ...
@@ -183,8 +173,6 @@ public class Framework extends Canvas {
                     //...
                 break;
                 case STARTING:
-                    // Sets variables and objects.
-                    Initialize();
                     // Load files - images, sounds, ...
                     LoadContent();
 
@@ -209,7 +197,10 @@ public class Framework extends Canvas {
                         visualizingTime += System.nanoTime() - lastVisualizingTime;
                         lastVisualizingTime = System.nanoTime();
                     }
-                break;
+                    break;
+                default:
+                    Logger.getLogger("error1");
+                    break;
             }
             
             // Repaint the screen.
@@ -224,7 +215,10 @@ public class Framework extends Canvas {
             try {
                  //Provides the necessary delay and also yields control so that other thread can do work.
                  Thread.sleep(timeLeft);
-            } catch (InterruptedException ex) { }
+            } catch (InterruptedException ex) {
+                Logger.getLogger(String.valueOf(Level.SEVERE), "Thread sleep error");
+                Thread.currentThread().interrupt();
+            }
         }
     }
     
@@ -240,24 +234,27 @@ public class Framework extends Canvas {
                 game.Draw(g2d, mousePosition());
                 g2d.setColor(Color.white);
                 g2d.drawString("Time: " + gameTime / SECINNANOSEC, 5, 30);
-            break;
+                break;
             case GAMEOVER:
                 game.DrawGameOver(g2d, mousePosition(), gameTime);
-            break;
+                break;
             case MAIN_MENU:
                 g2d.drawImage(moonLanderMenuImg, 0, 0, frameWidth, frameHeight, null);
                 g2d.setColor(Color.white);
                 g2d.drawString("Use w a d keys to controle the rocket.", frameWidth / 2 - 117, frameHeight / 2);
                 g2d.drawString("Press any key to start the game.", frameWidth / 2 - 100, frameHeight / 2 + 30);
                 g2d.drawString("WWW.GAMETUTORIAL.NET", 7, frameHeight - 5);
-            break;
+                break;
             case OPTIONS:
                 //...
-            break;
+                break;
             case GAME_CONTENT_LOADING:
                 g2d.setColor(Color.white);
                 g2d.drawString("GAME is LOADING", frameWidth / 2 - 50, frameHeight / 2);
-            break;
+                break;
+            default:
+                Logger.getLogger("error5");
+                break;
         }
     }
     
@@ -338,7 +335,7 @@ public class Framework extends Canvas {
                 }
                 break;
             default:
-                Logger.getLogger("error");
+                Logger.getLogger("error3");
                 break;
         }
     }
@@ -360,7 +357,7 @@ public class Framework extends Canvas {
                 //...
                 break;
             default:
-                Logger.getLogger("error");
+                Logger.getLogger("error4");
                 break;
         }
     }

@@ -139,6 +139,10 @@ public class Game {
                 }
 
                 break;
+
+            default:
+                Logger.getLogger("stage select error");
+                break;
         }
 
         fixedEnemy = new FixedEnemy();
@@ -235,7 +239,7 @@ public class Game {
                 if ((playerRocket.speedY <= playerRocket.topLandingSpeed) && key.getKey){
                     backgroundSound.stop();
                     playerRocket.landed = true;
-                    score = 10000 - (int)((gameTime / Framework.secInNanosec) * 100);
+                    score = 10000 - (int)((gameTime / Framework.SECINNANOSEC) * 100);
                     if (score > highscore){
                         highscore = score;
                         db.storeScore(highscore);
@@ -354,7 +358,7 @@ public class Game {
         if(playerRocket.landed)
         {
             g2d.drawString("You have successfully landed!", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3);
-            g2d.drawString("You have landed in " + gameTime / Framework.secInNanosec + " seconds.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 20);
+            g2d.drawString("You have landed in " + gameTime / Framework.SECINNANOSEC + " seconds.", Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 20);
             g2d.drawString("Your Score: " + (score), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 40);
             g2d.drawString("Your highScore: " + (highscore), Framework.frameWidth / 2 - 100, Framework.frameHeight / 3 + 60);
 

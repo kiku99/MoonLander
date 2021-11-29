@@ -42,13 +42,13 @@ public class Framework extends Canvas {
      * Time of one second in nanoseconds.
      * 1 second = 1 000 000 000 nanoseconds
      */
-    public static final long secInNanosec = 1000000000L;
+    public static final long SECINNANOSEC = 1000000000L;
     
     /**
      * Time of one millisecond in nanoseconds.
      * 1 millisecond = 1 000 000 nanoseconds
      */
-    public static final long milisecInNanosec = 1000000L;
+    public static final long MILISECINNANOSEC = 1000000L;
     
     /**
      * FPS - Frames per second
@@ -58,12 +58,12 @@ public class Framework extends Canvas {
     /**
      * Pause between updates. It is in nanoseconds.
      */
-    private final long GAME_UPDATE_PERIOD = secInNanosec / GAME_FPS;
+    private final long GAME_UPDATE_PERIOD = SECINNANOSEC / GAME_FPS;
     
     /**
      * Possible states of the game
      */
-    public static enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, DESTROYED, STAGE_SELECT}
+    public enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, DESTROYED, STAGE_SELECT}
     /**
      * Current state of the game
      */
@@ -145,10 +145,13 @@ public class Framework extends Canvas {
     private void GameLoop()
     {
         // This two variables are used in VISUALIZING state of the game. We used them to wait some time so that we get correct frame/window resolution.
-        long visualizingTime = 0, lastVisualizingTime = System.nanoTime();
+        long visualizingTime = 0;
+        long lastVisualizingTime = System.nanoTime();
         
         // This variables are used for calculating the time that defines for how long we should put threat to sleep to meet the GAME_FPS.
-        long beginTime, timeTaken, timeLeft;
+        long beginTime;
+        long timeTaken;
+        long timeLeft;
         
         while(true)
         {
@@ -193,7 +196,7 @@ public class Framework extends Canvas {
                     // So we wait one second for the window/frame to be set to its correct size. Just in case we
                     // also insert 'this.getWidth() > 1' condition in case when the window/frame size wasn't set in time,
                     // so that we although get approximately size.
-                    if(this.getWidth() > 1 && visualizingTime > secInNanosec)
+                    if(this.getWidth() > 1 && visualizingTime > SECINNANOSEC)
                     {
                         frameWidth = this.getWidth();
                         frameHeight = this.getHeight();
@@ -214,7 +217,7 @@ public class Framework extends Canvas {
             
             // Here we calculate the time that defines for how long we should put threat to sleep to meet the GAME_FPS.
             timeTaken = System.nanoTime() - beginTime;
-            timeLeft = (GAME_UPDATE_PERIOD - timeTaken) / milisecInNanosec; // In milliseconds
+            timeLeft = (GAME_UPDATE_PERIOD - timeTaken) / MILISECINNANOSEC; // In milliseconds
             // If the time is less than 10 milliseconds, then we will put thread to sleep for 10 millisecond so that some other thread can do some work.
             if (timeLeft < 10) 
                 timeLeft = 10; //set a minimum
@@ -236,7 +239,7 @@ public class Framework extends Canvas {
             case PLAYING:
                 game.Draw(g2d, mousePosition());
                 g2d.setColor(Color.white);
-                g2d.drawString("Time: " + gameTime / secInNanosec, 5, 30);
+                g2d.drawString("Time: " + gameTime / SECINNANOSEC, 5, 30);
             break;
             case GAMEOVER:
                 game.DrawGameOver(g2d, mousePosition(), gameTime);
@@ -322,19 +325,21 @@ public class Framework extends Canvas {
         {
             case MAIN_MENU:
                 //...
-            break;
+                break;
             case STAGE_SELECT:
                 //...
-            break;
+                break;
             case GAMEOVER:
                 if(e.getKeyCode() == KeyEvent.VK_SPACE || e.getKeyCode() == KeyEvent.VK_ENTER) {
                     restartGame();
                 }
                 else if (e.getKeyCode()  == KeyEvent.VK_M){
                     stage = new Stage();
-
                 }
-            break;
+                break;
+            default:
+                Logger.getLogger("error");
+                break;
         }
     }
     
@@ -350,10 +355,13 @@ public class Framework extends Canvas {
         {
             case MAIN_MENU:
                 stage = new Stage();
-            break;
+                break;
             case STAGE_SELECT:
                 //...
-            break;
+                break;
+            default:
+                Logger.getLogger("error");
+                break;
         }
     }
 

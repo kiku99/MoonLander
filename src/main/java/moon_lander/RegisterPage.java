@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ResisterPage extends JFrame {
+public class RegisterPage extends JFrame {
     //ID 입력 필드
     private JTextField tResisterID;
     //계정 생성 버튼
@@ -23,7 +23,7 @@ public class ResisterPage extends JFrame {
     //PW 입력 필드
     private JPasswordField tResisterPw;
 
-    public ResisterPage(){
+    public RegisterPage(){
         setContentPane(resisterPanel);
         setTitle("resister");
         setSize(450, 300);
@@ -45,12 +45,12 @@ public class ResisterPage extends JFrame {
                             .setEmailVerified(false)
                             .setDisplayName(String.valueOf(tResisterPw.getPassword()));
 
-                    UserRecord userRecord = FirebaseAuth.getInstance().createUser(request);
-                    System.out.println("유저 생성 성공");
+                    FirebaseAuth.getInstance().createUser(request);
+                    Logger.getLogger(RegisterPage.class.getName()).log(Level.INFO, "유저 생성 성공");
                     JOptionPane.showMessageDialog(null, "유저 생성 성공");
                 }
                 catch (FirebaseAuthException ex){
-                    Logger.getLogger(ResisterPage.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(RegisterPage.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
                 new LoginPage();

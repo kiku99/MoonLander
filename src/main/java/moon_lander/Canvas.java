@@ -28,7 +28,7 @@ public abstract class Canvas extends JPanel implements KeyListener, MouseListene
     private static boolean[] mouseState = new boolean[3];
 
     
-    public Canvas()
+    protected Canvas()
     {
         // We use double buffer to draw on the screen.
         this.setDoubleBuffered(true); //메모리 활성화
@@ -61,7 +61,6 @@ public abstract class Canvas extends JPanel implements KeyListener, MouseListene
         super.paintComponent(g2d);
         Draw(g2d);
     }
-       
     
     // Keyboard
     /**

@@ -76,7 +76,7 @@ public class LoginPage extends JFrame {
         btnResister.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ResisterPage();
+                new RegisterPage();
                 dispose();
             }
         });
@@ -91,11 +91,6 @@ public class LoginPage extends JFrame {
             String uid = userRecord.getUid();
             String password = userRecord.getDisplayName();
 
-            System.out.println(email);
-            System.out.println(uid);
-
-
-
             if (password.equals(String.valueOf(tpw.getPassword()))){
                 JOptionPane.showMessageDialog(null, "Hello" + " " + email);
                 setVisible(false);
@@ -105,7 +100,7 @@ public class LoginPage extends JFrame {
 
             recoverUserData(uid);
         } catch (FirebaseAuthException ex) {
-            Logger.getLogger(ResisterPage.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RegisterPage.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -113,7 +108,9 @@ public class LoginPage extends JFrame {
         UserRecord userRecord = null;
         try {
             userRecord = FirebaseAuth.getInstance().getUser(uid);
-            System.out.println("유저 데이터를 성공적으로 Fetch: " + userRecord.getUid());
+
+            Logger.getLogger(LoginPage.class.getName()).log(Level.INFO, "유저 데이터를 성공적으로 Fetch:");
+            Logger.getLogger(LoginPage.class.getName()).log(Level.INFO, userRecord.getUid());
         } catch (FirebaseAuthException e) {
             e.printStackTrace();
         }

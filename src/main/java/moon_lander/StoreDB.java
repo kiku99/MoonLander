@@ -14,9 +14,6 @@ public class StoreDB {
 
     public static Object score;
 
-    Logger logger = Logger.getLogger(StoreDB.class.getName());
-
-
     public void storeScore(int score) {
         HashMap<String, Integer> users = new HashMap<>();
         users.put("high score", score);
@@ -27,13 +24,13 @@ public class StoreDB {
         userRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                logger.log(Level.INFO, "ss");
+                Logger.getLogger(StoreDB.class.getName()).log(Level.INFO, "data read");
                 score = dataSnapshot.getValue();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                logger.log(Level.INFO, "ss");
+                Logger.getLogger(StoreDB.class.getName()).log(Level.INFO, "data read");
             }
         });
     }

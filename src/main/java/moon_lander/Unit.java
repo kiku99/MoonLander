@@ -5,15 +5,15 @@ import java.awt.image.BufferedImage;
 
 public abstract class Unit {
     //x 좌표
-    public int posx;
+    protected int posx;
     //y 좌표
-    public int posy;
+    protected int posy;
     //이미지
-    public BufferedImage Img;
+    protected BufferedImage Img;
     //이미지 넓이
-    public int ImgWidth;
+    protected int ImgWidth;
     //이미지 높이
-    public int ImgHeight;
+    protected int ImgHeight;
 
     public abstract void Initialize();
 

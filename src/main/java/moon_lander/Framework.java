@@ -29,8 +29,6 @@ public class Framework extends Canvas {
      */
     public static int frameHeight;
 
-    public static int score = 50;
-
     /**
      * Time of one second in nanoseconds.
      * 1 second = 1 000 000 000 nanoseconds
@@ -56,7 +54,7 @@ public class Framework extends Canvas {
     /**
      * Possible states of the game
      */
-    public enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, DESTROYED, STAGE_SELECT}
+    public enum GameState{STARTING, VISUALIZING, GAME_CONTENT_LOADING, MAIN_MENU, OPTIONS, PLAYING, GAMEOVER, STAGE_SELECT}
     /**
      * Current state of the game
      */
@@ -77,9 +75,8 @@ public class Framework extends Canvas {
     private Stage stage;
 
 
-    private LoginPage menu;
-    
-    
+
+
     /**
      * Image for menu.
      */
@@ -199,7 +196,7 @@ public class Framework extends Canvas {
                     }
                     break;
                 default:
-                    Logger.getLogger("error1");
+                    Logger.getLogger(StoreDB.class.getName()).log(Level.INFO, "gamestate is default");
                     break;
             }
             
@@ -216,7 +213,7 @@ public class Framework extends Canvas {
                  //Provides the necessary delay and also yields control so that other thread can do work.
                  Thread.sleep(timeLeft);
             } catch (InterruptedException ex) {
-                Logger.getLogger(String.valueOf(Level.SEVERE), "Thread sleep error");
+                Logger.getLogger(StoreDB.class.getName()).log(Level.SEVERE, "thread sleep error");
                 Thread.currentThread().interrupt();
             }
         }
@@ -253,7 +250,7 @@ public class Framework extends Canvas {
                 g2d.drawString("GAME is LOADING", frameWidth / 2 - 50, frameHeight / 2);
                 break;
             default:
-                Logger.getLogger("error5");
+                Logger.getLogger(StoreDB.class.getName()).log(Level.INFO, "draw");
                 break;
         }
     }
@@ -335,7 +332,7 @@ public class Framework extends Canvas {
                 }
                 break;
             default:
-                Logger.getLogger("error3");
+                Logger.getLogger(StoreDB.class.getName()).log(Level.INFO, "gamestate is default");
                 break;
         }
     }
@@ -357,7 +354,7 @@ public class Framework extends Canvas {
                 //...
                 break;
             default:
-                Logger.getLogger("error4");
+                Logger.getLogger(Framework.class.getName()).log(Level.INFO, "gamestate is default");
                 break;
         }
     }

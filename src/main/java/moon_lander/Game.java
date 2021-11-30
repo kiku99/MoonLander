@@ -151,7 +151,7 @@ public class Game {
                 break;
 
             default:
-                Logger.getLogger("stage select error");
+                Logger.getLogger(StoreDB.class.getName()).log(Level.INFO, "stage select");
                 break;
         }
 

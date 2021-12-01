@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e3f656b9-1a17-4bfb-87a9-9e74f5a9bcf9" name="Changes" comment="블랙홀 위치에 로켓 생성X">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Canvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Framework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/RegisterPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/ResisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/StoreDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moon_lander/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/moon_lander/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Canvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Canvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework$GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/moon_lander/Framework.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +119,17 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="moon_lander.Window" />
       <module name="my-project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -261,7 +258,9 @@
       <workItem from="1638005712587" duration="281000" />
       <workItem from="1638006513160" duration="3253000" />
       <workItem from="1638177840852" duration="3804000" />
-      <workItem from="1638231711723" duration="3104000" />
+      <workItem from="1638231711723" duration="4570000" />
+      <workItem from="1638236624413" duration="80000" />
+      <workItem from="1638236741708" duration="12097000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -494,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638168584934</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="리팩토링 최종 버전">
+      <created>1638235202730</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1638235202730</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +531,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="로켓 내구도 구현" />
     <MESSAGE value="add firebase dependency" />
     <MESSAGE value="firebase db 연결" />
     <MESSAGE value="pom.xml 에 플러그인, 의존성 추가" />
@@ -550,7 +555,8 @@
     <MESSAGE value="블랙홀 이미지 사이즈조정" />
     <MESSAGE value="Game 클래스 enemy 수정" />
     <MESSAGE value="Stage 버튼 생성 시 중복 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stage 버튼 생성 시 중복 삭제" />
+    <MESSAGE value="리팩토링 최종 버전" />
+    <option name="LAST_COMMIT_MESSAGE" value="리팩토링 최종 버전" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

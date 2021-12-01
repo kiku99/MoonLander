@@ -4,11 +4,12 @@ moon_lander/Game$1.class
 moon_lander/Enemy.class
 moon_lander/Window.class
 moon_lander/Framework$GameState.class
+moon_lander/RegisterPage$1.class
 moon_lander/Canvas.class
 moon_lander/Stage.class
 moon_lander/Unit.class
 firebase/ConectionFirebase.class
-moon_lander/ResisterPage$1.class
+moon_lander/RegisterPage.class
 moon_lander/LoginPage.class
 moon_lander/StoreDB$1.class
 moon_lander/Stage$1.class
@@ -21,7 +22,6 @@ moon_lander/PlayerRocket.class
 moon_lander/Bullet.class
 moon_lander/StoreDB.class
 moon_lander/LoginPage$2.class
-moon_lander/ResisterPage.class
 moon_lander/Window$1.class
 moon_lander/LoginPage$3.class
 moon_lander/Framework$2.class

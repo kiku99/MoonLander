@@ -123,17 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="moon_lander [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -260,7 +249,7 @@
       <workItem from="1638177840852" duration="3804000" />
       <workItem from="1638231711723" duration="4570000" />
       <workItem from="1638236624413" duration="80000" />
-      <workItem from="1638236741708" duration="12097000" />
+      <workItem from="1638236741708" duration="14521000" />
     </task>
     <task id="LOCAL-00003" summary="1">
       <created>1632566297312</created>
@@ -500,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638235202730</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="소스코드 최종버전">
+      <created>1638360728131</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1638360728132</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +527,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add firebase dependency" />
     <MESSAGE value="firebase db 연결" />
     <MESSAGE value="pom.xml 에 플러그인, 의존성 추가" />
     <MESSAGE value="로그인 페이지 구현" />
@@ -556,7 +551,8 @@
     <MESSAGE value="Game 클래스 enemy 수정" />
     <MESSAGE value="Stage 버튼 생성 시 중복 삭제" />
     <MESSAGE value="리팩토링 최종 버전" />
-    <option name="LAST_COMMIT_MESSAGE" value="리팩토링 최종 버전" />
+    <MESSAGE value="소스코드 최종버전" />
+    <option name="LAST_COMMIT_MESSAGE" value="소스코드 최종버전" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
